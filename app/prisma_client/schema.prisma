@@ -1,0 +1,70 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-py"
+  output   = "../app/prisma_client"
+}
+
+model User {
+  id              String            @id @default(uuid())
+  email           String            @unique
+  passwordHash    String?
+  googleId        String?           @unique
+  membershipLevel String            @default("free") // 'free' or 'premium'
+  createdAt       DateTime          @default(now())
+  progress        UserProgress[]
+  attempts        UserExamAttempt[]
+}
+
+model Course {
+  id           String   @id @default(uuid())
+  title        String
+  description  String
+  thumbnailUrl String
+  difficulty   String
+  lessons      Lesson[]
+}
+
+model Lesson {
+  id          String         @id @default(uuid())
+  courseId    String
+  course      Course         @relation(fields: [courseId], references: [id])
+  title       String
+  videoUrl    String
+  textContent String
+  orderIndex  Int
+  progress    UserProgress[]
+}
+
+model UserProgress {
+  id        String  @id @default(uuid())
+  userId    String
+  user      User    @relation(fields: [userId], references: [id])
+  lessonId  String
+  lesson    Lesson  @relation(fields: [lessonId], references: [id])
+  completed Boolean @default(false)
+
+  @@unique([userId, lessonId])
+}
+
+model Question {
+  id            String @id @default(uuid())
+  category      String
+  questionText  String
+  options       Json
+  correctOption String
+  explanation   String
+  indexNumber   Int    @unique
+}
+
+model UserExamAttempt {
+  id          String   @id @default(uuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  score       Int
+  passed      Boolean
+  completedAt DateTime @default(now())
+}
