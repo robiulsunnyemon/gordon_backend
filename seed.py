@@ -191,6 +191,59 @@ async def seed():
         q_item["options"] = Json(json.loads(q_item["options"]))
         await db.question.create(data=q_item)
 
+    print("Seeding Payments & Extra Users...")
+    import datetime
+    from datetime import timedelta
+    import random
+    
+    premium_user_db = await db.user.find_unique(where={"email": "premium@gordon.com"})
+    
+    extra_emails = [
+        "john.doe@example.com", "jane.smith@example.com", "alice.johnson@example.com",
+        "bob.brown@example.com", "charlie.davis@example.com", "eva.white@example.com"
+    ]
+    
+    base_date = datetime.datetime.now(datetime.timezone.utc)
+    
+    for i, email in enumerate(extra_emails):
+        hashed_pwd = hash_password("pwd123")
+        signup_offset = random.randint(10, 180)
+        created_at = base_date - timedelta(days=signup_offset)
+        
+        user = await db.user.create(
+            data={
+                "email": email,
+                "passwordHash": hashed_pwd,
+                "membershipLevel": "premium" if i % 2 == 0 else "free",
+                "createdAt": created_at
+            }
+        )
+        
+        if user.membershipLevel == "premium":
+            plan = "yearly" if i % 3 == 0 else "monthly"
+            amount = 120.00 if plan == "yearly" else 15.00
+            payment_offset = signup_offset - random.randint(0, 2)
+            payment_date = base_date - timedelta(days=payment_offset)
+            
+            await db.payment.create(
+                data={
+                    "userId": user.id,
+                    "amount": amount,
+                    "planType": plan,
+                    "createdAt": payment_date
+                }
+            )
+            
+    if premium_user_db:
+        await db.payment.create(
+            data={
+                "userId": premium_user_db.id,
+                "amount": 120.00,
+                "planType": "yearly",
+                "createdAt": base_date - timedelta(days=120)
+            }
+        )
+
     print("Database seeding completed successfully!")
     await db.disconnect()
 

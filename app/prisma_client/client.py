@@ -100,6 +100,7 @@ class Prisma(AsyncBasePrisma):
     userprogress: 'actions.UserProgressActions[models.UserProgress]'
     question: 'actions.QuestionActions[models.Question]'
     userexamattempt: 'actions.UserExamAttemptActions[models.UserExamAttempt]'
+    payment: 'actions.PaymentActions[models.Payment]'
 
     __slots__ = (
         'user',
@@ -108,6 +109,7 @@ class Prisma(AsyncBasePrisma):
         'userprogress',
         'question',
         'userexamattempt',
+        'payment',
     )
 
     def __init__(
@@ -144,6 +146,7 @@ class Prisma(AsyncBasePrisma):
         self.userprogress = actions.UserProgressActions[models.UserProgress](self, models.UserProgress)
         self.question = actions.QuestionActions[models.Question](self, models.Question)
         self.userexamattempt = actions.UserExamAttemptActions[models.UserExamAttempt](self, models.UserExamAttempt)
+        self.payment = actions.PaymentActions[models.Payment](self, models.Payment)
 
         if auto_register:
             register(self)
@@ -300,6 +303,7 @@ class Batch:
     userprogress: 'UserProgressBatchActions'
     question: 'QuestionBatchActions'
     userexamattempt: 'UserExamAttemptBatchActions'
+    payment: 'PaymentBatchActions'
 
     def __init__(self, client: Prisma) -> None:
         self.__client = client
@@ -311,6 +315,7 @@ class Batch:
         self.userprogress = UserProgressBatchActions(self)
         self.question = QuestionBatchActions(self)
         self.userexamattempt = UserExamAttemptBatchActions(self)
+        self.payment = PaymentBatchActions(self)
 
     def _add(self, **kwargs: Any) -> None:
         builder = QueryBuilder(
@@ -1023,6 +1028,117 @@ class UserExamAttemptBatchActions:
         self._batcher._add(
             method='delete_many',
             model=models.UserExamAttempt,
+            arguments={'where': where},
+            root_selection=['count'],
+        )
+
+
+
+# NOTE: some arguments are meaningless in this context but are included
+# for completeness sake
+class PaymentBatchActions:
+    def __init__(self, batcher: Batch) -> None:
+        self._batcher = batcher
+
+    def create(
+        self,
+        data: types.PaymentCreateInput,
+        include: Optional[types.PaymentInclude] = None
+    ) -> None:
+        self._batcher._add(
+            method='create',
+            model=models.Payment,
+            arguments={
+                'data': data,
+                'include': include,
+            },
+        )
+
+    def create_many(
+        self,
+        data: List[types.PaymentCreateWithoutRelationsInput],
+        *,
+        skip_duplicates: Optional[bool] = None,
+    ) -> None:
+        if skip_duplicates and self._batcher._active_provider in CREATE_MANY_SKIP_DUPLICATES_UNSUPPORTED:
+            raise errors.UnsupportedDatabaseError(self._batcher._active_provider, 'create_many_skip_duplicates')
+
+        self._batcher._add(
+            method='create_many',
+            model=models.Payment,
+            arguments={
+                'data': data,
+                'skipDuplicates': skip_duplicates,
+            },
+            root_selection=['count'],
+        )
+
+    def delete(
+        self,
+        where: types.PaymentWhereUniqueInput,
+        include: Optional[types.PaymentInclude] = None,
+    ) -> None:
+        self._batcher._add(
+            method='delete',
+            model=models.Payment,
+            arguments={
+                'where': where,
+                'include': include,
+            },
+        )
+
+    def update(
+        self,
+        data: types.PaymentUpdateInput,
+        where: types.PaymentWhereUniqueInput,
+        include: Optional[types.PaymentInclude] = None
+    ) -> None:
+        self._batcher._add(
+            method='update',
+            model=models.Payment,
+            arguments={
+                'data': data,
+                'where': where,
+                'include': include,
+            },
+        )
+
+    def upsert(
+        self,
+        where: types.PaymentWhereUniqueInput,
+        data: types.PaymentUpsertInput,
+        include: Optional[types.PaymentInclude] = None,
+    ) -> None:
+        self._batcher._add(
+            method='upsert',
+            model=models.Payment,
+            arguments={
+                'where': where,
+                'include': include,
+                'create': data.get('create'),
+                'update': data.get('update'),
+            },
+        )
+
+    def update_many(
+        self,
+        data: types.PaymentUpdateManyMutationInput,
+        where: types.PaymentWhereInput,
+    ) -> None:
+        self._batcher._add(
+            method='update_many',
+            model=models.Payment,
+            arguments={'data': data, 'where': where,},
+            root_selection=['count'],
+        )
+
+    def delete_many(
+        self,
+        where: Optional[types.PaymentWhereInput] = None,
+    ) -> None:
+        self._batcher._add(
+            method='delete_many',
+            model=models.Payment,
             arguments={'where': where},
             root_selection=['count'],
         )

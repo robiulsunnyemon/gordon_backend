@@ -1151,6 +1151,7 @@ class UserOptionalCreateInput(TypedDict, total=False):
     createdAt: datetime.datetime
     progress: 'UserProgressCreateManyNestedWithoutRelationsInput'
     attempts: 'UserExamAttemptCreateManyNestedWithoutRelationsInput'
+    payments: 'PaymentCreateManyNestedWithoutRelationsInput'
 
 
 class UserCreateInput(UserOptionalCreateInput):
@@ -1230,6 +1231,7 @@ class UserUpdateInput(TypedDict, total=False):
     createdAt: datetime.datetime
     progress: 'UserProgressUpdateManyWithoutRelationsInput'
     attempts: 'UserExamAttemptUpdateManyWithoutRelationsInput'
+    payments: 'PaymentUpdateManyWithoutRelationsInput'
 
 
 class UserUpdateManyMutationInput(TypedDict, total=False):
@@ -1380,6 +1382,7 @@ class UserInclude(TypedDict, total=False):
     """User relational arguments"""
     progress: Union[bool, 'FindManyUserProgressArgsFromUser']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromUser']
+    payments: Union[bool, 'FindManyPaymentArgsFromUser']
 
 
     
@@ -1388,24 +1391,28 @@ class UserIncludeFromUser(TypedDict, total=False):
     """Relational arguments for User"""
     progress: Union[bool, 'FindManyUserProgressArgsFromUserRecursive1']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromUserRecursive1']
+    payments: Union[bool, 'FindManyPaymentArgsFromUserRecursive1']
 
 
 class UserIncludeFromUserRecursive1(TypedDict, total=False):
     """Relational arguments for User"""
     progress: Union[bool, 'FindManyUserProgressArgsFromUserRecursive2']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromUserRecursive2']
+    payments: Union[bool, 'FindManyPaymentArgsFromUserRecursive2']
 
 
 class UserIncludeFromUserRecursive2(TypedDict, total=False):
     """Relational arguments for User"""
     progress: Union[bool, 'FindManyUserProgressArgsFromUserRecursive3']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromUserRecursive3']
+    payments: Union[bool, 'FindManyPaymentArgsFromUserRecursive3']
 
 
 class UserIncludeFromUserRecursive3(TypedDict, total=False):
     """Relational arguments for User"""
     progress: Union[bool, 'FindManyUserProgressArgsFromUserRecursive4']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromUserRecursive4']
+    payments: Union[bool, 'FindManyPaymentArgsFromUserRecursive4']
 
 
 class UserIncludeFromUserRecursive4(TypedDict, total=False):
@@ -2020,6 +2027,111 @@ class FindManyUserExamAttemptArgsFromUserRecursive4(TypedDict, total=False):
     cursor: 'UserExamAttemptWhereUniqueInput'
     distinct: List['UserExamAttemptScalarFieldKeys']
     
+    
+
+class PaymentIncludeFromUser(TypedDict, total=False):
+    """Relational arguments for User"""
+    user: Union[bool, 'UserArgsFromUserRecursive1']
+
+
+class PaymentIncludeFromUserRecursive1(TypedDict, total=False):
+    """Relational arguments for User"""
+    user: Union[bool, 'UserArgsFromUserRecursive2']
+
+
+class PaymentIncludeFromUserRecursive2(TypedDict, total=False):
+    """Relational arguments for User"""
+    user: Union[bool, 'UserArgsFromUserRecursive3']
+
+
+class PaymentIncludeFromUserRecursive3(TypedDict, total=False):
+    """Relational arguments for User"""
+    user: Union[bool, 'UserArgsFromUserRecursive4']
+
+
+class PaymentIncludeFromUserRecursive4(TypedDict, total=False):
+    """Relational arguments for User"""
+
+    
+
+class PaymentArgsFromUser(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class PaymentArgsFromUserRecursive1(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class PaymentArgsFromUserRecursive2(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class PaymentArgsFromUserRecursive3(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class PaymentArgsFromUserRecursive4(TypedDict, total=False):
+    """Arguments for User"""
+    
+    
+
+class FindManyPaymentArgsFromUser(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class FindManyPaymentArgsFromUserRecursive1(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class FindManyPaymentArgsFromUserRecursive2(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class FindManyPaymentArgsFromUserRecursive3(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class FindManyPaymentArgsFromUserRecursive4(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    
 
 
 FindManyUserArgs = FindManyUserArgsFromUser
@@ -2038,6 +2150,7 @@ class UserWhereInput(TypedDict, total=False):
     createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
     progress: 'UserProgressListRelationFilter'
     attempts: 'UserExamAttemptListRelationFilter'
+    payments: 'PaymentListRelationFilter'
 
     # should be noted that AND and NOT should be Union['UserWhereInputRecursive1', List['UserWhereInputRecursive1']]
     # but this causes mypy to hang :/
@@ -2056,6 +2169,7 @@ class UserWhereInputRecursive1(TypedDict, total=False):
     createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
     progress: 'UserProgressListRelationFilter'
     attempts: 'UserExamAttemptListRelationFilter'
+    payments: 'PaymentListRelationFilter'
 
     # should be noted that AND and NOT should be Union['UserWhereInputRecursive2', List['UserWhereInputRecursive2']]
     # but this causes mypy to hang :/
@@ -2074,6 +2188,7 @@ class UserWhereInputRecursive2(TypedDict, total=False):
     createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
     progress: 'UserProgressListRelationFilter'
     attempts: 'UserExamAttemptListRelationFilter'
+    payments: 'PaymentListRelationFilter'
 
     # should be noted that AND and NOT should be Union['UserWhereInputRecursive3', List['UserWhereInputRecursive3']]
     # but this causes mypy to hang :/
@@ -2092,6 +2207,7 @@ class UserWhereInputRecursive3(TypedDict, total=False):
     createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
     progress: 'UserProgressListRelationFilter'
     attempts: 'UserExamAttemptListRelationFilter'
+    payments: 'PaymentListRelationFilter'
 
     # should be noted that AND and NOT should be Union['UserWhereInputRecursive4', List['UserWhereInputRecursive4']]
     # but this causes mypy to hang :/
@@ -2110,6 +2226,7 @@ class UserWhereInputRecursive4(TypedDict, total=False):
     createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
     progress: 'UserProgressListRelationFilter'
     attempts: 'UserExamAttemptListRelationFilter'
+    payments: 'PaymentListRelationFilter'
 
 
 
@@ -2287,6 +2404,7 @@ UserKeys = Literal[
     'createdAt',
     'progress',
     'attempts',
+    'payments',
 ]
 UserScalarFieldKeys = Literal[
     'id',
@@ -2301,6 +2419,7 @@ UserScalarFieldKeysT = TypeVar('UserScalarFieldKeysT', bound=UserScalarFieldKeys
 UserRelationalFieldKeys = Literal[
         'progress',
         'attempts',
+        'payments',
     ]
 
 # Course types
@@ -2515,24 +2634,28 @@ class UserIncludeFromCourse(TypedDict, total=False):
     """Relational arguments for Course"""
     progress: Union[bool, 'FindManyUserProgressArgsFromCourseRecursive1']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromCourseRecursive1']
+    payments: Union[bool, 'FindManyPaymentArgsFromCourseRecursive1']
 
 
 class UserIncludeFromCourseRecursive1(TypedDict, total=False):
     """Relational arguments for Course"""
     progress: Union[bool, 'FindManyUserProgressArgsFromCourseRecursive2']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromCourseRecursive2']
+    payments: Union[bool, 'FindManyPaymentArgsFromCourseRecursive2']
 
 
 class UserIncludeFromCourseRecursive2(TypedDict, total=False):
     """Relational arguments for Course"""
     progress: Union[bool, 'FindManyUserProgressArgsFromCourseRecursive3']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromCourseRecursive3']
+    payments: Union[bool, 'FindManyPaymentArgsFromCourseRecursive3']
 
 
 class UserIncludeFromCourseRecursive3(TypedDict, total=False):
     """Relational arguments for Course"""
     progress: Union[bool, 'FindManyUserProgressArgsFromCourseRecursive4']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromCourseRecursive4']
+    payments: Union[bool, 'FindManyPaymentArgsFromCourseRecursive4']
 
 
 class UserIncludeFromCourseRecursive4(TypedDict, total=False):
@@ -3147,6 +3270,111 @@ class FindManyUserExamAttemptArgsFromCourseRecursive4(TypedDict, total=False):
     cursor: 'UserExamAttemptWhereUniqueInput'
     distinct: List['UserExamAttemptScalarFieldKeys']
     
+    
+
+class PaymentIncludeFromCourse(TypedDict, total=False):
+    """Relational arguments for Course"""
+    user: Union[bool, 'UserArgsFromCourseRecursive1']
+
+
+class PaymentIncludeFromCourseRecursive1(TypedDict, total=False):
+    """Relational arguments for Course"""
+    user: Union[bool, 'UserArgsFromCourseRecursive2']
+
+
+class PaymentIncludeFromCourseRecursive2(TypedDict, total=False):
+    """Relational arguments for Course"""
+    user: Union[bool, 'UserArgsFromCourseRecursive3']
+
+
+class PaymentIncludeFromCourseRecursive3(TypedDict, total=False):
+    """Relational arguments for Course"""
+    user: Union[bool, 'UserArgsFromCourseRecursive4']
+
+
+class PaymentIncludeFromCourseRecursive4(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+    
+
+class PaymentArgsFromCourse(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class PaymentArgsFromCourseRecursive1(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class PaymentArgsFromCourseRecursive2(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class PaymentArgsFromCourseRecursive3(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class PaymentArgsFromCourseRecursive4(TypedDict, total=False):
+    """Arguments for Course"""
+    
+    
+
+class FindManyPaymentArgsFromCourse(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class FindManyPaymentArgsFromCourseRecursive1(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class FindManyPaymentArgsFromCourseRecursive2(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class FindManyPaymentArgsFromCourseRecursive3(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class FindManyPaymentArgsFromCourseRecursive4(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    
 
 
 FindManyCourseArgs = FindManyCourseArgsFromCourse
@@ -3631,24 +3859,28 @@ class UserIncludeFromLesson(TypedDict, total=False):
     """Relational arguments for Lesson"""
     progress: Union[bool, 'FindManyUserProgressArgsFromLessonRecursive1']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromLessonRecursive1']
+    payments: Union[bool, 'FindManyPaymentArgsFromLessonRecursive1']
 
 
 class UserIncludeFromLessonRecursive1(TypedDict, total=False):
     """Relational arguments for Lesson"""
     progress: Union[bool, 'FindManyUserProgressArgsFromLessonRecursive2']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromLessonRecursive2']
+    payments: Union[bool, 'FindManyPaymentArgsFromLessonRecursive2']
 
 
 class UserIncludeFromLessonRecursive2(TypedDict, total=False):
     """Relational arguments for Lesson"""
     progress: Union[bool, 'FindManyUserProgressArgsFromLessonRecursive3']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromLessonRecursive3']
+    payments: Union[bool, 'FindManyPaymentArgsFromLessonRecursive3']
 
 
 class UserIncludeFromLessonRecursive3(TypedDict, total=False):
     """Relational arguments for Lesson"""
     progress: Union[bool, 'FindManyUserProgressArgsFromLessonRecursive4']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromLessonRecursive4']
+    payments: Union[bool, 'FindManyPaymentArgsFromLessonRecursive4']
 
 
 class UserIncludeFromLessonRecursive4(TypedDict, total=False):
@@ -4263,6 +4495,111 @@ class FindManyUserExamAttemptArgsFromLessonRecursive4(TypedDict, total=False):
     cursor: 'UserExamAttemptWhereUniqueInput'
     distinct: List['UserExamAttemptScalarFieldKeys']
     
+    
+
+class PaymentIncludeFromLesson(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+    user: Union[bool, 'UserArgsFromLessonRecursive1']
+
+
+class PaymentIncludeFromLessonRecursive1(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+    user: Union[bool, 'UserArgsFromLessonRecursive2']
+
+
+class PaymentIncludeFromLessonRecursive2(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+    user: Union[bool, 'UserArgsFromLessonRecursive3']
+
+
+class PaymentIncludeFromLessonRecursive3(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+    user: Union[bool, 'UserArgsFromLessonRecursive4']
+
+
+class PaymentIncludeFromLessonRecursive4(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+    
+
+class PaymentArgsFromLesson(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class PaymentArgsFromLessonRecursive1(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class PaymentArgsFromLessonRecursive2(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class PaymentArgsFromLessonRecursive3(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class PaymentArgsFromLessonRecursive4(TypedDict, total=False):
+    """Arguments for Lesson"""
+    
+    
+
+class FindManyPaymentArgsFromLesson(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class FindManyPaymentArgsFromLessonRecursive1(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class FindManyPaymentArgsFromLessonRecursive2(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class FindManyPaymentArgsFromLessonRecursive3(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class FindManyPaymentArgsFromLessonRecursive4(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    
 
 
 FindManyLessonArgs = FindManyLessonArgsFromLesson
@@ -4767,24 +5104,28 @@ class UserIncludeFromUserProgress(TypedDict, total=False):
     """Relational arguments for UserProgress"""
     progress: Union[bool, 'FindManyUserProgressArgsFromUserProgressRecursive1']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromUserProgressRecursive1']
+    payments: Union[bool, 'FindManyPaymentArgsFromUserProgressRecursive1']
 
 
 class UserIncludeFromUserProgressRecursive1(TypedDict, total=False):
     """Relational arguments for UserProgress"""
     progress: Union[bool, 'FindManyUserProgressArgsFromUserProgressRecursive2']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromUserProgressRecursive2']
+    payments: Union[bool, 'FindManyPaymentArgsFromUserProgressRecursive2']
 
 
 class UserIncludeFromUserProgressRecursive2(TypedDict, total=False):
     """Relational arguments for UserProgress"""
     progress: Union[bool, 'FindManyUserProgressArgsFromUserProgressRecursive3']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromUserProgressRecursive3']
+    payments: Union[bool, 'FindManyPaymentArgsFromUserProgressRecursive3']
 
 
 class UserIncludeFromUserProgressRecursive3(TypedDict, total=False):
     """Relational arguments for UserProgress"""
     progress: Union[bool, 'FindManyUserProgressArgsFromUserProgressRecursive4']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromUserProgressRecursive4']
+    payments: Union[bool, 'FindManyPaymentArgsFromUserProgressRecursive4']
 
 
 class UserIncludeFromUserProgressRecursive4(TypedDict, total=False):
@@ -5399,6 +5740,111 @@ class FindManyUserExamAttemptArgsFromUserProgressRecursive4(TypedDict, total=Fal
     cursor: 'UserExamAttemptWhereUniqueInput'
     distinct: List['UserExamAttemptScalarFieldKeys']
     
+    
+
+class PaymentIncludeFromUserProgress(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+    user: Union[bool, 'UserArgsFromUserProgressRecursive1']
+
+
+class PaymentIncludeFromUserProgressRecursive1(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+    user: Union[bool, 'UserArgsFromUserProgressRecursive2']
+
+
+class PaymentIncludeFromUserProgressRecursive2(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+    user: Union[bool, 'UserArgsFromUserProgressRecursive3']
+
+
+class PaymentIncludeFromUserProgressRecursive3(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+    user: Union[bool, 'UserArgsFromUserProgressRecursive4']
+
+
+class PaymentIncludeFromUserProgressRecursive4(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+    
+
+class PaymentArgsFromUserProgress(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class PaymentArgsFromUserProgressRecursive1(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class PaymentArgsFromUserProgressRecursive2(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class PaymentArgsFromUserProgressRecursive3(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class PaymentArgsFromUserProgressRecursive4(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    
+    
+
+class FindManyPaymentArgsFromUserProgress(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class FindManyPaymentArgsFromUserProgressRecursive1(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class FindManyPaymentArgsFromUserProgressRecursive2(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class FindManyPaymentArgsFromUserProgressRecursive3(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class FindManyPaymentArgsFromUserProgressRecursive4(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    
 
 
 FindManyUserProgressArgs = FindManyUserProgressArgsFromUserProgress
@@ -5892,24 +6338,28 @@ class UserIncludeFromQuestion(TypedDict, total=False):
     """Relational arguments for Question"""
     progress: Union[bool, 'FindManyUserProgressArgsFromQuestionRecursive1']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromQuestionRecursive1']
+    payments: Union[bool, 'FindManyPaymentArgsFromQuestionRecursive1']
 
 
 class UserIncludeFromQuestionRecursive1(TypedDict, total=False):
     """Relational arguments for Question"""
     progress: Union[bool, 'FindManyUserProgressArgsFromQuestionRecursive2']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromQuestionRecursive2']
+    payments: Union[bool, 'FindManyPaymentArgsFromQuestionRecursive2']
 
 
 class UserIncludeFromQuestionRecursive2(TypedDict, total=False):
     """Relational arguments for Question"""
     progress: Union[bool, 'FindManyUserProgressArgsFromQuestionRecursive3']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromQuestionRecursive3']
+    payments: Union[bool, 'FindManyPaymentArgsFromQuestionRecursive3']
 
 
 class UserIncludeFromQuestionRecursive3(TypedDict, total=False):
     """Relational arguments for Question"""
     progress: Union[bool, 'FindManyUserProgressArgsFromQuestionRecursive4']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromQuestionRecursive4']
+    payments: Union[bool, 'FindManyPaymentArgsFromQuestionRecursive4']
 
 
 class UserIncludeFromQuestionRecursive4(TypedDict, total=False):
@@ -6524,6 +6974,111 @@ class FindManyUserExamAttemptArgsFromQuestionRecursive4(TypedDict, total=False):
     cursor: 'UserExamAttemptWhereUniqueInput'
     distinct: List['UserExamAttemptScalarFieldKeys']
     
+    
+
+class PaymentIncludeFromQuestion(TypedDict, total=False):
+    """Relational arguments for Question"""
+    user: Union[bool, 'UserArgsFromQuestionRecursive1']
+
+
+class PaymentIncludeFromQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for Question"""
+    user: Union[bool, 'UserArgsFromQuestionRecursive2']
+
+
+class PaymentIncludeFromQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for Question"""
+    user: Union[bool, 'UserArgsFromQuestionRecursive3']
+
+
+class PaymentIncludeFromQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for Question"""
+    user: Union[bool, 'UserArgsFromQuestionRecursive4']
+
+
+class PaymentIncludeFromQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+    
+
+class PaymentArgsFromQuestion(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class PaymentArgsFromQuestionRecursive1(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class PaymentArgsFromQuestionRecursive2(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class PaymentArgsFromQuestionRecursive3(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class PaymentArgsFromQuestionRecursive4(TypedDict, total=False):
+    """Arguments for Question"""
+    
+    
+
+class FindManyPaymentArgsFromQuestion(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class FindManyPaymentArgsFromQuestionRecursive1(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class FindManyPaymentArgsFromQuestionRecursive2(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class FindManyPaymentArgsFromQuestionRecursive3(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class FindManyPaymentArgsFromQuestionRecursive4(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    
 
 
 FindManyQuestionArgs = FindManyQuestionArgsFromQuestion
@@ -7023,24 +7578,28 @@ class UserIncludeFromUserExamAttempt(TypedDict, total=False):
     """Relational arguments for UserExamAttempt"""
     progress: Union[bool, 'FindManyUserProgressArgsFromUserExamAttemptRecursive1']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromUserExamAttemptRecursive1']
+    payments: Union[bool, 'FindManyPaymentArgsFromUserExamAttemptRecursive1']
 
 
 class UserIncludeFromUserExamAttemptRecursive1(TypedDict, total=False):
     """Relational arguments for UserExamAttempt"""
     progress: Union[bool, 'FindManyUserProgressArgsFromUserExamAttemptRecursive2']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromUserExamAttemptRecursive2']
+    payments: Union[bool, 'FindManyPaymentArgsFromUserExamAttemptRecursive2']
 
 
 class UserIncludeFromUserExamAttemptRecursive2(TypedDict, total=False):
     """Relational arguments for UserExamAttempt"""
     progress: Union[bool, 'FindManyUserProgressArgsFromUserExamAttemptRecursive3']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromUserExamAttemptRecursive3']
+    payments: Union[bool, 'FindManyPaymentArgsFromUserExamAttemptRecursive3']
 
 
 class UserIncludeFromUserExamAttemptRecursive3(TypedDict, total=False):
     """Relational arguments for UserExamAttempt"""
     progress: Union[bool, 'FindManyUserProgressArgsFromUserExamAttemptRecursive4']
     attempts: Union[bool, 'FindManyUserExamAttemptArgsFromUserExamAttemptRecursive4']
+    payments: Union[bool, 'FindManyPaymentArgsFromUserExamAttemptRecursive4']
 
 
 class UserIncludeFromUserExamAttemptRecursive4(TypedDict, total=False):
@@ -7655,6 +8214,111 @@ class FindManyUserExamAttemptArgsFromUserExamAttemptRecursive4(TypedDict, total=
     cursor: 'UserExamAttemptWhereUniqueInput'
     distinct: List['UserExamAttemptScalarFieldKeys']
     
+    
+
+class PaymentIncludeFromUserExamAttempt(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+    user: Union[bool, 'UserArgsFromUserExamAttemptRecursive1']
+
+
+class PaymentIncludeFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+    user: Union[bool, 'UserArgsFromUserExamAttemptRecursive2']
+
+
+class PaymentIncludeFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+    user: Union[bool, 'UserArgsFromUserExamAttemptRecursive3']
+
+
+class PaymentIncludeFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+    user: Union[bool, 'UserArgsFromUserExamAttemptRecursive4']
+
+
+class PaymentIncludeFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+    
+
+class PaymentArgsFromUserExamAttempt(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class PaymentArgsFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class PaymentArgsFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class PaymentArgsFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class PaymentArgsFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    
+    
+
+class FindManyPaymentArgsFromUserExamAttempt(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class FindManyPaymentArgsFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class FindManyPaymentArgsFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class FindManyPaymentArgsFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class FindManyPaymentArgsFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    
 
 
 FindManyUserExamAttemptArgs = FindManyUserExamAttemptArgsFromUserExamAttempt
@@ -7913,6 +8577,1218 @@ UserExamAttemptScalarFieldKeys = Literal[
 UserExamAttemptScalarFieldKeysT = TypeVar('UserExamAttemptScalarFieldKeysT', bound=UserExamAttemptScalarFieldKeys)
 
 UserExamAttemptRelationalFieldKeys = Literal[
+        'user',
+    ]
+
+# Payment types
+
+class PaymentOptionalCreateInput(TypedDict, total=False):
+    """Optional arguments to the Payment create method"""
+    id: _str
+    userId: _str
+    user: 'UserCreateNestedWithoutRelationsInput'
+    createdAt: datetime.datetime
+
+
+class PaymentCreateInput(PaymentOptionalCreateInput):
+    """Required arguments to the Payment create method"""
+    amount: _float
+    planType: _str
+
+
+# TODO: remove this in favour of without explicit relations
+# e.g. PostCreateWithoutAuthorInput
+
+class PaymentOptionalCreateWithoutRelationsInput(TypedDict, total=False):
+    """Optional arguments to the Payment create method, without relations"""
+    id: _str
+    userId: _str
+    createdAt: datetime.datetime
+
+
+class PaymentCreateWithoutRelationsInput(PaymentOptionalCreateWithoutRelationsInput):
+    """Required arguments to the Payment create method, without relations"""
+    amount: _float
+    planType: _str
+
+class PaymentConnectOrCreateWithoutRelationsInput(TypedDict):
+    create: 'PaymentCreateWithoutRelationsInput'
+    where: 'PaymentWhereUniqueInput'
+
+class PaymentCreateNestedWithoutRelationsInput(TypedDict, total=False):
+    create: 'PaymentCreateWithoutRelationsInput'
+    connect: 'PaymentWhereUniqueInput'
+    connect_or_create: 'PaymentConnectOrCreateWithoutRelationsInput'
+
+
+class PaymentCreateManyNestedWithoutRelationsInput(TypedDict, total=False):
+    create: Union['PaymentCreateWithoutRelationsInput', List['PaymentCreateWithoutRelationsInput']]
+    connect: Union['PaymentWhereUniqueInput', List['PaymentWhereUniqueInput']]
+    connect_or_create: Union['PaymentConnectOrCreateWithoutRelationsInput', List['PaymentConnectOrCreateWithoutRelationsInput']]
+
+_PaymentWhereUnique_id_Input = TypedDict(
+    '_PaymentWhereUnique_id_Input',
+    {
+        'id': '_str',
+    },
+    total=True
+)
+
+PaymentWhereUniqueInput = _PaymentWhereUnique_id_Input
+
+
+class PaymentUpdateInput(TypedDict, total=False):
+    """Optional arguments for updating a record"""
+    id: _str
+    user: 'UserUpdateOneWithoutRelationsInput'
+    amount: Union[AtomicFloatInput, _float]
+    planType: _str
+    createdAt: datetime.datetime
+
+
+class PaymentUpdateManyMutationInput(TypedDict, total=False):
+    """Arguments for updating many records"""
+    id: _str
+    amount: Union[AtomicFloatInput, _float]
+    planType: _str
+    createdAt: datetime.datetime
+
+
+class PaymentUpdateManyWithoutRelationsInput(TypedDict, total=False):
+    create: List['PaymentCreateWithoutRelationsInput']
+    connect: List['PaymentWhereUniqueInput']
+    connect_or_create: List['PaymentConnectOrCreateWithoutRelationsInput']
+    set: List['PaymentWhereUniqueInput']
+    disconnect: List['PaymentWhereUniqueInput']
+    delete: List['PaymentWhereUniqueInput']
+
+    # TODO
+    # update: List['PaymentUpdateWithWhereUniqueWithoutRelationsInput']
+    # updateMany: List['PaymentUpdateManyWithWhereUniqueWithoutRelationsInput']
+    # deleteMany: List['PaymentScalarWhereInput']
+    # upsert: List['PaymentUpserteWithWhereUniqueWithoutRelationsInput']
+
+
+class PaymentUpdateOneWithoutRelationsInput(TypedDict, total=False):
+    create: 'PaymentCreateWithoutRelationsInput'
+    connect: 'PaymentWhereUniqueInput'
+    connect_or_create: 'PaymentConnectOrCreateWithoutRelationsInput'
+    disconnect: bool
+    delete: bool
+
+    # TODO
+    # update: 'PaymentUpdateInput'
+    # upsert: 'PaymentUpsertWithoutRelationsInput'
+
+
+class PaymentUpsertInput(TypedDict):
+    create: 'PaymentCreateInput'
+    update: 'PaymentUpdateInput'  # pyright: ignore[reportIncompatibleMethodOverride]
+
+
+_Payment_id_OrderByInput = TypedDict(
+    '_Payment_id_OrderByInput',
+    {
+        'id': 'SortOrder',
+    },
+    total=True
+)
+
+_Payment_userId_OrderByInput = TypedDict(
+    '_Payment_userId_OrderByInput',
+    {
+        'userId': 'SortOrder',
+    },
+    total=True
+)
+
+_Payment_amount_OrderByInput = TypedDict(
+    '_Payment_amount_OrderByInput',
+    {
+        'amount': 'SortOrder',
+    },
+    total=True
+)
+
+_Payment_planType_OrderByInput = TypedDict(
+    '_Payment_planType_OrderByInput',
+    {
+        'planType': 'SortOrder',
+    },
+    total=True
+)
+
+_Payment_createdAt_OrderByInput = TypedDict(
+    '_Payment_createdAt_OrderByInput',
+    {
+        'createdAt': 'SortOrder',
+    },
+    total=True
+)
+
+_Payment_RelevanceInner = TypedDict(
+    '_Payment_RelevanceInner',
+    {
+        'fields': 'List[PaymentScalarFieldKeys]',
+        'search': 'str',
+        'sort': 'SortOrder',
+    },
+    total=True
+)
+
+_Payment_RelevanceOrderByInput = TypedDict(
+    '_Payment_RelevanceOrderByInput',
+    {
+        '_relevance': '_Payment_RelevanceInner',
+    },
+    total=True
+)
+
+PaymentOrderByInput = Union[
+    '_Payment_id_OrderByInput',
+    '_Payment_userId_OrderByInput',
+    '_Payment_amount_OrderByInput',
+    '_Payment_planType_OrderByInput',
+    '_Payment_createdAt_OrderByInput',
+    '_Payment_RelevanceOrderByInput',
+]
+
+
+
+# recursive Payment types
+# TODO: cleanup these types
+
+
+# Dict[str, Any] is a mypy limitation
+# see https://github.com/RobertCraigie/prisma-client-py/issues/45
+# switch to pyright for improved types, see https://prisma-client-py.readthedocs.io/en/stable/reference/limitations/
+
+PaymentRelationFilter = TypedDict(
+    'PaymentRelationFilter',
+    {
+        'is': 'Dict[str, Any]',
+        'is_not': 'Dict[str, Any]',
+    },
+    total=False,
+)
+
+
+class PaymentListRelationFilter(TypedDict, total=False):
+    some: 'Dict[str, Any]'
+    none: 'Dict[str, Any]'
+    every: 'Dict[str, Any]'
+
+
+class PaymentInclude(TypedDict, total=False):
+    """Payment relational arguments"""
+    user: Union[bool, 'UserArgsFromPayment']
+
+
+    
+
+class UserIncludeFromPayment(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromPaymentRecursive1']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromPaymentRecursive1']
+    payments: Union[bool, 'FindManyPaymentArgsFromPaymentRecursive1']
+
+
+class UserIncludeFromPaymentRecursive1(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromPaymentRecursive2']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromPaymentRecursive2']
+    payments: Union[bool, 'FindManyPaymentArgsFromPaymentRecursive2']
+
+
+class UserIncludeFromPaymentRecursive2(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromPaymentRecursive3']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromPaymentRecursive3']
+    payments: Union[bool, 'FindManyPaymentArgsFromPaymentRecursive3']
+
+
+class UserIncludeFromPaymentRecursive3(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromPaymentRecursive4']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromPaymentRecursive4']
+    payments: Union[bool, 'FindManyPaymentArgsFromPaymentRecursive4']
+
+
+class UserIncludeFromPaymentRecursive4(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+    
+
+class UserArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'UserIncludeFromUserRecursive1'
+
+
+class UserArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'UserIncludeFromUserRecursive2'
+
+
+class UserArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'UserIncludeFromUserRecursive3'
+
+
+class UserArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'UserIncludeFromUserRecursive4'
+
+
+class UserArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    
+    
+
+class FindManyUserArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive1'
+
+
+class FindManyUserArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive2'
+
+
+class FindManyUserArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive3'
+
+
+class FindManyUserArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive4'
+
+
+class FindManyUserArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    
+    
+
+class CourseIncludeFromPayment(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    lessons: Union[bool, 'FindManyLessonArgsFromPaymentRecursive1']
+
+
+class CourseIncludeFromPaymentRecursive1(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    lessons: Union[bool, 'FindManyLessonArgsFromPaymentRecursive2']
+
+
+class CourseIncludeFromPaymentRecursive2(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    lessons: Union[bool, 'FindManyLessonArgsFromPaymentRecursive3']
+
+
+class CourseIncludeFromPaymentRecursive3(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    lessons: Union[bool, 'FindManyLessonArgsFromPaymentRecursive4']
+
+
+class CourseIncludeFromPaymentRecursive4(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+    
+
+class CourseArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'CourseIncludeFromCourseRecursive1'
+
+
+class CourseArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'CourseIncludeFromCourseRecursive2'
+
+
+class CourseArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'CourseIncludeFromCourseRecursive3'
+
+
+class CourseArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'CourseIncludeFromCourseRecursive4'
+
+
+class CourseArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    
+    
+
+class FindManyCourseArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive1'
+
+
+class FindManyCourseArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive2'
+
+
+class FindManyCourseArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive3'
+
+
+class FindManyCourseArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive4'
+
+
+class FindManyCourseArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    
+    
+
+class LessonIncludeFromPayment(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    course: Union[bool, 'CourseArgsFromPaymentRecursive1']
+    progress: Union[bool, 'FindManyUserProgressArgsFromPaymentRecursive1']
+
+
+class LessonIncludeFromPaymentRecursive1(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    course: Union[bool, 'CourseArgsFromPaymentRecursive2']
+    progress: Union[bool, 'FindManyUserProgressArgsFromPaymentRecursive2']
+
+
+class LessonIncludeFromPaymentRecursive2(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    course: Union[bool, 'CourseArgsFromPaymentRecursive3']
+    progress: Union[bool, 'FindManyUserProgressArgsFromPaymentRecursive3']
+
+
+class LessonIncludeFromPaymentRecursive3(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    course: Union[bool, 'CourseArgsFromPaymentRecursive4']
+    progress: Union[bool, 'FindManyUserProgressArgsFromPaymentRecursive4']
+
+
+class LessonIncludeFromPaymentRecursive4(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+    
+
+class LessonArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'LessonIncludeFromLessonRecursive1'
+
+
+class LessonArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'LessonIncludeFromLessonRecursive2'
+
+
+class LessonArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'LessonIncludeFromLessonRecursive3'
+
+
+class LessonArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'LessonIncludeFromLessonRecursive4'
+
+
+class LessonArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    
+    
+
+class FindManyLessonArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive1'
+
+
+class FindManyLessonArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive2'
+
+
+class FindManyLessonArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive3'
+
+
+class FindManyLessonArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive4'
+
+
+class FindManyLessonArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    
+    
+
+class UserProgressIncludeFromPayment(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    user: Union[bool, 'UserArgsFromPaymentRecursive1']
+    lesson: Union[bool, 'LessonArgsFromPaymentRecursive1']
+
+
+class UserProgressIncludeFromPaymentRecursive1(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    user: Union[bool, 'UserArgsFromPaymentRecursive2']
+    lesson: Union[bool, 'LessonArgsFromPaymentRecursive2']
+
+
+class UserProgressIncludeFromPaymentRecursive2(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    user: Union[bool, 'UserArgsFromPaymentRecursive3']
+    lesson: Union[bool, 'LessonArgsFromPaymentRecursive3']
+
+
+class UserProgressIncludeFromPaymentRecursive3(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    user: Union[bool, 'UserArgsFromPaymentRecursive4']
+    lesson: Union[bool, 'LessonArgsFromPaymentRecursive4']
+
+
+class UserProgressIncludeFromPaymentRecursive4(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+    
+
+class UserProgressArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'UserProgressIncludeFromUserProgressRecursive1'
+
+
+class UserProgressArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'UserProgressIncludeFromUserProgressRecursive2'
+
+
+class UserProgressArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'UserProgressIncludeFromUserProgressRecursive3'
+
+
+class UserProgressArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'UserProgressIncludeFromUserProgressRecursive4'
+
+
+class UserProgressArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    
+    
+
+class FindManyUserProgressArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive1'
+
+
+class FindManyUserProgressArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive2'
+
+
+class FindManyUserProgressArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive3'
+
+
+class FindManyUserProgressArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive4'
+
+
+class FindManyUserProgressArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    
+    
+
+class QuestionIncludeFromPayment(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class QuestionIncludeFromPaymentRecursive1(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class QuestionIncludeFromPaymentRecursive2(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class QuestionIncludeFromPaymentRecursive3(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class QuestionIncludeFromPaymentRecursive4(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+    
+
+class QuestionArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'QuestionIncludeFromQuestionRecursive1'
+
+
+class QuestionArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'QuestionIncludeFromQuestionRecursive2'
+
+
+class QuestionArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'QuestionIncludeFromQuestionRecursive3'
+
+
+class QuestionArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'QuestionIncludeFromQuestionRecursive4'
+
+
+class QuestionArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    
+    
+
+class FindManyQuestionArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive1'
+
+
+class FindManyQuestionArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive2'
+
+
+class FindManyQuestionArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive3'
+
+
+class FindManyQuestionArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive4'
+
+
+class FindManyQuestionArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    
+    
+
+class UserExamAttemptIncludeFromPayment(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    user: Union[bool, 'UserArgsFromPaymentRecursive1']
+
+
+class UserExamAttemptIncludeFromPaymentRecursive1(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    user: Union[bool, 'UserArgsFromPaymentRecursive2']
+
+
+class UserExamAttemptIncludeFromPaymentRecursive2(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    user: Union[bool, 'UserArgsFromPaymentRecursive3']
+
+
+class UserExamAttemptIncludeFromPaymentRecursive3(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    user: Union[bool, 'UserArgsFromPaymentRecursive4']
+
+
+class UserExamAttemptIncludeFromPaymentRecursive4(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+    
+
+class UserExamAttemptArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive1'
+
+
+class UserExamAttemptArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive2'
+
+
+class UserExamAttemptArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive3'
+
+
+class UserExamAttemptArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive4'
+
+
+class UserExamAttemptArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    
+    
+
+class FindManyUserExamAttemptArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive1'
+
+
+class FindManyUserExamAttemptArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive2'
+
+
+class FindManyUserExamAttemptArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive3'
+
+
+class FindManyUserExamAttemptArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive4'
+
+
+class FindManyUserExamAttemptArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    
+    
+
+class PaymentIncludeFromPayment(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    user: Union[bool, 'UserArgsFromPaymentRecursive1']
+
+
+class PaymentIncludeFromPaymentRecursive1(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    user: Union[bool, 'UserArgsFromPaymentRecursive2']
+
+
+class PaymentIncludeFromPaymentRecursive2(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    user: Union[bool, 'UserArgsFromPaymentRecursive3']
+
+
+class PaymentIncludeFromPaymentRecursive3(TypedDict, total=False):
+    """Relational arguments for Payment"""
+    user: Union[bool, 'UserArgsFromPaymentRecursive4']
+
+
+class PaymentIncludeFromPaymentRecursive4(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+    
+
+class PaymentArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class PaymentArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class PaymentArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class PaymentArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class PaymentArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    
+    
+
+class FindManyPaymentArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class FindManyPaymentArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class FindManyPaymentArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class FindManyPaymentArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class FindManyPaymentArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    
+
+
+FindManyPaymentArgs = FindManyPaymentArgsFromPayment
+FindFirstPaymentArgs = FindManyPaymentArgsFromPayment
+
+
+    
+
+class PaymentWhereInput(TypedDict, total=False):
+    """Payment arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    userId: Union[_str, 'types.StringFilter']
+    user: 'UserRelationFilter'
+    amount: Union[_float, 'types.FloatFilter']
+    planType: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['PaymentWhereInputRecursive1', List['PaymentWhereInputRecursive1']]
+    # but this causes mypy to hang :/
+    AND: List['PaymentWhereInputRecursive1']
+    OR: List['PaymentWhereInputRecursive1']
+    NOT: List['PaymentWhereInputRecursive1']
+
+
+class PaymentWhereInputRecursive1(TypedDict, total=False):
+    """Payment arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    userId: Union[_str, 'types.StringFilter']
+    user: 'UserRelationFilter'
+    amount: Union[_float, 'types.FloatFilter']
+    planType: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['PaymentWhereInputRecursive2', List['PaymentWhereInputRecursive2']]
+    # but this causes mypy to hang :/
+    AND: List['PaymentWhereInputRecursive2']
+    OR: List['PaymentWhereInputRecursive2']
+    NOT: List['PaymentWhereInputRecursive2']
+
+
+class PaymentWhereInputRecursive2(TypedDict, total=False):
+    """Payment arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    userId: Union[_str, 'types.StringFilter']
+    user: 'UserRelationFilter'
+    amount: Union[_float, 'types.FloatFilter']
+    planType: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['PaymentWhereInputRecursive3', List['PaymentWhereInputRecursive3']]
+    # but this causes mypy to hang :/
+    AND: List['PaymentWhereInputRecursive3']
+    OR: List['PaymentWhereInputRecursive3']
+    NOT: List['PaymentWhereInputRecursive3']
+
+
+class PaymentWhereInputRecursive3(TypedDict, total=False):
+    """Payment arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    userId: Union[_str, 'types.StringFilter']
+    user: 'UserRelationFilter'
+    amount: Union[_float, 'types.FloatFilter']
+    planType: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['PaymentWhereInputRecursive4', List['PaymentWhereInputRecursive4']]
+    # but this causes mypy to hang :/
+    AND: List['PaymentWhereInputRecursive4']
+    OR: List['PaymentWhereInputRecursive4']
+    NOT: List['PaymentWhereInputRecursive4']
+
+
+class PaymentWhereInputRecursive4(TypedDict, total=False):
+    """Payment arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    userId: Union[_str, 'types.StringFilter']
+    user: 'UserRelationFilter'
+    amount: Union[_float, 'types.FloatFilter']
+    planType: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+
+
+# aggregate Payment types
+
+
+    
+
+class PaymentScalarWhereWithAggregatesInput(TypedDict, total=False):
+    """Payment arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    userId: Union[_str, 'types.StringWithAggregatesFilter']
+    amount: Union[_float, 'types.FloatWithAggregatesFilter']
+    planType: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['PaymentScalarWhereWithAggregatesInputRecursive1']
+    OR: List['PaymentScalarWhereWithAggregatesInputRecursive1']
+    NOT: List['PaymentScalarWhereWithAggregatesInputRecursive1']
+
+
+class PaymentScalarWhereWithAggregatesInputRecursive1(TypedDict, total=False):
+    """Payment arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    userId: Union[_str, 'types.StringWithAggregatesFilter']
+    amount: Union[_float, 'types.FloatWithAggregatesFilter']
+    planType: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['PaymentScalarWhereWithAggregatesInputRecursive2']
+    OR: List['PaymentScalarWhereWithAggregatesInputRecursive2']
+    NOT: List['PaymentScalarWhereWithAggregatesInputRecursive2']
+
+
+class PaymentScalarWhereWithAggregatesInputRecursive2(TypedDict, total=False):
+    """Payment arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    userId: Union[_str, 'types.StringWithAggregatesFilter']
+    amount: Union[_float, 'types.FloatWithAggregatesFilter']
+    planType: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['PaymentScalarWhereWithAggregatesInputRecursive3']
+    OR: List['PaymentScalarWhereWithAggregatesInputRecursive3']
+    NOT: List['PaymentScalarWhereWithAggregatesInputRecursive3']
+
+
+class PaymentScalarWhereWithAggregatesInputRecursive3(TypedDict, total=False):
+    """Payment arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    userId: Union[_str, 'types.StringWithAggregatesFilter']
+    amount: Union[_float, 'types.FloatWithAggregatesFilter']
+    planType: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['PaymentScalarWhereWithAggregatesInputRecursive4']
+    OR: List['PaymentScalarWhereWithAggregatesInputRecursive4']
+    NOT: List['PaymentScalarWhereWithAggregatesInputRecursive4']
+
+
+class PaymentScalarWhereWithAggregatesInputRecursive4(TypedDict, total=False):
+    """Payment arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    userId: Union[_str, 'types.StringWithAggregatesFilter']
+    amount: Union[_float, 'types.FloatWithAggregatesFilter']
+    planType: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+
+
+class PaymentGroupByOutput(TypedDict, total=False):
+    id: _str
+    userId: _str
+    amount: _float
+    planType: _str
+    createdAt: datetime.datetime
+    _sum: 'PaymentSumAggregateOutput'
+    _avg: 'PaymentAvgAggregateOutput'
+    _min: 'PaymentMinAggregateOutput'
+    _max: 'PaymentMaxAggregateOutput'
+    _count: 'PaymentCountAggregateOutput'
+
+
+class PaymentAvgAggregateOutput(TypedDict, total=False):
+    """Payment output for aggregating averages"""
+    amount: float
+
+
+class PaymentSumAggregateOutput(TypedDict, total=False):
+    """Payment output for aggregating sums"""
+    amount: _float
+
+
+class PaymentScalarAggregateOutput(TypedDict, total=False):
+    """Payment output including scalar fields"""
+    id: _str
+    userId: _str
+    amount: _float
+    planType: _str
+    createdAt: datetime.datetime
+
+
+PaymentMinAggregateOutput = PaymentScalarAggregateOutput
+PaymentMaxAggregateOutput = PaymentScalarAggregateOutput
+
+
+class PaymentMaxAggregateInput(TypedDict, total=False):
+    """Payment input for aggregating by max"""
+    id: bool
+    userId: bool
+    amount: bool
+    planType: bool
+    createdAt: bool
+
+
+class PaymentMinAggregateInput(TypedDict, total=False):
+    """Payment input for aggregating by min"""
+    id: bool
+    userId: bool
+    amount: bool
+    planType: bool
+    createdAt: bool
+
+
+class PaymentNumberAggregateInput(TypedDict, total=False):
+    """Payment input for aggregating numbers"""
+    amount: bool
+
+
+PaymentAvgAggregateInput = PaymentNumberAggregateInput
+PaymentSumAggregateInput = PaymentNumberAggregateInput
+
+
+PaymentCountAggregateInput = TypedDict(
+    'PaymentCountAggregateInput',
+    {
+        'id': bool,
+        'userId': bool,
+        'amount': bool,
+        'planType': bool,
+        'createdAt': bool,
+        '_all': bool,
+    },
+    total=False,
+)
+
+PaymentCountAggregateOutput = TypedDict(
+    'PaymentCountAggregateOutput',
+    {
+        'id': int,
+        'userId': int,
+        'amount': int,
+        'planType': int,
+        'createdAt': int,
+        '_all': int,
+    },
+    total=False,
+)
+
+
+PaymentKeys = Literal[
+    'id',
+    'userId',
+    'user',
+    'amount',
+    'planType',
+    'createdAt',
+]
+PaymentScalarFieldKeys = Literal[
+    'id',
+    'userId',
+    'amount',
+    'planType',
+    'createdAt',
+]
+PaymentScalarFieldKeysT = TypeVar('PaymentScalarFieldKeysT', bound=PaymentScalarFieldKeys)
+
+PaymentRelationalFieldKeys = Literal[
         'user',
     ]
 

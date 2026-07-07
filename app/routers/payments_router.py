@@ -67,12 +67,22 @@ async def verify_session(data: VerifyRequest):
                 user_id = session.metadata.get("user_id")
 
             if user_id:
-                # Upgrade user to premium
-                user = await db.user.update(
-                    where={"id": user_id},
-                    data={"membershipLevel": "premium"}
-                )
-                return {"status": "success", "membership_level": user.membershipLevel, "email": user.email}
+                user = await db.user.find_unique(where={"id": user_id})
+                if user and user.membershipLevel != "premium":
+                    plan_type = session.metadata.get("plan_type", "monthly") if session.metadata else "monthly"
+                    amount = 15.00 if plan_type == "monthly" else 120.00
+                    await db.payment.create(
+                        data={
+                            "userId": user_id,
+                            "amount": amount,
+                            "planType": plan_type
+                        }
+                    )
+                    user = await db.user.update(
+                        where={"id": user_id},
+                        data={"membershipLevel": "premium"}
+                    )
+                return {"status": "success", "membership_level": user.membershipLevel if user else "free", "email": user.email if user else ""}
             else:
                 raise HTTPException(status_code=400, detail="User ID not found in session metadata")
         else:
@@ -88,7 +98,6 @@ async def stripe_webhook(request: Request):
 
     if not sig_header or not webhook_secret:
         # Fallback processing if webhook is not configured with secret
-        # For simplicity, we parse direct event types
         try:
             event = stripe.Event.construct_from(
                 await request.json(), stripe.api_key
@@ -113,10 +122,22 @@ async def stripe_webhook(request: Request):
             user_id = session.get("metadata", {}).get("user_id")
             
         if user_id:
-            await db.user.update(
-                where={"id": user_id},
-                data={"membershipLevel": "premium"}
-            )
-            print(f"User {user_id} upgraded to premium via Stripe Webhook.")
+            user = await db.user.find_unique(where={"id": user_id})
+            if user and user.membershipLevel != "premium":
+                metadata = session.get("metadata", {})
+                plan_type = metadata.get("plan_type", "monthly") if metadata else "monthly"
+                amount = 15.00 if plan_type == "monthly" else 120.00
+                await db.payment.create(
+                    data={
+                        "userId": user_id,
+                        "amount": amount,
+                        "planType": plan_type
+                    }
+                )
+                await db.user.update(
+                    where={"id": user_id},
+                    data={"membershipLevel": "premium"}
+                )
+                print(f"User {user_id} upgraded to premium via Stripe Webhook.")
 
     return {"status": "success"}

@@ -17,6 +17,7 @@ model User {
   createdAt       DateTime          @default(now())
   progress        UserProgress[]
   attempts        UserExamAttempt[]
+  payments        Payment[]
 }
 
 model Course {
@@ -68,3 +69,13 @@ model UserExamAttempt {
   passed      Boolean
   completedAt DateTime @default(now())
 }
+
+model Payment {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  amount    Float
+  planType  String
+  createdAt DateTime @default(now())
+}
+

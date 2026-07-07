@@ -2,6 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends, status
 from typing import List, Optional
 from app.db import db
 from app.routers.auth_router import get_current_user
+from app.routers.courses_router import verify_admin
 from pydantic import BaseModel
 
 router = APIRouter()
@@ -9,6 +10,14 @@ router = APIRouter()
 class ExamAttemptRequest(BaseModel):
     score: int
     passed: bool
+
+class QuestionCreateRequest(BaseModel):
+    category: str
+    questionText: str
+    options: List[str]
+    correctOption: str
+    explanation: str
+    indexNumber: int
 
 @router.get("/questions")
 async def get_exam_questions(category: Optional[str] = None, user_token: Optional[str] = None):
@@ -76,3 +85,23 @@ async def get_exam_attempts(current_user = Depends(get_current_user)):
         order={"completedAt": "desc"}
     )
     return attempts
+
+@router.post("/questions", response_model=None, dependencies=[Depends(verify_admin)])
+async def create_exam_question(data: QuestionCreateRequest):
+    existing = await db.question.find_unique(where={"indexNumber": data.indexNumber})
+    if existing:
+        raise HTTPException(status_code=400, detail="Question with this index number already exists")
+
+    from app.prisma_client import Json
+    new_q = await db.question.create(
+        data={
+            "category": data.category,
+            "questionText": data.questionText,
+            "options": Json(data.options),
+            "correctOption": data.correctOption,
+            "explanation": data.explanation,
+            "indexNumber": data.indexNumber
+        }
+    )
+    return new_q
+

@@ -134,3 +134,13 @@ class BaseUserExamAttempt(_PrismaModel):
         return actions.UserExamAttemptActions[_PrismaModelT](client or get_client(), cls)
 
 
+class BasePayment(_PrismaModel):
+    __prisma_model__: ClassVar[Literal['Payment']] = 'Payment'  # pyright: ignore[reportIncompatibleVariableOverride]
+
+    @classmethod
+    def prisma(cls: Type[_PrismaModelT], client: Optional['Prisma'] = None) -> 'actions.PaymentActions[_PrismaModelT]':
+        from .client import get_client
+
+        return actions.PaymentActions[_PrismaModelT](client or get_client(), cls)
+
+

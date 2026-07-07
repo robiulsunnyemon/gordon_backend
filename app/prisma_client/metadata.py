@@ -12,12 +12,14 @@ PRISMA_MODELS: set[str] = {
     'UserProgress',
     'Question',
     'UserExamAttempt',
+    'Payment',
 }
 
 RELATIONAL_FIELD_MAPPINGS: dict[str, dict[str, str]] = {
     'User': {
         'progress': 'UserProgress',
         'attempts': 'UserExamAttempt',
+        'payments': 'Payment',
     },
     'Course': {
         'lessons': 'Lesson',
@@ -33,6 +35,9 @@ RELATIONAL_FIELD_MAPPINGS: dict[str, dict[str, str]] = {
     'Question': {
     },
     'UserExamAttempt': {
+        'user': 'User',
+    },
+    'Payment': {
         'user': 'User',
     },
 }
