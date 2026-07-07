@@ -5,10 +5,13 @@ from app.routers import auth_router, courses_router, exams_router, payments_rout
 
 app = FastAPI(title="Gordon IT Platform API")
 
-# Configure CORS to allow landing page (3000) and dashboard (3001)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:3001"],
+    allow_origins=[
+        "http://localhost:3000",
+        "http://localhost:3001",
+        "https://robiulsunnyemon.github.io"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
