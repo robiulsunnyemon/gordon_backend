@@ -102,3 +102,19 @@ model AboutContent {
   updatedAt   DateTime @updatedAt
 }
 
+model SubscriptionPlan {
+  id            String   @id @default(uuid())
+  name          String   @unique
+  planType      String   // "free", "monthly", "yearly"
+  price         Float
+  billingPeriod String   // "forever", "month", "year"
+  description   String
+  features      Json     // Array of strings: ["feature 1", "feature 2"]
+  badge         String?  // e.g. "Most Popular", "Save 33%"
+  cta           String   // e.g. "Start Free", "Upgrade Now"
+  featured      Boolean  @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+
