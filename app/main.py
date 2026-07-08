@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.db import db
-from app.routers import auth_router, courses_router, exams_router, payments_router, admin_router
+from app.routers import auth_router, courses_router, exams_router, payments_router, admin_router, blog_router
 
 app = FastAPI(title="Gordon IT Platform API")
 
@@ -33,6 +33,7 @@ app.include_router(courses_router.router, prefix="/api/courses", tags=["Courses"
 app.include_router(exams_router.router, prefix="/api/exams", tags=["Practice Exams"])
 app.include_router(payments_router.router, prefix="/api/payments", tags=["Payments"])
 app.include_router(admin_router.router, prefix="/api/admin", tags=["Admin Operations"])
+app.include_router(blog_router.router, prefix="/api/blog", tags=["Blog"])
 
 @app.get("/api/health")
 def health_check():
