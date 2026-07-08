@@ -92,3 +92,13 @@ model BlogPost {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }
+
+model AboutContent {
+  id          String   @id @default(uuid())
+  title       String   @default("About Gordon IT Academy")
+  subTitle    String   @default("About")
+  paragraphs  Json     // String array: ["p1", "p2", ...]
+  stats       Json     // Array of objects: [{"icon": "Award", "label": "...", "sub": "..."}]
+  updatedAt   DateTime @updatedAt
+}
+
