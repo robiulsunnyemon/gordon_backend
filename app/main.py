@@ -5,13 +5,15 @@ from app.routers import auth_router, courses_router, exams_router, payments_rout
 
 app = FastAPI(title="Gordon IT Platform API")
 
+import os
+
+# Parse allowed origins from environment or use defaults
+allowed_origins_env = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000,http://localhost:3001,https://robiulsunnyemon.github.io")
+allowed_origins = [origin.strip() for origin in allowed_origins_env.split(",")]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "http://localhost:3001",
-        "https://robiulsunnyemon.github.io"
-    ],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
