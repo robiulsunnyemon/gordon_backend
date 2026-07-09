@@ -16,7 +16,7 @@ class InterviewQuestionUpdate(BaseModel):
     questionText: Optional[str] = None
     correctAnswer: Optional[str] = None
 
-@router.get("/", response_model=List[dict])
+@router.get("", response_model=List[dict])
 async def get_all_interview_questions():
     questions = await db.interviewquestion.find_many(
         order={"createdAt": "desc"}
@@ -31,7 +31,7 @@ async def get_questions_by_topic(topic: str):
     )
     return [q.model_dump() for q in questions]
 
-@router.post("/", response_model=dict, status_code=status.HTTP_201_CREATED)
+@router.post("", response_model=dict, status_code=status.HTTP_201_CREATED)
 async def create_interview_question(
     data: InterviewQuestionCreate,
     current_user=Depends(get_current_user)
