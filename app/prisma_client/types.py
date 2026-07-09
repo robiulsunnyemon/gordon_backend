@@ -2132,6 +2132,511 @@ class FindManyPaymentArgsFromUserRecursive4(TypedDict, total=False):
     cursor: 'PaymentWhereUniqueInput'
     distinct: List['PaymentScalarFieldKeys']
     
+    
+
+class BlogPostIncludeFromUser(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class BlogPostIncludeFromUserRecursive1(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class BlogPostIncludeFromUserRecursive2(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class BlogPostIncludeFromUserRecursive3(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class BlogPostIncludeFromUserRecursive4(TypedDict, total=False):
+    """Relational arguments for User"""
+
+    
+
+class BlogPostArgsFromUser(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class BlogPostArgsFromUserRecursive1(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class BlogPostArgsFromUserRecursive2(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class BlogPostArgsFromUserRecursive3(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class BlogPostArgsFromUserRecursive4(TypedDict, total=False):
+    """Arguments for User"""
+    
+    
+
+class FindManyBlogPostArgsFromUser(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class FindManyBlogPostArgsFromUserRecursive1(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class FindManyBlogPostArgsFromUserRecursive2(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class FindManyBlogPostArgsFromUserRecursive3(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class FindManyBlogPostArgsFromUserRecursive4(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    
+    
+
+class AboutContentIncludeFromUser(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class AboutContentIncludeFromUserRecursive1(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class AboutContentIncludeFromUserRecursive2(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class AboutContentIncludeFromUserRecursive3(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class AboutContentIncludeFromUserRecursive4(TypedDict, total=False):
+    """Relational arguments for User"""
+
+    
+
+class AboutContentArgsFromUser(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class AboutContentArgsFromUserRecursive1(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class AboutContentArgsFromUserRecursive2(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class AboutContentArgsFromUserRecursive3(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class AboutContentArgsFromUserRecursive4(TypedDict, total=False):
+    """Arguments for User"""
+    
+    
+
+class FindManyAboutContentArgsFromUser(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class FindManyAboutContentArgsFromUserRecursive1(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class FindManyAboutContentArgsFromUserRecursive2(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class FindManyAboutContentArgsFromUserRecursive3(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class FindManyAboutContentArgsFromUserRecursive4(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    
+    
+
+class SubscriptionPlanIncludeFromUser(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class SubscriptionPlanIncludeFromUserRecursive1(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class SubscriptionPlanIncludeFromUserRecursive2(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class SubscriptionPlanIncludeFromUserRecursive3(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class SubscriptionPlanIncludeFromUserRecursive4(TypedDict, total=False):
+    """Relational arguments for User"""
+
+    
+
+class SubscriptionPlanArgsFromUser(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class SubscriptionPlanArgsFromUserRecursive1(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class SubscriptionPlanArgsFromUserRecursive2(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class SubscriptionPlanArgsFromUserRecursive3(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class SubscriptionPlanArgsFromUserRecursive4(TypedDict, total=False):
+    """Arguments for User"""
+    
+    
+
+class FindManySubscriptionPlanArgsFromUser(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class FindManySubscriptionPlanArgsFromUserRecursive1(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class FindManySubscriptionPlanArgsFromUserRecursive2(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class FindManySubscriptionPlanArgsFromUserRecursive3(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class FindManySubscriptionPlanArgsFromUserRecursive4(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    
+    
+
+class TestimonialIncludeFromUser(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class TestimonialIncludeFromUserRecursive1(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class TestimonialIncludeFromUserRecursive2(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class TestimonialIncludeFromUserRecursive3(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class TestimonialIncludeFromUserRecursive4(TypedDict, total=False):
+    """Relational arguments for User"""
+
+    
+
+class TestimonialArgsFromUser(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class TestimonialArgsFromUserRecursive1(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class TestimonialArgsFromUserRecursive2(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class TestimonialArgsFromUserRecursive3(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class TestimonialArgsFromUserRecursive4(TypedDict, total=False):
+    """Arguments for User"""
+    
+    
+
+class FindManyTestimonialArgsFromUser(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class FindManyTestimonialArgsFromUserRecursive1(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class FindManyTestimonialArgsFromUserRecursive2(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class FindManyTestimonialArgsFromUserRecursive3(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class FindManyTestimonialArgsFromUserRecursive4(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    
+    
+
+class InterviewQuestionIncludeFromUser(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class InterviewQuestionIncludeFromUserRecursive1(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class InterviewQuestionIncludeFromUserRecursive2(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class InterviewQuestionIncludeFromUserRecursive3(TypedDict, total=False):
+    """Relational arguments for User"""
+
+
+class InterviewQuestionIncludeFromUserRecursive4(TypedDict, total=False):
+    """Relational arguments for User"""
+
+    
+
+class InterviewQuestionArgsFromUser(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class InterviewQuestionArgsFromUserRecursive1(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class InterviewQuestionArgsFromUserRecursive2(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class InterviewQuestionArgsFromUserRecursive3(TypedDict, total=False):
+    """Arguments for User"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class InterviewQuestionArgsFromUserRecursive4(TypedDict, total=False):
+    """Arguments for User"""
+    
+    
+
+class FindManyInterviewQuestionArgsFromUser(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class FindManyInterviewQuestionArgsFromUserRecursive1(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class FindManyInterviewQuestionArgsFromUserRecursive2(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class FindManyInterviewQuestionArgsFromUserRecursive3(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class FindManyInterviewQuestionArgsFromUserRecursive4(TypedDict, total=False):
+    """Arguments for User"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    
 
 
 FindManyUserArgs = FindManyUserArgsFromUser
@@ -3375,6 +3880,511 @@ class FindManyPaymentArgsFromCourseRecursive4(TypedDict, total=False):
     cursor: 'PaymentWhereUniqueInput'
     distinct: List['PaymentScalarFieldKeys']
     
+    
+
+class BlogPostIncludeFromCourse(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class BlogPostIncludeFromCourseRecursive1(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class BlogPostIncludeFromCourseRecursive2(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class BlogPostIncludeFromCourseRecursive3(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class BlogPostIncludeFromCourseRecursive4(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+    
+
+class BlogPostArgsFromCourse(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class BlogPostArgsFromCourseRecursive1(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class BlogPostArgsFromCourseRecursive2(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class BlogPostArgsFromCourseRecursive3(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class BlogPostArgsFromCourseRecursive4(TypedDict, total=False):
+    """Arguments for Course"""
+    
+    
+
+class FindManyBlogPostArgsFromCourse(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class FindManyBlogPostArgsFromCourseRecursive1(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class FindManyBlogPostArgsFromCourseRecursive2(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class FindManyBlogPostArgsFromCourseRecursive3(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class FindManyBlogPostArgsFromCourseRecursive4(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    
+    
+
+class AboutContentIncludeFromCourse(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class AboutContentIncludeFromCourseRecursive1(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class AboutContentIncludeFromCourseRecursive2(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class AboutContentIncludeFromCourseRecursive3(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class AboutContentIncludeFromCourseRecursive4(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+    
+
+class AboutContentArgsFromCourse(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class AboutContentArgsFromCourseRecursive1(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class AboutContentArgsFromCourseRecursive2(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class AboutContentArgsFromCourseRecursive3(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class AboutContentArgsFromCourseRecursive4(TypedDict, total=False):
+    """Arguments for Course"""
+    
+    
+
+class FindManyAboutContentArgsFromCourse(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class FindManyAboutContentArgsFromCourseRecursive1(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class FindManyAboutContentArgsFromCourseRecursive2(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class FindManyAboutContentArgsFromCourseRecursive3(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class FindManyAboutContentArgsFromCourseRecursive4(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    
+    
+
+class SubscriptionPlanIncludeFromCourse(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class SubscriptionPlanIncludeFromCourseRecursive1(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class SubscriptionPlanIncludeFromCourseRecursive2(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class SubscriptionPlanIncludeFromCourseRecursive3(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class SubscriptionPlanIncludeFromCourseRecursive4(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+    
+
+class SubscriptionPlanArgsFromCourse(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class SubscriptionPlanArgsFromCourseRecursive1(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class SubscriptionPlanArgsFromCourseRecursive2(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class SubscriptionPlanArgsFromCourseRecursive3(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class SubscriptionPlanArgsFromCourseRecursive4(TypedDict, total=False):
+    """Arguments for Course"""
+    
+    
+
+class FindManySubscriptionPlanArgsFromCourse(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class FindManySubscriptionPlanArgsFromCourseRecursive1(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class FindManySubscriptionPlanArgsFromCourseRecursive2(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class FindManySubscriptionPlanArgsFromCourseRecursive3(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class FindManySubscriptionPlanArgsFromCourseRecursive4(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    
+    
+
+class TestimonialIncludeFromCourse(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class TestimonialIncludeFromCourseRecursive1(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class TestimonialIncludeFromCourseRecursive2(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class TestimonialIncludeFromCourseRecursive3(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class TestimonialIncludeFromCourseRecursive4(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+    
+
+class TestimonialArgsFromCourse(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class TestimonialArgsFromCourseRecursive1(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class TestimonialArgsFromCourseRecursive2(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class TestimonialArgsFromCourseRecursive3(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class TestimonialArgsFromCourseRecursive4(TypedDict, total=False):
+    """Arguments for Course"""
+    
+    
+
+class FindManyTestimonialArgsFromCourse(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class FindManyTestimonialArgsFromCourseRecursive1(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class FindManyTestimonialArgsFromCourseRecursive2(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class FindManyTestimonialArgsFromCourseRecursive3(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class FindManyTestimonialArgsFromCourseRecursive4(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    
+    
+
+class InterviewQuestionIncludeFromCourse(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class InterviewQuestionIncludeFromCourseRecursive1(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class InterviewQuestionIncludeFromCourseRecursive2(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class InterviewQuestionIncludeFromCourseRecursive3(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+
+class InterviewQuestionIncludeFromCourseRecursive4(TypedDict, total=False):
+    """Relational arguments for Course"""
+
+    
+
+class InterviewQuestionArgsFromCourse(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class InterviewQuestionArgsFromCourseRecursive1(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class InterviewQuestionArgsFromCourseRecursive2(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class InterviewQuestionArgsFromCourseRecursive3(TypedDict, total=False):
+    """Arguments for Course"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class InterviewQuestionArgsFromCourseRecursive4(TypedDict, total=False):
+    """Arguments for Course"""
+    
+    
+
+class FindManyInterviewQuestionArgsFromCourse(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class FindManyInterviewQuestionArgsFromCourseRecursive1(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class FindManyInterviewQuestionArgsFromCourseRecursive2(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class FindManyInterviewQuestionArgsFromCourseRecursive3(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class FindManyInterviewQuestionArgsFromCourseRecursive4(TypedDict, total=False):
+    """Arguments for Course"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    
 
 
 FindManyCourseArgs = FindManyCourseArgsFromCourse
@@ -4599,6 +5609,511 @@ class FindManyPaymentArgsFromLessonRecursive4(TypedDict, total=False):
     where: 'PaymentWhereInput'
     cursor: 'PaymentWhereUniqueInput'
     distinct: List['PaymentScalarFieldKeys']
+    
+    
+
+class BlogPostIncludeFromLesson(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class BlogPostIncludeFromLessonRecursive1(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class BlogPostIncludeFromLessonRecursive2(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class BlogPostIncludeFromLessonRecursive3(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class BlogPostIncludeFromLessonRecursive4(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+    
+
+class BlogPostArgsFromLesson(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class BlogPostArgsFromLessonRecursive1(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class BlogPostArgsFromLessonRecursive2(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class BlogPostArgsFromLessonRecursive3(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class BlogPostArgsFromLessonRecursive4(TypedDict, total=False):
+    """Arguments for Lesson"""
+    
+    
+
+class FindManyBlogPostArgsFromLesson(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class FindManyBlogPostArgsFromLessonRecursive1(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class FindManyBlogPostArgsFromLessonRecursive2(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class FindManyBlogPostArgsFromLessonRecursive3(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class FindManyBlogPostArgsFromLessonRecursive4(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    
+    
+
+class AboutContentIncludeFromLesson(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class AboutContentIncludeFromLessonRecursive1(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class AboutContentIncludeFromLessonRecursive2(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class AboutContentIncludeFromLessonRecursive3(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class AboutContentIncludeFromLessonRecursive4(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+    
+
+class AboutContentArgsFromLesson(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class AboutContentArgsFromLessonRecursive1(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class AboutContentArgsFromLessonRecursive2(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class AboutContentArgsFromLessonRecursive3(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class AboutContentArgsFromLessonRecursive4(TypedDict, total=False):
+    """Arguments for Lesson"""
+    
+    
+
+class FindManyAboutContentArgsFromLesson(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class FindManyAboutContentArgsFromLessonRecursive1(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class FindManyAboutContentArgsFromLessonRecursive2(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class FindManyAboutContentArgsFromLessonRecursive3(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class FindManyAboutContentArgsFromLessonRecursive4(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    
+    
+
+class SubscriptionPlanIncludeFromLesson(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class SubscriptionPlanIncludeFromLessonRecursive1(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class SubscriptionPlanIncludeFromLessonRecursive2(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class SubscriptionPlanIncludeFromLessonRecursive3(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class SubscriptionPlanIncludeFromLessonRecursive4(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+    
+
+class SubscriptionPlanArgsFromLesson(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class SubscriptionPlanArgsFromLessonRecursive1(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class SubscriptionPlanArgsFromLessonRecursive2(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class SubscriptionPlanArgsFromLessonRecursive3(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class SubscriptionPlanArgsFromLessonRecursive4(TypedDict, total=False):
+    """Arguments for Lesson"""
+    
+    
+
+class FindManySubscriptionPlanArgsFromLesson(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class FindManySubscriptionPlanArgsFromLessonRecursive1(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class FindManySubscriptionPlanArgsFromLessonRecursive2(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class FindManySubscriptionPlanArgsFromLessonRecursive3(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class FindManySubscriptionPlanArgsFromLessonRecursive4(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    
+    
+
+class TestimonialIncludeFromLesson(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class TestimonialIncludeFromLessonRecursive1(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class TestimonialIncludeFromLessonRecursive2(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class TestimonialIncludeFromLessonRecursive3(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class TestimonialIncludeFromLessonRecursive4(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+    
+
+class TestimonialArgsFromLesson(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class TestimonialArgsFromLessonRecursive1(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class TestimonialArgsFromLessonRecursive2(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class TestimonialArgsFromLessonRecursive3(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class TestimonialArgsFromLessonRecursive4(TypedDict, total=False):
+    """Arguments for Lesson"""
+    
+    
+
+class FindManyTestimonialArgsFromLesson(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class FindManyTestimonialArgsFromLessonRecursive1(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class FindManyTestimonialArgsFromLessonRecursive2(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class FindManyTestimonialArgsFromLessonRecursive3(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class FindManyTestimonialArgsFromLessonRecursive4(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    
+    
+
+class InterviewQuestionIncludeFromLesson(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class InterviewQuestionIncludeFromLessonRecursive1(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class InterviewQuestionIncludeFromLessonRecursive2(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class InterviewQuestionIncludeFromLessonRecursive3(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+
+class InterviewQuestionIncludeFromLessonRecursive4(TypedDict, total=False):
+    """Relational arguments for Lesson"""
+
+    
+
+class InterviewQuestionArgsFromLesson(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class InterviewQuestionArgsFromLessonRecursive1(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class InterviewQuestionArgsFromLessonRecursive2(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class InterviewQuestionArgsFromLessonRecursive3(TypedDict, total=False):
+    """Arguments for Lesson"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class InterviewQuestionArgsFromLessonRecursive4(TypedDict, total=False):
+    """Arguments for Lesson"""
+    
+    
+
+class FindManyInterviewQuestionArgsFromLesson(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class FindManyInterviewQuestionArgsFromLessonRecursive1(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class FindManyInterviewQuestionArgsFromLessonRecursive2(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class FindManyInterviewQuestionArgsFromLessonRecursive3(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class FindManyInterviewQuestionArgsFromLessonRecursive4(TypedDict, total=False):
+    """Arguments for Lesson"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
     
 
 
@@ -5845,6 +7360,511 @@ class FindManyPaymentArgsFromUserProgressRecursive4(TypedDict, total=False):
     cursor: 'PaymentWhereUniqueInput'
     distinct: List['PaymentScalarFieldKeys']
     
+    
+
+class BlogPostIncludeFromUserProgress(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class BlogPostIncludeFromUserProgressRecursive1(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class BlogPostIncludeFromUserProgressRecursive2(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class BlogPostIncludeFromUserProgressRecursive3(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class BlogPostIncludeFromUserProgressRecursive4(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+    
+
+class BlogPostArgsFromUserProgress(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class BlogPostArgsFromUserProgressRecursive1(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class BlogPostArgsFromUserProgressRecursive2(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class BlogPostArgsFromUserProgressRecursive3(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class BlogPostArgsFromUserProgressRecursive4(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    
+    
+
+class FindManyBlogPostArgsFromUserProgress(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class FindManyBlogPostArgsFromUserProgressRecursive1(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class FindManyBlogPostArgsFromUserProgressRecursive2(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class FindManyBlogPostArgsFromUserProgressRecursive3(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class FindManyBlogPostArgsFromUserProgressRecursive4(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    
+    
+
+class AboutContentIncludeFromUserProgress(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class AboutContentIncludeFromUserProgressRecursive1(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class AboutContentIncludeFromUserProgressRecursive2(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class AboutContentIncludeFromUserProgressRecursive3(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class AboutContentIncludeFromUserProgressRecursive4(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+    
+
+class AboutContentArgsFromUserProgress(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class AboutContentArgsFromUserProgressRecursive1(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class AboutContentArgsFromUserProgressRecursive2(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class AboutContentArgsFromUserProgressRecursive3(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class AboutContentArgsFromUserProgressRecursive4(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    
+    
+
+class FindManyAboutContentArgsFromUserProgress(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class FindManyAboutContentArgsFromUserProgressRecursive1(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class FindManyAboutContentArgsFromUserProgressRecursive2(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class FindManyAboutContentArgsFromUserProgressRecursive3(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class FindManyAboutContentArgsFromUserProgressRecursive4(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    
+    
+
+class SubscriptionPlanIncludeFromUserProgress(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class SubscriptionPlanIncludeFromUserProgressRecursive1(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class SubscriptionPlanIncludeFromUserProgressRecursive2(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class SubscriptionPlanIncludeFromUserProgressRecursive3(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class SubscriptionPlanIncludeFromUserProgressRecursive4(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+    
+
+class SubscriptionPlanArgsFromUserProgress(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class SubscriptionPlanArgsFromUserProgressRecursive1(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class SubscriptionPlanArgsFromUserProgressRecursive2(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class SubscriptionPlanArgsFromUserProgressRecursive3(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class SubscriptionPlanArgsFromUserProgressRecursive4(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    
+    
+
+class FindManySubscriptionPlanArgsFromUserProgress(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class FindManySubscriptionPlanArgsFromUserProgressRecursive1(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class FindManySubscriptionPlanArgsFromUserProgressRecursive2(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class FindManySubscriptionPlanArgsFromUserProgressRecursive3(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class FindManySubscriptionPlanArgsFromUserProgressRecursive4(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    
+    
+
+class TestimonialIncludeFromUserProgress(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class TestimonialIncludeFromUserProgressRecursive1(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class TestimonialIncludeFromUserProgressRecursive2(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class TestimonialIncludeFromUserProgressRecursive3(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class TestimonialIncludeFromUserProgressRecursive4(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+    
+
+class TestimonialArgsFromUserProgress(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class TestimonialArgsFromUserProgressRecursive1(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class TestimonialArgsFromUserProgressRecursive2(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class TestimonialArgsFromUserProgressRecursive3(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class TestimonialArgsFromUserProgressRecursive4(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    
+    
+
+class FindManyTestimonialArgsFromUserProgress(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class FindManyTestimonialArgsFromUserProgressRecursive1(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class FindManyTestimonialArgsFromUserProgressRecursive2(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class FindManyTestimonialArgsFromUserProgressRecursive3(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class FindManyTestimonialArgsFromUserProgressRecursive4(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    
+    
+
+class InterviewQuestionIncludeFromUserProgress(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class InterviewQuestionIncludeFromUserProgressRecursive1(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class InterviewQuestionIncludeFromUserProgressRecursive2(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class InterviewQuestionIncludeFromUserProgressRecursive3(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+
+class InterviewQuestionIncludeFromUserProgressRecursive4(TypedDict, total=False):
+    """Relational arguments for UserProgress"""
+
+    
+
+class InterviewQuestionArgsFromUserProgress(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class InterviewQuestionArgsFromUserProgressRecursive1(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class InterviewQuestionArgsFromUserProgressRecursive2(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class InterviewQuestionArgsFromUserProgressRecursive3(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class InterviewQuestionArgsFromUserProgressRecursive4(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    
+    
+
+class FindManyInterviewQuestionArgsFromUserProgress(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class FindManyInterviewQuestionArgsFromUserProgressRecursive1(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class FindManyInterviewQuestionArgsFromUserProgressRecursive2(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class FindManyInterviewQuestionArgsFromUserProgressRecursive3(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class FindManyInterviewQuestionArgsFromUserProgressRecursive4(TypedDict, total=False):
+    """Arguments for UserProgress"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    
 
 
 FindManyUserProgressArgs = FindManyUserProgressArgsFromUserProgress
@@ -7078,6 +9098,511 @@ class FindManyPaymentArgsFromQuestionRecursive4(TypedDict, total=False):
     where: 'PaymentWhereInput'
     cursor: 'PaymentWhereUniqueInput'
     distinct: List['PaymentScalarFieldKeys']
+    
+    
+
+class BlogPostIncludeFromQuestion(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class BlogPostIncludeFromQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class BlogPostIncludeFromQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class BlogPostIncludeFromQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class BlogPostIncludeFromQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+    
+
+class BlogPostArgsFromQuestion(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class BlogPostArgsFromQuestionRecursive1(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class BlogPostArgsFromQuestionRecursive2(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class BlogPostArgsFromQuestionRecursive3(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class BlogPostArgsFromQuestionRecursive4(TypedDict, total=False):
+    """Arguments for Question"""
+    
+    
+
+class FindManyBlogPostArgsFromQuestion(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class FindManyBlogPostArgsFromQuestionRecursive1(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class FindManyBlogPostArgsFromQuestionRecursive2(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class FindManyBlogPostArgsFromQuestionRecursive3(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class FindManyBlogPostArgsFromQuestionRecursive4(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    
+    
+
+class AboutContentIncludeFromQuestion(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class AboutContentIncludeFromQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class AboutContentIncludeFromQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class AboutContentIncludeFromQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class AboutContentIncludeFromQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+    
+
+class AboutContentArgsFromQuestion(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class AboutContentArgsFromQuestionRecursive1(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class AboutContentArgsFromQuestionRecursive2(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class AboutContentArgsFromQuestionRecursive3(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class AboutContentArgsFromQuestionRecursive4(TypedDict, total=False):
+    """Arguments for Question"""
+    
+    
+
+class FindManyAboutContentArgsFromQuestion(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class FindManyAboutContentArgsFromQuestionRecursive1(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class FindManyAboutContentArgsFromQuestionRecursive2(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class FindManyAboutContentArgsFromQuestionRecursive3(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class FindManyAboutContentArgsFromQuestionRecursive4(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    
+    
+
+class SubscriptionPlanIncludeFromQuestion(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class SubscriptionPlanIncludeFromQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class SubscriptionPlanIncludeFromQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class SubscriptionPlanIncludeFromQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class SubscriptionPlanIncludeFromQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+    
+
+class SubscriptionPlanArgsFromQuestion(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class SubscriptionPlanArgsFromQuestionRecursive1(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class SubscriptionPlanArgsFromQuestionRecursive2(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class SubscriptionPlanArgsFromQuestionRecursive3(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class SubscriptionPlanArgsFromQuestionRecursive4(TypedDict, total=False):
+    """Arguments for Question"""
+    
+    
+
+class FindManySubscriptionPlanArgsFromQuestion(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class FindManySubscriptionPlanArgsFromQuestionRecursive1(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class FindManySubscriptionPlanArgsFromQuestionRecursive2(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class FindManySubscriptionPlanArgsFromQuestionRecursive3(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class FindManySubscriptionPlanArgsFromQuestionRecursive4(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    
+    
+
+class TestimonialIncludeFromQuestion(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class TestimonialIncludeFromQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class TestimonialIncludeFromQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class TestimonialIncludeFromQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class TestimonialIncludeFromQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+    
+
+class TestimonialArgsFromQuestion(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class TestimonialArgsFromQuestionRecursive1(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class TestimonialArgsFromQuestionRecursive2(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class TestimonialArgsFromQuestionRecursive3(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class TestimonialArgsFromQuestionRecursive4(TypedDict, total=False):
+    """Arguments for Question"""
+    
+    
+
+class FindManyTestimonialArgsFromQuestion(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class FindManyTestimonialArgsFromQuestionRecursive1(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class FindManyTestimonialArgsFromQuestionRecursive2(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class FindManyTestimonialArgsFromQuestionRecursive3(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class FindManyTestimonialArgsFromQuestionRecursive4(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    
+    
+
+class InterviewQuestionIncludeFromQuestion(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class InterviewQuestionIncludeFromQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class InterviewQuestionIncludeFromQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class InterviewQuestionIncludeFromQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+
+class InterviewQuestionIncludeFromQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for Question"""
+
+    
+
+class InterviewQuestionArgsFromQuestion(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class InterviewQuestionArgsFromQuestionRecursive1(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class InterviewQuestionArgsFromQuestionRecursive2(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class InterviewQuestionArgsFromQuestionRecursive3(TypedDict, total=False):
+    """Arguments for Question"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class InterviewQuestionArgsFromQuestionRecursive4(TypedDict, total=False):
+    """Arguments for Question"""
+    
+    
+
+class FindManyInterviewQuestionArgsFromQuestion(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class FindManyInterviewQuestionArgsFromQuestionRecursive1(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class FindManyInterviewQuestionArgsFromQuestionRecursive2(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class FindManyInterviewQuestionArgsFromQuestionRecursive3(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class FindManyInterviewQuestionArgsFromQuestionRecursive4(TypedDict, total=False):
+    """Arguments for Question"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
     
 
 
@@ -8319,6 +10844,511 @@ class FindManyPaymentArgsFromUserExamAttemptRecursive4(TypedDict, total=False):
     cursor: 'PaymentWhereUniqueInput'
     distinct: List['PaymentScalarFieldKeys']
     
+    
+
+class BlogPostIncludeFromUserExamAttempt(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class BlogPostIncludeFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class BlogPostIncludeFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class BlogPostIncludeFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class BlogPostIncludeFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+    
+
+class BlogPostArgsFromUserExamAttempt(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class BlogPostArgsFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class BlogPostArgsFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class BlogPostArgsFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class BlogPostArgsFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    
+    
+
+class FindManyBlogPostArgsFromUserExamAttempt(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class FindManyBlogPostArgsFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class FindManyBlogPostArgsFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class FindManyBlogPostArgsFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class FindManyBlogPostArgsFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    
+    
+
+class AboutContentIncludeFromUserExamAttempt(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class AboutContentIncludeFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class AboutContentIncludeFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class AboutContentIncludeFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class AboutContentIncludeFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+    
+
+class AboutContentArgsFromUserExamAttempt(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class AboutContentArgsFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class AboutContentArgsFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class AboutContentArgsFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class AboutContentArgsFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    
+    
+
+class FindManyAboutContentArgsFromUserExamAttempt(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class FindManyAboutContentArgsFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class FindManyAboutContentArgsFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class FindManyAboutContentArgsFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class FindManyAboutContentArgsFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    
+    
+
+class SubscriptionPlanIncludeFromUserExamAttempt(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class SubscriptionPlanIncludeFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class SubscriptionPlanIncludeFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class SubscriptionPlanIncludeFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class SubscriptionPlanIncludeFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+    
+
+class SubscriptionPlanArgsFromUserExamAttempt(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class SubscriptionPlanArgsFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class SubscriptionPlanArgsFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class SubscriptionPlanArgsFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class SubscriptionPlanArgsFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    
+    
+
+class FindManySubscriptionPlanArgsFromUserExamAttempt(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class FindManySubscriptionPlanArgsFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class FindManySubscriptionPlanArgsFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class FindManySubscriptionPlanArgsFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class FindManySubscriptionPlanArgsFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    
+    
+
+class TestimonialIncludeFromUserExamAttempt(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class TestimonialIncludeFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class TestimonialIncludeFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class TestimonialIncludeFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class TestimonialIncludeFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+    
+
+class TestimonialArgsFromUserExamAttempt(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class TestimonialArgsFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class TestimonialArgsFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class TestimonialArgsFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class TestimonialArgsFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    
+    
+
+class FindManyTestimonialArgsFromUserExamAttempt(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class FindManyTestimonialArgsFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class FindManyTestimonialArgsFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class FindManyTestimonialArgsFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class FindManyTestimonialArgsFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    
+    
+
+class InterviewQuestionIncludeFromUserExamAttempt(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class InterviewQuestionIncludeFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class InterviewQuestionIncludeFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class InterviewQuestionIncludeFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+
+class InterviewQuestionIncludeFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Relational arguments for UserExamAttempt"""
+
+    
+
+class InterviewQuestionArgsFromUserExamAttempt(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class InterviewQuestionArgsFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class InterviewQuestionArgsFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class InterviewQuestionArgsFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class InterviewQuestionArgsFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    
+    
+
+class FindManyInterviewQuestionArgsFromUserExamAttempt(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class FindManyInterviewQuestionArgsFromUserExamAttemptRecursive1(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class FindManyInterviewQuestionArgsFromUserExamAttemptRecursive2(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class FindManyInterviewQuestionArgsFromUserExamAttemptRecursive3(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class FindManyInterviewQuestionArgsFromUserExamAttemptRecursive4(TypedDict, total=False):
+    """Arguments for UserExamAttempt"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    
 
 
 FindManyUserExamAttemptArgs = FindManyUserExamAttemptArgsFromUserExamAttempt
@@ -9531,6 +12561,511 @@ class FindManyPaymentArgsFromPaymentRecursive4(TypedDict, total=False):
     cursor: 'PaymentWhereUniqueInput'
     distinct: List['PaymentScalarFieldKeys']
     
+    
+
+class BlogPostIncludeFromPayment(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class BlogPostIncludeFromPaymentRecursive1(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class BlogPostIncludeFromPaymentRecursive2(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class BlogPostIncludeFromPaymentRecursive3(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class BlogPostIncludeFromPaymentRecursive4(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+    
+
+class BlogPostArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class BlogPostArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class BlogPostArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class BlogPostArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class BlogPostArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    
+    
+
+class FindManyBlogPostArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class FindManyBlogPostArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class FindManyBlogPostArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class FindManyBlogPostArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class FindManyBlogPostArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    
+    
+
+class AboutContentIncludeFromPayment(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class AboutContentIncludeFromPaymentRecursive1(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class AboutContentIncludeFromPaymentRecursive2(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class AboutContentIncludeFromPaymentRecursive3(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class AboutContentIncludeFromPaymentRecursive4(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+    
+
+class AboutContentArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class AboutContentArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class AboutContentArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class AboutContentArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class AboutContentArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    
+    
+
+class FindManyAboutContentArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class FindManyAboutContentArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class FindManyAboutContentArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class FindManyAboutContentArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class FindManyAboutContentArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    
+    
+
+class SubscriptionPlanIncludeFromPayment(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class SubscriptionPlanIncludeFromPaymentRecursive1(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class SubscriptionPlanIncludeFromPaymentRecursive2(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class SubscriptionPlanIncludeFromPaymentRecursive3(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class SubscriptionPlanIncludeFromPaymentRecursive4(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+    
+
+class SubscriptionPlanArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class SubscriptionPlanArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class SubscriptionPlanArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class SubscriptionPlanArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class SubscriptionPlanArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    
+    
+
+class FindManySubscriptionPlanArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class FindManySubscriptionPlanArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class FindManySubscriptionPlanArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class FindManySubscriptionPlanArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class FindManySubscriptionPlanArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    
+    
+
+class TestimonialIncludeFromPayment(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class TestimonialIncludeFromPaymentRecursive1(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class TestimonialIncludeFromPaymentRecursive2(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class TestimonialIncludeFromPaymentRecursive3(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class TestimonialIncludeFromPaymentRecursive4(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+    
+
+class TestimonialArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class TestimonialArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class TestimonialArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class TestimonialArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class TestimonialArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    
+    
+
+class FindManyTestimonialArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class FindManyTestimonialArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class FindManyTestimonialArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class FindManyTestimonialArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class FindManyTestimonialArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    
+    
+
+class InterviewQuestionIncludeFromPayment(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class InterviewQuestionIncludeFromPaymentRecursive1(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class InterviewQuestionIncludeFromPaymentRecursive2(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class InterviewQuestionIncludeFromPaymentRecursive3(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+
+class InterviewQuestionIncludeFromPaymentRecursive4(TypedDict, total=False):
+    """Relational arguments for Payment"""
+
+    
+
+class InterviewQuestionArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class InterviewQuestionArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class InterviewQuestionArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class InterviewQuestionArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class InterviewQuestionArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    
+    
+
+class FindManyInterviewQuestionArgsFromPayment(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class FindManyInterviewQuestionArgsFromPaymentRecursive1(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class FindManyInterviewQuestionArgsFromPaymentRecursive2(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class FindManyInterviewQuestionArgsFromPaymentRecursive3(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class FindManyInterviewQuestionArgsFromPaymentRecursive4(TypedDict, total=False):
+    """Arguments for Payment"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    
 
 
 FindManyPaymentArgs = FindManyPaymentArgsFromPayment
@@ -9791,6 +13326,9117 @@ PaymentScalarFieldKeysT = TypeVar('PaymentScalarFieldKeysT', bound=PaymentScalar
 PaymentRelationalFieldKeys = Literal[
         'user',
     ]
+
+# BlogPost types
+
+class BlogPostOptionalCreateInput(TypedDict, total=False):
+    """Optional arguments to the BlogPost create method"""
+    id: _str
+    coverImage: Optional[_str]
+    readTime: _str
+    published: _bool
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class BlogPostCreateInput(BlogPostOptionalCreateInput):
+    """Required arguments to the BlogPost create method"""
+    title: _str
+    slug: _str
+    excerpt: _str
+    content: _str
+    category: _str
+
+
+# TODO: remove this in favour of without explicit relations
+# e.g. PostCreateWithoutAuthorInput
+
+class BlogPostOptionalCreateWithoutRelationsInput(TypedDict, total=False):
+    """Optional arguments to the BlogPost create method, without relations"""
+    id: _str
+    coverImage: Optional[_str]
+    readTime: _str
+    published: _bool
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class BlogPostCreateWithoutRelationsInput(BlogPostOptionalCreateWithoutRelationsInput):
+    """Required arguments to the BlogPost create method, without relations"""
+    title: _str
+    slug: _str
+    excerpt: _str
+    content: _str
+    category: _str
+
+class BlogPostConnectOrCreateWithoutRelationsInput(TypedDict):
+    create: 'BlogPostCreateWithoutRelationsInput'
+    where: 'BlogPostWhereUniqueInput'
+
+class BlogPostCreateNestedWithoutRelationsInput(TypedDict, total=False):
+    create: 'BlogPostCreateWithoutRelationsInput'
+    connect: 'BlogPostWhereUniqueInput'
+    connect_or_create: 'BlogPostConnectOrCreateWithoutRelationsInput'
+
+
+class BlogPostCreateManyNestedWithoutRelationsInput(TypedDict, total=False):
+    create: Union['BlogPostCreateWithoutRelationsInput', List['BlogPostCreateWithoutRelationsInput']]
+    connect: Union['BlogPostWhereUniqueInput', List['BlogPostWhereUniqueInput']]
+    connect_or_create: Union['BlogPostConnectOrCreateWithoutRelationsInput', List['BlogPostConnectOrCreateWithoutRelationsInput']]
+
+_BlogPostWhereUnique_id_Input = TypedDict(
+    '_BlogPostWhereUnique_id_Input',
+    {
+        'id': '_str',
+    },
+    total=True
+)
+
+_BlogPostWhereUnique_slug_Input = TypedDict(
+    '_BlogPostWhereUnique_slug_Input',
+    {
+        'slug': '_str',
+    },
+    total=True
+)
+
+BlogPostWhereUniqueInput = Union[
+    '_BlogPostWhereUnique_id_Input',
+    '_BlogPostWhereUnique_slug_Input',
+]
+
+
+class BlogPostUpdateInput(TypedDict, total=False):
+    """Optional arguments for updating a record"""
+    id: _str
+    title: _str
+    slug: _str
+    excerpt: _str
+    content: _str
+    category: _str
+    coverImage: Optional[_str]
+    readTime: _str
+    published: _bool
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class BlogPostUpdateManyMutationInput(TypedDict, total=False):
+    """Arguments for updating many records"""
+    id: _str
+    title: _str
+    slug: _str
+    excerpt: _str
+    content: _str
+    category: _str
+    coverImage: Optional[_str]
+    readTime: _str
+    published: _bool
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class BlogPostUpdateManyWithoutRelationsInput(TypedDict, total=False):
+    create: List['BlogPostCreateWithoutRelationsInput']
+    connect: List['BlogPostWhereUniqueInput']
+    connect_or_create: List['BlogPostConnectOrCreateWithoutRelationsInput']
+    set: List['BlogPostWhereUniqueInput']
+    disconnect: List['BlogPostWhereUniqueInput']
+    delete: List['BlogPostWhereUniqueInput']
+
+    # TODO
+    # update: List['BlogPostUpdateWithWhereUniqueWithoutRelationsInput']
+    # updateMany: List['BlogPostUpdateManyWithWhereUniqueWithoutRelationsInput']
+    # deleteMany: List['BlogPostScalarWhereInput']
+    # upsert: List['BlogPostUpserteWithWhereUniqueWithoutRelationsInput']
+
+
+class BlogPostUpdateOneWithoutRelationsInput(TypedDict, total=False):
+    create: 'BlogPostCreateWithoutRelationsInput'
+    connect: 'BlogPostWhereUniqueInput'
+    connect_or_create: 'BlogPostConnectOrCreateWithoutRelationsInput'
+    disconnect: bool
+    delete: bool
+
+    # TODO
+    # update: 'BlogPostUpdateInput'
+    # upsert: 'BlogPostUpsertWithoutRelationsInput'
+
+
+class BlogPostUpsertInput(TypedDict):
+    create: 'BlogPostCreateInput'
+    update: 'BlogPostUpdateInput'  # pyright: ignore[reportIncompatibleMethodOverride]
+
+
+_BlogPost_id_OrderByInput = TypedDict(
+    '_BlogPost_id_OrderByInput',
+    {
+        'id': 'SortOrder',
+    },
+    total=True
+)
+
+_BlogPost_title_OrderByInput = TypedDict(
+    '_BlogPost_title_OrderByInput',
+    {
+        'title': 'SortOrder',
+    },
+    total=True
+)
+
+_BlogPost_slug_OrderByInput = TypedDict(
+    '_BlogPost_slug_OrderByInput',
+    {
+        'slug': 'SortOrder',
+    },
+    total=True
+)
+
+_BlogPost_excerpt_OrderByInput = TypedDict(
+    '_BlogPost_excerpt_OrderByInput',
+    {
+        'excerpt': 'SortOrder',
+    },
+    total=True
+)
+
+_BlogPost_content_OrderByInput = TypedDict(
+    '_BlogPost_content_OrderByInput',
+    {
+        'content': 'SortOrder',
+    },
+    total=True
+)
+
+_BlogPost_category_OrderByInput = TypedDict(
+    '_BlogPost_category_OrderByInput',
+    {
+        'category': 'SortOrder',
+    },
+    total=True
+)
+
+_BlogPost_coverImage_OrderByInput = TypedDict(
+    '_BlogPost_coverImage_OrderByInput',
+    {
+        'coverImage': 'SortOrder',
+    },
+    total=True
+)
+
+_BlogPost_readTime_OrderByInput = TypedDict(
+    '_BlogPost_readTime_OrderByInput',
+    {
+        'readTime': 'SortOrder',
+    },
+    total=True
+)
+
+_BlogPost_published_OrderByInput = TypedDict(
+    '_BlogPost_published_OrderByInput',
+    {
+        'published': 'SortOrder',
+    },
+    total=True
+)
+
+_BlogPost_createdAt_OrderByInput = TypedDict(
+    '_BlogPost_createdAt_OrderByInput',
+    {
+        'createdAt': 'SortOrder',
+    },
+    total=True
+)
+
+_BlogPost_updatedAt_OrderByInput = TypedDict(
+    '_BlogPost_updatedAt_OrderByInput',
+    {
+        'updatedAt': 'SortOrder',
+    },
+    total=True
+)
+
+_BlogPost_RelevanceInner = TypedDict(
+    '_BlogPost_RelevanceInner',
+    {
+        'fields': 'List[BlogPostScalarFieldKeys]',
+        'search': 'str',
+        'sort': 'SortOrder',
+    },
+    total=True
+)
+
+_BlogPost_RelevanceOrderByInput = TypedDict(
+    '_BlogPost_RelevanceOrderByInput',
+    {
+        '_relevance': '_BlogPost_RelevanceInner',
+    },
+    total=True
+)
+
+BlogPostOrderByInput = Union[
+    '_BlogPost_id_OrderByInput',
+    '_BlogPost_title_OrderByInput',
+    '_BlogPost_slug_OrderByInput',
+    '_BlogPost_excerpt_OrderByInput',
+    '_BlogPost_content_OrderByInput',
+    '_BlogPost_category_OrderByInput',
+    '_BlogPost_coverImage_OrderByInput',
+    '_BlogPost_readTime_OrderByInput',
+    '_BlogPost_published_OrderByInput',
+    '_BlogPost_createdAt_OrderByInput',
+    '_BlogPost_updatedAt_OrderByInput',
+    '_BlogPost_RelevanceOrderByInput',
+]
+
+
+
+# recursive BlogPost types
+# TODO: cleanup these types
+
+
+# Dict[str, Any] is a mypy limitation
+# see https://github.com/RobertCraigie/prisma-client-py/issues/45
+# switch to pyright for improved types, see https://prisma-client-py.readthedocs.io/en/stable/reference/limitations/
+
+BlogPostRelationFilter = TypedDict(
+    'BlogPostRelationFilter',
+    {
+        'is': 'Dict[str, Any]',
+        'is_not': 'Dict[str, Any]',
+    },
+    total=False,
+)
+
+
+class BlogPostListRelationFilter(TypedDict, total=False):
+    some: 'Dict[str, Any]'
+    none: 'Dict[str, Any]'
+    every: 'Dict[str, Any]'
+
+
+class BlogPostInclude(TypedDict, total=False):
+    """BlogPost relational arguments"""
+
+
+    
+
+class UserIncludeFromBlogPost(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromBlogPostRecursive1']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromBlogPostRecursive1']
+    payments: Union[bool, 'FindManyPaymentArgsFromBlogPostRecursive1']
+
+
+class UserIncludeFromBlogPostRecursive1(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromBlogPostRecursive2']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromBlogPostRecursive2']
+    payments: Union[bool, 'FindManyPaymentArgsFromBlogPostRecursive2']
+
+
+class UserIncludeFromBlogPostRecursive2(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromBlogPostRecursive3']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromBlogPostRecursive3']
+    payments: Union[bool, 'FindManyPaymentArgsFromBlogPostRecursive3']
+
+
+class UserIncludeFromBlogPostRecursive3(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromBlogPostRecursive4']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromBlogPostRecursive4']
+    payments: Union[bool, 'FindManyPaymentArgsFromBlogPostRecursive4']
+
+
+class UserIncludeFromBlogPostRecursive4(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+    
+
+class UserArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'UserIncludeFromUserRecursive1'
+
+
+class UserArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'UserIncludeFromUserRecursive2'
+
+
+class UserArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'UserIncludeFromUserRecursive3'
+
+
+class UserArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'UserIncludeFromUserRecursive4'
+
+
+class UserArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    
+    
+
+class FindManyUserArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive1'
+
+
+class FindManyUserArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive2'
+
+
+class FindManyUserArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive3'
+
+
+class FindManyUserArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive4'
+
+
+class FindManyUserArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    
+    
+
+class CourseIncludeFromBlogPost(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    lessons: Union[bool, 'FindManyLessonArgsFromBlogPostRecursive1']
+
+
+class CourseIncludeFromBlogPostRecursive1(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    lessons: Union[bool, 'FindManyLessonArgsFromBlogPostRecursive2']
+
+
+class CourseIncludeFromBlogPostRecursive2(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    lessons: Union[bool, 'FindManyLessonArgsFromBlogPostRecursive3']
+
+
+class CourseIncludeFromBlogPostRecursive3(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    lessons: Union[bool, 'FindManyLessonArgsFromBlogPostRecursive4']
+
+
+class CourseIncludeFromBlogPostRecursive4(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+    
+
+class CourseArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'CourseIncludeFromCourseRecursive1'
+
+
+class CourseArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'CourseIncludeFromCourseRecursive2'
+
+
+class CourseArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'CourseIncludeFromCourseRecursive3'
+
+
+class CourseArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'CourseIncludeFromCourseRecursive4'
+
+
+class CourseArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    
+    
+
+class FindManyCourseArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive1'
+
+
+class FindManyCourseArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive2'
+
+
+class FindManyCourseArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive3'
+
+
+class FindManyCourseArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive4'
+
+
+class FindManyCourseArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    
+    
+
+class LessonIncludeFromBlogPost(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    course: Union[bool, 'CourseArgsFromBlogPostRecursive1']
+    progress: Union[bool, 'FindManyUserProgressArgsFromBlogPostRecursive1']
+
+
+class LessonIncludeFromBlogPostRecursive1(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    course: Union[bool, 'CourseArgsFromBlogPostRecursive2']
+    progress: Union[bool, 'FindManyUserProgressArgsFromBlogPostRecursive2']
+
+
+class LessonIncludeFromBlogPostRecursive2(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    course: Union[bool, 'CourseArgsFromBlogPostRecursive3']
+    progress: Union[bool, 'FindManyUserProgressArgsFromBlogPostRecursive3']
+
+
+class LessonIncludeFromBlogPostRecursive3(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    course: Union[bool, 'CourseArgsFromBlogPostRecursive4']
+    progress: Union[bool, 'FindManyUserProgressArgsFromBlogPostRecursive4']
+
+
+class LessonIncludeFromBlogPostRecursive4(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+    
+
+class LessonArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'LessonIncludeFromLessonRecursive1'
+
+
+class LessonArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'LessonIncludeFromLessonRecursive2'
+
+
+class LessonArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'LessonIncludeFromLessonRecursive3'
+
+
+class LessonArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'LessonIncludeFromLessonRecursive4'
+
+
+class LessonArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    
+    
+
+class FindManyLessonArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive1'
+
+
+class FindManyLessonArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive2'
+
+
+class FindManyLessonArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive3'
+
+
+class FindManyLessonArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive4'
+
+
+class FindManyLessonArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    
+    
+
+class UserProgressIncludeFromBlogPost(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    user: Union[bool, 'UserArgsFromBlogPostRecursive1']
+    lesson: Union[bool, 'LessonArgsFromBlogPostRecursive1']
+
+
+class UserProgressIncludeFromBlogPostRecursive1(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    user: Union[bool, 'UserArgsFromBlogPostRecursive2']
+    lesson: Union[bool, 'LessonArgsFromBlogPostRecursive2']
+
+
+class UserProgressIncludeFromBlogPostRecursive2(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    user: Union[bool, 'UserArgsFromBlogPostRecursive3']
+    lesson: Union[bool, 'LessonArgsFromBlogPostRecursive3']
+
+
+class UserProgressIncludeFromBlogPostRecursive3(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    user: Union[bool, 'UserArgsFromBlogPostRecursive4']
+    lesson: Union[bool, 'LessonArgsFromBlogPostRecursive4']
+
+
+class UserProgressIncludeFromBlogPostRecursive4(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+    
+
+class UserProgressArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'UserProgressIncludeFromUserProgressRecursive1'
+
+
+class UserProgressArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'UserProgressIncludeFromUserProgressRecursive2'
+
+
+class UserProgressArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'UserProgressIncludeFromUserProgressRecursive3'
+
+
+class UserProgressArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'UserProgressIncludeFromUserProgressRecursive4'
+
+
+class UserProgressArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    
+    
+
+class FindManyUserProgressArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive1'
+
+
+class FindManyUserProgressArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive2'
+
+
+class FindManyUserProgressArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive3'
+
+
+class FindManyUserProgressArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive4'
+
+
+class FindManyUserProgressArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    
+    
+
+class QuestionIncludeFromBlogPost(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class QuestionIncludeFromBlogPostRecursive1(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class QuestionIncludeFromBlogPostRecursive2(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class QuestionIncludeFromBlogPostRecursive3(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class QuestionIncludeFromBlogPostRecursive4(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+    
+
+class QuestionArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'QuestionIncludeFromQuestionRecursive1'
+
+
+class QuestionArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'QuestionIncludeFromQuestionRecursive2'
+
+
+class QuestionArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'QuestionIncludeFromQuestionRecursive3'
+
+
+class QuestionArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'QuestionIncludeFromQuestionRecursive4'
+
+
+class QuestionArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    
+    
+
+class FindManyQuestionArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive1'
+
+
+class FindManyQuestionArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive2'
+
+
+class FindManyQuestionArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive3'
+
+
+class FindManyQuestionArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive4'
+
+
+class FindManyQuestionArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    
+    
+
+class UserExamAttemptIncludeFromBlogPost(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    user: Union[bool, 'UserArgsFromBlogPostRecursive1']
+
+
+class UserExamAttemptIncludeFromBlogPostRecursive1(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    user: Union[bool, 'UserArgsFromBlogPostRecursive2']
+
+
+class UserExamAttemptIncludeFromBlogPostRecursive2(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    user: Union[bool, 'UserArgsFromBlogPostRecursive3']
+
+
+class UserExamAttemptIncludeFromBlogPostRecursive3(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    user: Union[bool, 'UserArgsFromBlogPostRecursive4']
+
+
+class UserExamAttemptIncludeFromBlogPostRecursive4(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+    
+
+class UserExamAttemptArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive1'
+
+
+class UserExamAttemptArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive2'
+
+
+class UserExamAttemptArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive3'
+
+
+class UserExamAttemptArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive4'
+
+
+class UserExamAttemptArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    
+    
+
+class FindManyUserExamAttemptArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive1'
+
+
+class FindManyUserExamAttemptArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive2'
+
+
+class FindManyUserExamAttemptArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive3'
+
+
+class FindManyUserExamAttemptArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive4'
+
+
+class FindManyUserExamAttemptArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    
+    
+
+class PaymentIncludeFromBlogPost(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    user: Union[bool, 'UserArgsFromBlogPostRecursive1']
+
+
+class PaymentIncludeFromBlogPostRecursive1(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    user: Union[bool, 'UserArgsFromBlogPostRecursive2']
+
+
+class PaymentIncludeFromBlogPostRecursive2(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    user: Union[bool, 'UserArgsFromBlogPostRecursive3']
+
+
+class PaymentIncludeFromBlogPostRecursive3(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+    user: Union[bool, 'UserArgsFromBlogPostRecursive4']
+
+
+class PaymentIncludeFromBlogPostRecursive4(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+    
+
+class PaymentArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class PaymentArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class PaymentArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class PaymentArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class PaymentArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    
+    
+
+class FindManyPaymentArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class FindManyPaymentArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class FindManyPaymentArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class FindManyPaymentArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class FindManyPaymentArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    
+    
+
+class BlogPostIncludeFromBlogPost(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class BlogPostIncludeFromBlogPostRecursive1(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class BlogPostIncludeFromBlogPostRecursive2(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class BlogPostIncludeFromBlogPostRecursive3(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class BlogPostIncludeFromBlogPostRecursive4(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+    
+
+class BlogPostArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class BlogPostArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class BlogPostArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class BlogPostArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class BlogPostArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    
+    
+
+class FindManyBlogPostArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class FindManyBlogPostArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class FindManyBlogPostArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class FindManyBlogPostArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class FindManyBlogPostArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    
+    
+
+class AboutContentIncludeFromBlogPost(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class AboutContentIncludeFromBlogPostRecursive1(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class AboutContentIncludeFromBlogPostRecursive2(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class AboutContentIncludeFromBlogPostRecursive3(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class AboutContentIncludeFromBlogPostRecursive4(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+    
+
+class AboutContentArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class AboutContentArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class AboutContentArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class AboutContentArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class AboutContentArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    
+    
+
+class FindManyAboutContentArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class FindManyAboutContentArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class FindManyAboutContentArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class FindManyAboutContentArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class FindManyAboutContentArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    
+    
+
+class SubscriptionPlanIncludeFromBlogPost(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class SubscriptionPlanIncludeFromBlogPostRecursive1(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class SubscriptionPlanIncludeFromBlogPostRecursive2(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class SubscriptionPlanIncludeFromBlogPostRecursive3(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class SubscriptionPlanIncludeFromBlogPostRecursive4(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+    
+
+class SubscriptionPlanArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class SubscriptionPlanArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class SubscriptionPlanArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class SubscriptionPlanArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class SubscriptionPlanArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    
+    
+
+class FindManySubscriptionPlanArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class FindManySubscriptionPlanArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class FindManySubscriptionPlanArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class FindManySubscriptionPlanArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class FindManySubscriptionPlanArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    
+    
+
+class TestimonialIncludeFromBlogPost(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class TestimonialIncludeFromBlogPostRecursive1(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class TestimonialIncludeFromBlogPostRecursive2(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class TestimonialIncludeFromBlogPostRecursive3(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class TestimonialIncludeFromBlogPostRecursive4(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+    
+
+class TestimonialArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class TestimonialArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class TestimonialArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class TestimonialArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class TestimonialArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    
+    
+
+class FindManyTestimonialArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class FindManyTestimonialArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class FindManyTestimonialArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class FindManyTestimonialArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class FindManyTestimonialArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    
+    
+
+class InterviewQuestionIncludeFromBlogPost(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class InterviewQuestionIncludeFromBlogPostRecursive1(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class InterviewQuestionIncludeFromBlogPostRecursive2(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class InterviewQuestionIncludeFromBlogPostRecursive3(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+
+class InterviewQuestionIncludeFromBlogPostRecursive4(TypedDict, total=False):
+    """Relational arguments for BlogPost"""
+
+    
+
+class InterviewQuestionArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class InterviewQuestionArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class InterviewQuestionArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class InterviewQuestionArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class InterviewQuestionArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    
+    
+
+class FindManyInterviewQuestionArgsFromBlogPost(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class FindManyInterviewQuestionArgsFromBlogPostRecursive1(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class FindManyInterviewQuestionArgsFromBlogPostRecursive2(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class FindManyInterviewQuestionArgsFromBlogPostRecursive3(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class FindManyInterviewQuestionArgsFromBlogPostRecursive4(TypedDict, total=False):
+    """Arguments for BlogPost"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    
+
+
+FindManyBlogPostArgs = FindManyBlogPostArgsFromBlogPost
+FindFirstBlogPostArgs = FindManyBlogPostArgsFromBlogPost
+
+
+    
+
+class BlogPostWhereInput(TypedDict, total=False):
+    """BlogPost arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    title: Union[_str, 'types.StringFilter']
+    slug: Union[_str, 'types.StringFilter']
+    excerpt: Union[_str, 'types.StringFilter']
+    content: Union[_str, 'types.StringFilter']
+    category: Union[_str, 'types.StringFilter']
+    coverImage: Union[None, _str, 'types.StringFilter']
+    readTime: Union[_str, 'types.StringFilter']
+    published: Union[_bool, 'types.BooleanFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['BlogPostWhereInputRecursive1', List['BlogPostWhereInputRecursive1']]
+    # but this causes mypy to hang :/
+    AND: List['BlogPostWhereInputRecursive1']
+    OR: List['BlogPostWhereInputRecursive1']
+    NOT: List['BlogPostWhereInputRecursive1']
+
+
+class BlogPostWhereInputRecursive1(TypedDict, total=False):
+    """BlogPost arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    title: Union[_str, 'types.StringFilter']
+    slug: Union[_str, 'types.StringFilter']
+    excerpt: Union[_str, 'types.StringFilter']
+    content: Union[_str, 'types.StringFilter']
+    category: Union[_str, 'types.StringFilter']
+    coverImage: Union[None, _str, 'types.StringFilter']
+    readTime: Union[_str, 'types.StringFilter']
+    published: Union[_bool, 'types.BooleanFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['BlogPostWhereInputRecursive2', List['BlogPostWhereInputRecursive2']]
+    # but this causes mypy to hang :/
+    AND: List['BlogPostWhereInputRecursive2']
+    OR: List['BlogPostWhereInputRecursive2']
+    NOT: List['BlogPostWhereInputRecursive2']
+
+
+class BlogPostWhereInputRecursive2(TypedDict, total=False):
+    """BlogPost arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    title: Union[_str, 'types.StringFilter']
+    slug: Union[_str, 'types.StringFilter']
+    excerpt: Union[_str, 'types.StringFilter']
+    content: Union[_str, 'types.StringFilter']
+    category: Union[_str, 'types.StringFilter']
+    coverImage: Union[None, _str, 'types.StringFilter']
+    readTime: Union[_str, 'types.StringFilter']
+    published: Union[_bool, 'types.BooleanFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['BlogPostWhereInputRecursive3', List['BlogPostWhereInputRecursive3']]
+    # but this causes mypy to hang :/
+    AND: List['BlogPostWhereInputRecursive3']
+    OR: List['BlogPostWhereInputRecursive3']
+    NOT: List['BlogPostWhereInputRecursive3']
+
+
+class BlogPostWhereInputRecursive3(TypedDict, total=False):
+    """BlogPost arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    title: Union[_str, 'types.StringFilter']
+    slug: Union[_str, 'types.StringFilter']
+    excerpt: Union[_str, 'types.StringFilter']
+    content: Union[_str, 'types.StringFilter']
+    category: Union[_str, 'types.StringFilter']
+    coverImage: Union[None, _str, 'types.StringFilter']
+    readTime: Union[_str, 'types.StringFilter']
+    published: Union[_bool, 'types.BooleanFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['BlogPostWhereInputRecursive4', List['BlogPostWhereInputRecursive4']]
+    # but this causes mypy to hang :/
+    AND: List['BlogPostWhereInputRecursive4']
+    OR: List['BlogPostWhereInputRecursive4']
+    NOT: List['BlogPostWhereInputRecursive4']
+
+
+class BlogPostWhereInputRecursive4(TypedDict, total=False):
+    """BlogPost arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    title: Union[_str, 'types.StringFilter']
+    slug: Union[_str, 'types.StringFilter']
+    excerpt: Union[_str, 'types.StringFilter']
+    content: Union[_str, 'types.StringFilter']
+    category: Union[_str, 'types.StringFilter']
+    coverImage: Union[None, _str, 'types.StringFilter']
+    readTime: Union[_str, 'types.StringFilter']
+    published: Union[_bool, 'types.BooleanFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+
+
+# aggregate BlogPost types
+
+
+    
+
+class BlogPostScalarWhereWithAggregatesInput(TypedDict, total=False):
+    """BlogPost arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    title: Union[_str, 'types.StringWithAggregatesFilter']
+    slug: Union[_str, 'types.StringWithAggregatesFilter']
+    excerpt: Union[_str, 'types.StringWithAggregatesFilter']
+    content: Union[_str, 'types.StringWithAggregatesFilter']
+    category: Union[_str, 'types.StringWithAggregatesFilter']
+    coverImage: Union[_str, 'types.StringWithAggregatesFilter']
+    readTime: Union[_str, 'types.StringWithAggregatesFilter']
+    published: Union[_bool, 'types.BooleanWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['BlogPostScalarWhereWithAggregatesInputRecursive1']
+    OR: List['BlogPostScalarWhereWithAggregatesInputRecursive1']
+    NOT: List['BlogPostScalarWhereWithAggregatesInputRecursive1']
+
+
+class BlogPostScalarWhereWithAggregatesInputRecursive1(TypedDict, total=False):
+    """BlogPost arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    title: Union[_str, 'types.StringWithAggregatesFilter']
+    slug: Union[_str, 'types.StringWithAggregatesFilter']
+    excerpt: Union[_str, 'types.StringWithAggregatesFilter']
+    content: Union[_str, 'types.StringWithAggregatesFilter']
+    category: Union[_str, 'types.StringWithAggregatesFilter']
+    coverImage: Union[_str, 'types.StringWithAggregatesFilter']
+    readTime: Union[_str, 'types.StringWithAggregatesFilter']
+    published: Union[_bool, 'types.BooleanWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['BlogPostScalarWhereWithAggregatesInputRecursive2']
+    OR: List['BlogPostScalarWhereWithAggregatesInputRecursive2']
+    NOT: List['BlogPostScalarWhereWithAggregatesInputRecursive2']
+
+
+class BlogPostScalarWhereWithAggregatesInputRecursive2(TypedDict, total=False):
+    """BlogPost arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    title: Union[_str, 'types.StringWithAggregatesFilter']
+    slug: Union[_str, 'types.StringWithAggregatesFilter']
+    excerpt: Union[_str, 'types.StringWithAggregatesFilter']
+    content: Union[_str, 'types.StringWithAggregatesFilter']
+    category: Union[_str, 'types.StringWithAggregatesFilter']
+    coverImage: Union[_str, 'types.StringWithAggregatesFilter']
+    readTime: Union[_str, 'types.StringWithAggregatesFilter']
+    published: Union[_bool, 'types.BooleanWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['BlogPostScalarWhereWithAggregatesInputRecursive3']
+    OR: List['BlogPostScalarWhereWithAggregatesInputRecursive3']
+    NOT: List['BlogPostScalarWhereWithAggregatesInputRecursive3']
+
+
+class BlogPostScalarWhereWithAggregatesInputRecursive3(TypedDict, total=False):
+    """BlogPost arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    title: Union[_str, 'types.StringWithAggregatesFilter']
+    slug: Union[_str, 'types.StringWithAggregatesFilter']
+    excerpt: Union[_str, 'types.StringWithAggregatesFilter']
+    content: Union[_str, 'types.StringWithAggregatesFilter']
+    category: Union[_str, 'types.StringWithAggregatesFilter']
+    coverImage: Union[_str, 'types.StringWithAggregatesFilter']
+    readTime: Union[_str, 'types.StringWithAggregatesFilter']
+    published: Union[_bool, 'types.BooleanWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['BlogPostScalarWhereWithAggregatesInputRecursive4']
+    OR: List['BlogPostScalarWhereWithAggregatesInputRecursive4']
+    NOT: List['BlogPostScalarWhereWithAggregatesInputRecursive4']
+
+
+class BlogPostScalarWhereWithAggregatesInputRecursive4(TypedDict, total=False):
+    """BlogPost arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    title: Union[_str, 'types.StringWithAggregatesFilter']
+    slug: Union[_str, 'types.StringWithAggregatesFilter']
+    excerpt: Union[_str, 'types.StringWithAggregatesFilter']
+    content: Union[_str, 'types.StringWithAggregatesFilter']
+    category: Union[_str, 'types.StringWithAggregatesFilter']
+    coverImage: Union[_str, 'types.StringWithAggregatesFilter']
+    readTime: Union[_str, 'types.StringWithAggregatesFilter']
+    published: Union[_bool, 'types.BooleanWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+
+
+class BlogPostGroupByOutput(TypedDict, total=False):
+    id: _str
+    title: _str
+    slug: _str
+    excerpt: _str
+    content: _str
+    category: _str
+    coverImage: _str
+    readTime: _str
+    published: _bool
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+    _sum: 'BlogPostSumAggregateOutput'
+    _avg: 'BlogPostAvgAggregateOutput'
+    _min: 'BlogPostMinAggregateOutput'
+    _max: 'BlogPostMaxAggregateOutput'
+    _count: 'BlogPostCountAggregateOutput'
+
+
+class BlogPostAvgAggregateOutput(TypedDict, total=False):
+    """BlogPost output for aggregating averages"""
+
+
+class BlogPostSumAggregateOutput(TypedDict, total=False):
+    """BlogPost output for aggregating sums"""
+
+
+class BlogPostScalarAggregateOutput(TypedDict, total=False):
+    """BlogPost output including scalar fields"""
+    id: _str
+    title: _str
+    slug: _str
+    excerpt: _str
+    content: _str
+    category: _str
+    coverImage: _str
+    readTime: _str
+    published: _bool
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+BlogPostMinAggregateOutput = BlogPostScalarAggregateOutput
+BlogPostMaxAggregateOutput = BlogPostScalarAggregateOutput
+
+
+class BlogPostMaxAggregateInput(TypedDict, total=False):
+    """BlogPost input for aggregating by max"""
+    id: bool
+    title: bool
+    slug: bool
+    excerpt: bool
+    content: bool
+    category: bool
+    coverImage: bool
+    readTime: bool
+    published: bool
+    createdAt: bool
+    updatedAt: bool
+
+
+class BlogPostMinAggregateInput(TypedDict, total=False):
+    """BlogPost input for aggregating by min"""
+    id: bool
+    title: bool
+    slug: bool
+    excerpt: bool
+    content: bool
+    category: bool
+    coverImage: bool
+    readTime: bool
+    published: bool
+    createdAt: bool
+    updatedAt: bool
+
+
+class BlogPostNumberAggregateInput(TypedDict, total=False):
+    """BlogPost input for aggregating numbers"""
+
+
+BlogPostAvgAggregateInput = BlogPostNumberAggregateInput
+BlogPostSumAggregateInput = BlogPostNumberAggregateInput
+
+
+BlogPostCountAggregateInput = TypedDict(
+    'BlogPostCountAggregateInput',
+    {
+        'id': bool,
+        'title': bool,
+        'slug': bool,
+        'excerpt': bool,
+        'content': bool,
+        'category': bool,
+        'coverImage': bool,
+        'readTime': bool,
+        'published': bool,
+        'createdAt': bool,
+        'updatedAt': bool,
+        '_all': bool,
+    },
+    total=False,
+)
+
+BlogPostCountAggregateOutput = TypedDict(
+    'BlogPostCountAggregateOutput',
+    {
+        'id': int,
+        'title': int,
+        'slug': int,
+        'excerpt': int,
+        'content': int,
+        'category': int,
+        'coverImage': int,
+        'readTime': int,
+        'published': int,
+        'createdAt': int,
+        'updatedAt': int,
+        '_all': int,
+    },
+    total=False,
+)
+
+
+BlogPostKeys = Literal[
+    'id',
+    'title',
+    'slug',
+    'excerpt',
+    'content',
+    'category',
+    'coverImage',
+    'readTime',
+    'published',
+    'createdAt',
+    'updatedAt',
+]
+BlogPostScalarFieldKeys = Literal[
+    'id',
+    'title',
+    'slug',
+    'excerpt',
+    'content',
+    'category',
+    'coverImage',
+    'readTime',
+    'published',
+    'createdAt',
+    'updatedAt',
+]
+BlogPostScalarFieldKeysT = TypeVar('BlogPostScalarFieldKeysT', bound=BlogPostScalarFieldKeys)
+
+BlogPostRelationalFieldKeys = _NoneType
+
+# AboutContent types
+
+class AboutContentOptionalCreateInput(TypedDict, total=False):
+    """Optional arguments to the AboutContent create method"""
+    id: _str
+    title: _str
+    subTitle: _str
+    updatedAt: datetime.datetime
+
+
+class AboutContentCreateInput(AboutContentOptionalCreateInput):
+    """Required arguments to the AboutContent create method"""
+    paragraphs: 'fields.Json'
+    stats: 'fields.Json'
+
+
+# TODO: remove this in favour of without explicit relations
+# e.g. PostCreateWithoutAuthorInput
+
+class AboutContentOptionalCreateWithoutRelationsInput(TypedDict, total=False):
+    """Optional arguments to the AboutContent create method, without relations"""
+    id: _str
+    title: _str
+    subTitle: _str
+    updatedAt: datetime.datetime
+
+
+class AboutContentCreateWithoutRelationsInput(AboutContentOptionalCreateWithoutRelationsInput):
+    """Required arguments to the AboutContent create method, without relations"""
+    paragraphs: 'fields.Json'
+    stats: 'fields.Json'
+
+class AboutContentConnectOrCreateWithoutRelationsInput(TypedDict):
+    create: 'AboutContentCreateWithoutRelationsInput'
+    where: 'AboutContentWhereUniqueInput'
+
+class AboutContentCreateNestedWithoutRelationsInput(TypedDict, total=False):
+    create: 'AboutContentCreateWithoutRelationsInput'
+    connect: 'AboutContentWhereUniqueInput'
+    connect_or_create: 'AboutContentConnectOrCreateWithoutRelationsInput'
+
+
+class AboutContentCreateManyNestedWithoutRelationsInput(TypedDict, total=False):
+    create: Union['AboutContentCreateWithoutRelationsInput', List['AboutContentCreateWithoutRelationsInput']]
+    connect: Union['AboutContentWhereUniqueInput', List['AboutContentWhereUniqueInput']]
+    connect_or_create: Union['AboutContentConnectOrCreateWithoutRelationsInput', List['AboutContentConnectOrCreateWithoutRelationsInput']]
+
+_AboutContentWhereUnique_id_Input = TypedDict(
+    '_AboutContentWhereUnique_id_Input',
+    {
+        'id': '_str',
+    },
+    total=True
+)
+
+AboutContentWhereUniqueInput = _AboutContentWhereUnique_id_Input
+
+
+class AboutContentUpdateInput(TypedDict, total=False):
+    """Optional arguments for updating a record"""
+    id: _str
+    title: _str
+    subTitle: _str
+    paragraphs: 'fields.Json'
+    stats: 'fields.Json'
+    updatedAt: datetime.datetime
+
+
+class AboutContentUpdateManyMutationInput(TypedDict, total=False):
+    """Arguments for updating many records"""
+    id: _str
+    title: _str
+    subTitle: _str
+    paragraphs: 'fields.Json'
+    stats: 'fields.Json'
+    updatedAt: datetime.datetime
+
+
+class AboutContentUpdateManyWithoutRelationsInput(TypedDict, total=False):
+    create: List['AboutContentCreateWithoutRelationsInput']
+    connect: List['AboutContentWhereUniqueInput']
+    connect_or_create: List['AboutContentConnectOrCreateWithoutRelationsInput']
+    set: List['AboutContentWhereUniqueInput']
+    disconnect: List['AboutContentWhereUniqueInput']
+    delete: List['AboutContentWhereUniqueInput']
+
+    # TODO
+    # update: List['AboutContentUpdateWithWhereUniqueWithoutRelationsInput']
+    # updateMany: List['AboutContentUpdateManyWithWhereUniqueWithoutRelationsInput']
+    # deleteMany: List['AboutContentScalarWhereInput']
+    # upsert: List['AboutContentUpserteWithWhereUniqueWithoutRelationsInput']
+
+
+class AboutContentUpdateOneWithoutRelationsInput(TypedDict, total=False):
+    create: 'AboutContentCreateWithoutRelationsInput'
+    connect: 'AboutContentWhereUniqueInput'
+    connect_or_create: 'AboutContentConnectOrCreateWithoutRelationsInput'
+    disconnect: bool
+    delete: bool
+
+    # TODO
+    # update: 'AboutContentUpdateInput'
+    # upsert: 'AboutContentUpsertWithoutRelationsInput'
+
+
+class AboutContentUpsertInput(TypedDict):
+    create: 'AboutContentCreateInput'
+    update: 'AboutContentUpdateInput'  # pyright: ignore[reportIncompatibleMethodOverride]
+
+
+_AboutContent_id_OrderByInput = TypedDict(
+    '_AboutContent_id_OrderByInput',
+    {
+        'id': 'SortOrder',
+    },
+    total=True
+)
+
+_AboutContent_title_OrderByInput = TypedDict(
+    '_AboutContent_title_OrderByInput',
+    {
+        'title': 'SortOrder',
+    },
+    total=True
+)
+
+_AboutContent_subTitle_OrderByInput = TypedDict(
+    '_AboutContent_subTitle_OrderByInput',
+    {
+        'subTitle': 'SortOrder',
+    },
+    total=True
+)
+
+_AboutContent_paragraphs_OrderByInput = TypedDict(
+    '_AboutContent_paragraphs_OrderByInput',
+    {
+        'paragraphs': 'SortOrder',
+    },
+    total=True
+)
+
+_AboutContent_stats_OrderByInput = TypedDict(
+    '_AboutContent_stats_OrderByInput',
+    {
+        'stats': 'SortOrder',
+    },
+    total=True
+)
+
+_AboutContent_updatedAt_OrderByInput = TypedDict(
+    '_AboutContent_updatedAt_OrderByInput',
+    {
+        'updatedAt': 'SortOrder',
+    },
+    total=True
+)
+
+_AboutContent_RelevanceInner = TypedDict(
+    '_AboutContent_RelevanceInner',
+    {
+        'fields': 'List[AboutContentScalarFieldKeys]',
+        'search': 'str',
+        'sort': 'SortOrder',
+    },
+    total=True
+)
+
+_AboutContent_RelevanceOrderByInput = TypedDict(
+    '_AboutContent_RelevanceOrderByInput',
+    {
+        '_relevance': '_AboutContent_RelevanceInner',
+    },
+    total=True
+)
+
+AboutContentOrderByInput = Union[
+    '_AboutContent_id_OrderByInput',
+    '_AboutContent_title_OrderByInput',
+    '_AboutContent_subTitle_OrderByInput',
+    '_AboutContent_paragraphs_OrderByInput',
+    '_AboutContent_stats_OrderByInput',
+    '_AboutContent_updatedAt_OrderByInput',
+    '_AboutContent_RelevanceOrderByInput',
+]
+
+
+
+# recursive AboutContent types
+# TODO: cleanup these types
+
+
+# Dict[str, Any] is a mypy limitation
+# see https://github.com/RobertCraigie/prisma-client-py/issues/45
+# switch to pyright for improved types, see https://prisma-client-py.readthedocs.io/en/stable/reference/limitations/
+
+AboutContentRelationFilter = TypedDict(
+    'AboutContentRelationFilter',
+    {
+        'is': 'Dict[str, Any]',
+        'is_not': 'Dict[str, Any]',
+    },
+    total=False,
+)
+
+
+class AboutContentListRelationFilter(TypedDict, total=False):
+    some: 'Dict[str, Any]'
+    none: 'Dict[str, Any]'
+    every: 'Dict[str, Any]'
+
+
+class AboutContentInclude(TypedDict, total=False):
+    """AboutContent relational arguments"""
+
+
+    
+
+class UserIncludeFromAboutContent(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromAboutContentRecursive1']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromAboutContentRecursive1']
+    payments: Union[bool, 'FindManyPaymentArgsFromAboutContentRecursive1']
+
+
+class UserIncludeFromAboutContentRecursive1(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromAboutContentRecursive2']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromAboutContentRecursive2']
+    payments: Union[bool, 'FindManyPaymentArgsFromAboutContentRecursive2']
+
+
+class UserIncludeFromAboutContentRecursive2(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromAboutContentRecursive3']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromAboutContentRecursive3']
+    payments: Union[bool, 'FindManyPaymentArgsFromAboutContentRecursive3']
+
+
+class UserIncludeFromAboutContentRecursive3(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromAboutContentRecursive4']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromAboutContentRecursive4']
+    payments: Union[bool, 'FindManyPaymentArgsFromAboutContentRecursive4']
+
+
+class UserIncludeFromAboutContentRecursive4(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+    
+
+class UserArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'UserIncludeFromUserRecursive1'
+
+
+class UserArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'UserIncludeFromUserRecursive2'
+
+
+class UserArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'UserIncludeFromUserRecursive3'
+
+
+class UserArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'UserIncludeFromUserRecursive4'
+
+
+class UserArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    
+    
+
+class FindManyUserArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive1'
+
+
+class FindManyUserArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive2'
+
+
+class FindManyUserArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive3'
+
+
+class FindManyUserArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive4'
+
+
+class FindManyUserArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    
+    
+
+class CourseIncludeFromAboutContent(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    lessons: Union[bool, 'FindManyLessonArgsFromAboutContentRecursive1']
+
+
+class CourseIncludeFromAboutContentRecursive1(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    lessons: Union[bool, 'FindManyLessonArgsFromAboutContentRecursive2']
+
+
+class CourseIncludeFromAboutContentRecursive2(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    lessons: Union[bool, 'FindManyLessonArgsFromAboutContentRecursive3']
+
+
+class CourseIncludeFromAboutContentRecursive3(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    lessons: Union[bool, 'FindManyLessonArgsFromAboutContentRecursive4']
+
+
+class CourseIncludeFromAboutContentRecursive4(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+    
+
+class CourseArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'CourseIncludeFromCourseRecursive1'
+
+
+class CourseArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'CourseIncludeFromCourseRecursive2'
+
+
+class CourseArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'CourseIncludeFromCourseRecursive3'
+
+
+class CourseArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'CourseIncludeFromCourseRecursive4'
+
+
+class CourseArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    
+    
+
+class FindManyCourseArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive1'
+
+
+class FindManyCourseArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive2'
+
+
+class FindManyCourseArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive3'
+
+
+class FindManyCourseArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive4'
+
+
+class FindManyCourseArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    
+    
+
+class LessonIncludeFromAboutContent(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    course: Union[bool, 'CourseArgsFromAboutContentRecursive1']
+    progress: Union[bool, 'FindManyUserProgressArgsFromAboutContentRecursive1']
+
+
+class LessonIncludeFromAboutContentRecursive1(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    course: Union[bool, 'CourseArgsFromAboutContentRecursive2']
+    progress: Union[bool, 'FindManyUserProgressArgsFromAboutContentRecursive2']
+
+
+class LessonIncludeFromAboutContentRecursive2(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    course: Union[bool, 'CourseArgsFromAboutContentRecursive3']
+    progress: Union[bool, 'FindManyUserProgressArgsFromAboutContentRecursive3']
+
+
+class LessonIncludeFromAboutContentRecursive3(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    course: Union[bool, 'CourseArgsFromAboutContentRecursive4']
+    progress: Union[bool, 'FindManyUserProgressArgsFromAboutContentRecursive4']
+
+
+class LessonIncludeFromAboutContentRecursive4(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+    
+
+class LessonArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'LessonIncludeFromLessonRecursive1'
+
+
+class LessonArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'LessonIncludeFromLessonRecursive2'
+
+
+class LessonArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'LessonIncludeFromLessonRecursive3'
+
+
+class LessonArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'LessonIncludeFromLessonRecursive4'
+
+
+class LessonArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    
+    
+
+class FindManyLessonArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive1'
+
+
+class FindManyLessonArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive2'
+
+
+class FindManyLessonArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive3'
+
+
+class FindManyLessonArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive4'
+
+
+class FindManyLessonArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    
+    
+
+class UserProgressIncludeFromAboutContent(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    user: Union[bool, 'UserArgsFromAboutContentRecursive1']
+    lesson: Union[bool, 'LessonArgsFromAboutContentRecursive1']
+
+
+class UserProgressIncludeFromAboutContentRecursive1(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    user: Union[bool, 'UserArgsFromAboutContentRecursive2']
+    lesson: Union[bool, 'LessonArgsFromAboutContentRecursive2']
+
+
+class UserProgressIncludeFromAboutContentRecursive2(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    user: Union[bool, 'UserArgsFromAboutContentRecursive3']
+    lesson: Union[bool, 'LessonArgsFromAboutContentRecursive3']
+
+
+class UserProgressIncludeFromAboutContentRecursive3(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    user: Union[bool, 'UserArgsFromAboutContentRecursive4']
+    lesson: Union[bool, 'LessonArgsFromAboutContentRecursive4']
+
+
+class UserProgressIncludeFromAboutContentRecursive4(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+    
+
+class UserProgressArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'UserProgressIncludeFromUserProgressRecursive1'
+
+
+class UserProgressArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'UserProgressIncludeFromUserProgressRecursive2'
+
+
+class UserProgressArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'UserProgressIncludeFromUserProgressRecursive3'
+
+
+class UserProgressArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'UserProgressIncludeFromUserProgressRecursive4'
+
+
+class UserProgressArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    
+    
+
+class FindManyUserProgressArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive1'
+
+
+class FindManyUserProgressArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive2'
+
+
+class FindManyUserProgressArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive3'
+
+
+class FindManyUserProgressArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive4'
+
+
+class FindManyUserProgressArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    
+    
+
+class QuestionIncludeFromAboutContent(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class QuestionIncludeFromAboutContentRecursive1(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class QuestionIncludeFromAboutContentRecursive2(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class QuestionIncludeFromAboutContentRecursive3(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class QuestionIncludeFromAboutContentRecursive4(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+    
+
+class QuestionArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'QuestionIncludeFromQuestionRecursive1'
+
+
+class QuestionArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'QuestionIncludeFromQuestionRecursive2'
+
+
+class QuestionArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'QuestionIncludeFromQuestionRecursive3'
+
+
+class QuestionArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'QuestionIncludeFromQuestionRecursive4'
+
+
+class QuestionArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    
+    
+
+class FindManyQuestionArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive1'
+
+
+class FindManyQuestionArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive2'
+
+
+class FindManyQuestionArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive3'
+
+
+class FindManyQuestionArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive4'
+
+
+class FindManyQuestionArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    
+    
+
+class UserExamAttemptIncludeFromAboutContent(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    user: Union[bool, 'UserArgsFromAboutContentRecursive1']
+
+
+class UserExamAttemptIncludeFromAboutContentRecursive1(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    user: Union[bool, 'UserArgsFromAboutContentRecursive2']
+
+
+class UserExamAttemptIncludeFromAboutContentRecursive2(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    user: Union[bool, 'UserArgsFromAboutContentRecursive3']
+
+
+class UserExamAttemptIncludeFromAboutContentRecursive3(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    user: Union[bool, 'UserArgsFromAboutContentRecursive4']
+
+
+class UserExamAttemptIncludeFromAboutContentRecursive4(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+    
+
+class UserExamAttemptArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive1'
+
+
+class UserExamAttemptArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive2'
+
+
+class UserExamAttemptArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive3'
+
+
+class UserExamAttemptArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive4'
+
+
+class UserExamAttemptArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    
+    
+
+class FindManyUserExamAttemptArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive1'
+
+
+class FindManyUserExamAttemptArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive2'
+
+
+class FindManyUserExamAttemptArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive3'
+
+
+class FindManyUserExamAttemptArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive4'
+
+
+class FindManyUserExamAttemptArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    
+    
+
+class PaymentIncludeFromAboutContent(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    user: Union[bool, 'UserArgsFromAboutContentRecursive1']
+
+
+class PaymentIncludeFromAboutContentRecursive1(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    user: Union[bool, 'UserArgsFromAboutContentRecursive2']
+
+
+class PaymentIncludeFromAboutContentRecursive2(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    user: Union[bool, 'UserArgsFromAboutContentRecursive3']
+
+
+class PaymentIncludeFromAboutContentRecursive3(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+    user: Union[bool, 'UserArgsFromAboutContentRecursive4']
+
+
+class PaymentIncludeFromAboutContentRecursive4(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+    
+
+class PaymentArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class PaymentArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class PaymentArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class PaymentArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class PaymentArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    
+    
+
+class FindManyPaymentArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class FindManyPaymentArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class FindManyPaymentArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class FindManyPaymentArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class FindManyPaymentArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    
+    
+
+class BlogPostIncludeFromAboutContent(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class BlogPostIncludeFromAboutContentRecursive1(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class BlogPostIncludeFromAboutContentRecursive2(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class BlogPostIncludeFromAboutContentRecursive3(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class BlogPostIncludeFromAboutContentRecursive4(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+    
+
+class BlogPostArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class BlogPostArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class BlogPostArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class BlogPostArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class BlogPostArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    
+    
+
+class FindManyBlogPostArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class FindManyBlogPostArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class FindManyBlogPostArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class FindManyBlogPostArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class FindManyBlogPostArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    
+    
+
+class AboutContentIncludeFromAboutContent(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class AboutContentIncludeFromAboutContentRecursive1(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class AboutContentIncludeFromAboutContentRecursive2(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class AboutContentIncludeFromAboutContentRecursive3(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class AboutContentIncludeFromAboutContentRecursive4(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+    
+
+class AboutContentArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class AboutContentArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class AboutContentArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class AboutContentArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class AboutContentArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    
+    
+
+class FindManyAboutContentArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class FindManyAboutContentArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class FindManyAboutContentArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class FindManyAboutContentArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class FindManyAboutContentArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    
+    
+
+class SubscriptionPlanIncludeFromAboutContent(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class SubscriptionPlanIncludeFromAboutContentRecursive1(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class SubscriptionPlanIncludeFromAboutContentRecursive2(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class SubscriptionPlanIncludeFromAboutContentRecursive3(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class SubscriptionPlanIncludeFromAboutContentRecursive4(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+    
+
+class SubscriptionPlanArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class SubscriptionPlanArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class SubscriptionPlanArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class SubscriptionPlanArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class SubscriptionPlanArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    
+    
+
+class FindManySubscriptionPlanArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class FindManySubscriptionPlanArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class FindManySubscriptionPlanArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class FindManySubscriptionPlanArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class FindManySubscriptionPlanArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    
+    
+
+class TestimonialIncludeFromAboutContent(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class TestimonialIncludeFromAboutContentRecursive1(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class TestimonialIncludeFromAboutContentRecursive2(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class TestimonialIncludeFromAboutContentRecursive3(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class TestimonialIncludeFromAboutContentRecursive4(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+    
+
+class TestimonialArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class TestimonialArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class TestimonialArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class TestimonialArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class TestimonialArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    
+    
+
+class FindManyTestimonialArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class FindManyTestimonialArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class FindManyTestimonialArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class FindManyTestimonialArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class FindManyTestimonialArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    
+    
+
+class InterviewQuestionIncludeFromAboutContent(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class InterviewQuestionIncludeFromAboutContentRecursive1(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class InterviewQuestionIncludeFromAboutContentRecursive2(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class InterviewQuestionIncludeFromAboutContentRecursive3(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+
+class InterviewQuestionIncludeFromAboutContentRecursive4(TypedDict, total=False):
+    """Relational arguments for AboutContent"""
+
+    
+
+class InterviewQuestionArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class InterviewQuestionArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class InterviewQuestionArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class InterviewQuestionArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class InterviewQuestionArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    
+    
+
+class FindManyInterviewQuestionArgsFromAboutContent(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class FindManyInterviewQuestionArgsFromAboutContentRecursive1(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class FindManyInterviewQuestionArgsFromAboutContentRecursive2(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class FindManyInterviewQuestionArgsFromAboutContentRecursive3(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class FindManyInterviewQuestionArgsFromAboutContentRecursive4(TypedDict, total=False):
+    """Arguments for AboutContent"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    
+
+
+FindManyAboutContentArgs = FindManyAboutContentArgsFromAboutContent
+FindFirstAboutContentArgs = FindManyAboutContentArgsFromAboutContent
+
+
+    
+
+class AboutContentWhereInput(TypedDict, total=False):
+    """AboutContent arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    title: Union[_str, 'types.StringFilter']
+    subTitle: Union[_str, 'types.StringFilter']
+    paragraphs: Union['fields.Json', 'types.JsonFilter']
+    stats: Union['fields.Json', 'types.JsonFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['AboutContentWhereInputRecursive1', List['AboutContentWhereInputRecursive1']]
+    # but this causes mypy to hang :/
+    AND: List['AboutContentWhereInputRecursive1']
+    OR: List['AboutContentWhereInputRecursive1']
+    NOT: List['AboutContentWhereInputRecursive1']
+
+
+class AboutContentWhereInputRecursive1(TypedDict, total=False):
+    """AboutContent arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    title: Union[_str, 'types.StringFilter']
+    subTitle: Union[_str, 'types.StringFilter']
+    paragraphs: Union['fields.Json', 'types.JsonFilter']
+    stats: Union['fields.Json', 'types.JsonFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['AboutContentWhereInputRecursive2', List['AboutContentWhereInputRecursive2']]
+    # but this causes mypy to hang :/
+    AND: List['AboutContentWhereInputRecursive2']
+    OR: List['AboutContentWhereInputRecursive2']
+    NOT: List['AboutContentWhereInputRecursive2']
+
+
+class AboutContentWhereInputRecursive2(TypedDict, total=False):
+    """AboutContent arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    title: Union[_str, 'types.StringFilter']
+    subTitle: Union[_str, 'types.StringFilter']
+    paragraphs: Union['fields.Json', 'types.JsonFilter']
+    stats: Union['fields.Json', 'types.JsonFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['AboutContentWhereInputRecursive3', List['AboutContentWhereInputRecursive3']]
+    # but this causes mypy to hang :/
+    AND: List['AboutContentWhereInputRecursive3']
+    OR: List['AboutContentWhereInputRecursive3']
+    NOT: List['AboutContentWhereInputRecursive3']
+
+
+class AboutContentWhereInputRecursive3(TypedDict, total=False):
+    """AboutContent arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    title: Union[_str, 'types.StringFilter']
+    subTitle: Union[_str, 'types.StringFilter']
+    paragraphs: Union['fields.Json', 'types.JsonFilter']
+    stats: Union['fields.Json', 'types.JsonFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['AboutContentWhereInputRecursive4', List['AboutContentWhereInputRecursive4']]
+    # but this causes mypy to hang :/
+    AND: List['AboutContentWhereInputRecursive4']
+    OR: List['AboutContentWhereInputRecursive4']
+    NOT: List['AboutContentWhereInputRecursive4']
+
+
+class AboutContentWhereInputRecursive4(TypedDict, total=False):
+    """AboutContent arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    title: Union[_str, 'types.StringFilter']
+    subTitle: Union[_str, 'types.StringFilter']
+    paragraphs: Union['fields.Json', 'types.JsonFilter']
+    stats: Union['fields.Json', 'types.JsonFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+
+
+# aggregate AboutContent types
+
+
+    
+
+class AboutContentScalarWhereWithAggregatesInput(TypedDict, total=False):
+    """AboutContent arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    title: Union[_str, 'types.StringWithAggregatesFilter']
+    subTitle: Union[_str, 'types.StringWithAggregatesFilter']
+    paragraphs: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    stats: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['AboutContentScalarWhereWithAggregatesInputRecursive1']
+    OR: List['AboutContentScalarWhereWithAggregatesInputRecursive1']
+    NOT: List['AboutContentScalarWhereWithAggregatesInputRecursive1']
+
+
+class AboutContentScalarWhereWithAggregatesInputRecursive1(TypedDict, total=False):
+    """AboutContent arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    title: Union[_str, 'types.StringWithAggregatesFilter']
+    subTitle: Union[_str, 'types.StringWithAggregatesFilter']
+    paragraphs: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    stats: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['AboutContentScalarWhereWithAggregatesInputRecursive2']
+    OR: List['AboutContentScalarWhereWithAggregatesInputRecursive2']
+    NOT: List['AboutContentScalarWhereWithAggregatesInputRecursive2']
+
+
+class AboutContentScalarWhereWithAggregatesInputRecursive2(TypedDict, total=False):
+    """AboutContent arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    title: Union[_str, 'types.StringWithAggregatesFilter']
+    subTitle: Union[_str, 'types.StringWithAggregatesFilter']
+    paragraphs: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    stats: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['AboutContentScalarWhereWithAggregatesInputRecursive3']
+    OR: List['AboutContentScalarWhereWithAggregatesInputRecursive3']
+    NOT: List['AboutContentScalarWhereWithAggregatesInputRecursive3']
+
+
+class AboutContentScalarWhereWithAggregatesInputRecursive3(TypedDict, total=False):
+    """AboutContent arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    title: Union[_str, 'types.StringWithAggregatesFilter']
+    subTitle: Union[_str, 'types.StringWithAggregatesFilter']
+    paragraphs: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    stats: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['AboutContentScalarWhereWithAggregatesInputRecursive4']
+    OR: List['AboutContentScalarWhereWithAggregatesInputRecursive4']
+    NOT: List['AboutContentScalarWhereWithAggregatesInputRecursive4']
+
+
+class AboutContentScalarWhereWithAggregatesInputRecursive4(TypedDict, total=False):
+    """AboutContent arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    title: Union[_str, 'types.StringWithAggregatesFilter']
+    subTitle: Union[_str, 'types.StringWithAggregatesFilter']
+    paragraphs: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    stats: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+
+
+class AboutContentGroupByOutput(TypedDict, total=False):
+    id: _str
+    title: _str
+    subTitle: _str
+    paragraphs: 'fields.Json'
+    stats: 'fields.Json'
+    updatedAt: datetime.datetime
+    _sum: 'AboutContentSumAggregateOutput'
+    _avg: 'AboutContentAvgAggregateOutput'
+    _min: 'AboutContentMinAggregateOutput'
+    _max: 'AboutContentMaxAggregateOutput'
+    _count: 'AboutContentCountAggregateOutput'
+
+
+class AboutContentAvgAggregateOutput(TypedDict, total=False):
+    """AboutContent output for aggregating averages"""
+
+
+class AboutContentSumAggregateOutput(TypedDict, total=False):
+    """AboutContent output for aggregating sums"""
+
+
+class AboutContentScalarAggregateOutput(TypedDict, total=False):
+    """AboutContent output including scalar fields"""
+    id: _str
+    title: _str
+    subTitle: _str
+    paragraphs: 'fields.Json'
+    stats: 'fields.Json'
+    updatedAt: datetime.datetime
+
+
+AboutContentMinAggregateOutput = AboutContentScalarAggregateOutput
+AboutContentMaxAggregateOutput = AboutContentScalarAggregateOutput
+
+
+class AboutContentMaxAggregateInput(TypedDict, total=False):
+    """AboutContent input for aggregating by max"""
+    id: bool
+    title: bool
+    subTitle: bool
+    paragraphs: bool
+    stats: bool
+    updatedAt: bool
+
+
+class AboutContentMinAggregateInput(TypedDict, total=False):
+    """AboutContent input for aggregating by min"""
+    id: bool
+    title: bool
+    subTitle: bool
+    paragraphs: bool
+    stats: bool
+    updatedAt: bool
+
+
+class AboutContentNumberAggregateInput(TypedDict, total=False):
+    """AboutContent input for aggregating numbers"""
+
+
+AboutContentAvgAggregateInput = AboutContentNumberAggregateInput
+AboutContentSumAggregateInput = AboutContentNumberAggregateInput
+
+
+AboutContentCountAggregateInput = TypedDict(
+    'AboutContentCountAggregateInput',
+    {
+        'id': bool,
+        'title': bool,
+        'subTitle': bool,
+        'paragraphs': bool,
+        'stats': bool,
+        'updatedAt': bool,
+        '_all': bool,
+    },
+    total=False,
+)
+
+AboutContentCountAggregateOutput = TypedDict(
+    'AboutContentCountAggregateOutput',
+    {
+        'id': int,
+        'title': int,
+        'subTitle': int,
+        'paragraphs': int,
+        'stats': int,
+        'updatedAt': int,
+        '_all': int,
+    },
+    total=False,
+)
+
+
+AboutContentKeys = Literal[
+    'id',
+    'title',
+    'subTitle',
+    'paragraphs',
+    'stats',
+    'updatedAt',
+]
+AboutContentScalarFieldKeys = Literal[
+    'id',
+    'title',
+    'subTitle',
+    'paragraphs',
+    'stats',
+    'updatedAt',
+]
+AboutContentScalarFieldKeysT = TypeVar('AboutContentScalarFieldKeysT', bound=AboutContentScalarFieldKeys)
+
+AboutContentRelationalFieldKeys = _NoneType
+
+# SubscriptionPlan types
+
+class SubscriptionPlanOptionalCreateInput(TypedDict, total=False):
+    """Optional arguments to the SubscriptionPlan create method"""
+    id: _str
+    badge: Optional[_str]
+    featured: _bool
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class SubscriptionPlanCreateInput(SubscriptionPlanOptionalCreateInput):
+    """Required arguments to the SubscriptionPlan create method"""
+    name: _str
+    planType: _str
+    price: _float
+    billingPeriod: _str
+    description: _str
+    features: 'fields.Json'
+    cta: _str
+
+
+# TODO: remove this in favour of without explicit relations
+# e.g. PostCreateWithoutAuthorInput
+
+class SubscriptionPlanOptionalCreateWithoutRelationsInput(TypedDict, total=False):
+    """Optional arguments to the SubscriptionPlan create method, without relations"""
+    id: _str
+    badge: Optional[_str]
+    featured: _bool
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class SubscriptionPlanCreateWithoutRelationsInput(SubscriptionPlanOptionalCreateWithoutRelationsInput):
+    """Required arguments to the SubscriptionPlan create method, without relations"""
+    name: _str
+    planType: _str
+    price: _float
+    billingPeriod: _str
+    description: _str
+    features: 'fields.Json'
+    cta: _str
+
+class SubscriptionPlanConnectOrCreateWithoutRelationsInput(TypedDict):
+    create: 'SubscriptionPlanCreateWithoutRelationsInput'
+    where: 'SubscriptionPlanWhereUniqueInput'
+
+class SubscriptionPlanCreateNestedWithoutRelationsInput(TypedDict, total=False):
+    create: 'SubscriptionPlanCreateWithoutRelationsInput'
+    connect: 'SubscriptionPlanWhereUniqueInput'
+    connect_or_create: 'SubscriptionPlanConnectOrCreateWithoutRelationsInput'
+
+
+class SubscriptionPlanCreateManyNestedWithoutRelationsInput(TypedDict, total=False):
+    create: Union['SubscriptionPlanCreateWithoutRelationsInput', List['SubscriptionPlanCreateWithoutRelationsInput']]
+    connect: Union['SubscriptionPlanWhereUniqueInput', List['SubscriptionPlanWhereUniqueInput']]
+    connect_or_create: Union['SubscriptionPlanConnectOrCreateWithoutRelationsInput', List['SubscriptionPlanConnectOrCreateWithoutRelationsInput']]
+
+_SubscriptionPlanWhereUnique_id_Input = TypedDict(
+    '_SubscriptionPlanWhereUnique_id_Input',
+    {
+        'id': '_str',
+    },
+    total=True
+)
+
+_SubscriptionPlanWhereUnique_name_Input = TypedDict(
+    '_SubscriptionPlanWhereUnique_name_Input',
+    {
+        'name': '_str',
+    },
+    total=True
+)
+
+SubscriptionPlanWhereUniqueInput = Union[
+    '_SubscriptionPlanWhereUnique_id_Input',
+    '_SubscriptionPlanWhereUnique_name_Input',
+]
+
+
+class SubscriptionPlanUpdateInput(TypedDict, total=False):
+    """Optional arguments for updating a record"""
+    id: _str
+    name: _str
+    planType: _str
+    price: Union[AtomicFloatInput, _float]
+    billingPeriod: _str
+    description: _str
+    features: 'fields.Json'
+    badge: Optional[_str]
+    cta: _str
+    featured: _bool
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class SubscriptionPlanUpdateManyMutationInput(TypedDict, total=False):
+    """Arguments for updating many records"""
+    id: _str
+    name: _str
+    planType: _str
+    price: Union[AtomicFloatInput, _float]
+    billingPeriod: _str
+    description: _str
+    features: 'fields.Json'
+    badge: Optional[_str]
+    cta: _str
+    featured: _bool
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class SubscriptionPlanUpdateManyWithoutRelationsInput(TypedDict, total=False):
+    create: List['SubscriptionPlanCreateWithoutRelationsInput']
+    connect: List['SubscriptionPlanWhereUniqueInput']
+    connect_or_create: List['SubscriptionPlanConnectOrCreateWithoutRelationsInput']
+    set: List['SubscriptionPlanWhereUniqueInput']
+    disconnect: List['SubscriptionPlanWhereUniqueInput']
+    delete: List['SubscriptionPlanWhereUniqueInput']
+
+    # TODO
+    # update: List['SubscriptionPlanUpdateWithWhereUniqueWithoutRelationsInput']
+    # updateMany: List['SubscriptionPlanUpdateManyWithWhereUniqueWithoutRelationsInput']
+    # deleteMany: List['SubscriptionPlanScalarWhereInput']
+    # upsert: List['SubscriptionPlanUpserteWithWhereUniqueWithoutRelationsInput']
+
+
+class SubscriptionPlanUpdateOneWithoutRelationsInput(TypedDict, total=False):
+    create: 'SubscriptionPlanCreateWithoutRelationsInput'
+    connect: 'SubscriptionPlanWhereUniqueInput'
+    connect_or_create: 'SubscriptionPlanConnectOrCreateWithoutRelationsInput'
+    disconnect: bool
+    delete: bool
+
+    # TODO
+    # update: 'SubscriptionPlanUpdateInput'
+    # upsert: 'SubscriptionPlanUpsertWithoutRelationsInput'
+
+
+class SubscriptionPlanUpsertInput(TypedDict):
+    create: 'SubscriptionPlanCreateInput'
+    update: 'SubscriptionPlanUpdateInput'  # pyright: ignore[reportIncompatibleMethodOverride]
+
+
+_SubscriptionPlan_id_OrderByInput = TypedDict(
+    '_SubscriptionPlan_id_OrderByInput',
+    {
+        'id': 'SortOrder',
+    },
+    total=True
+)
+
+_SubscriptionPlan_name_OrderByInput = TypedDict(
+    '_SubscriptionPlan_name_OrderByInput',
+    {
+        'name': 'SortOrder',
+    },
+    total=True
+)
+
+_SubscriptionPlan_planType_OrderByInput = TypedDict(
+    '_SubscriptionPlan_planType_OrderByInput',
+    {
+        'planType': 'SortOrder',
+    },
+    total=True
+)
+
+_SubscriptionPlan_price_OrderByInput = TypedDict(
+    '_SubscriptionPlan_price_OrderByInput',
+    {
+        'price': 'SortOrder',
+    },
+    total=True
+)
+
+_SubscriptionPlan_billingPeriod_OrderByInput = TypedDict(
+    '_SubscriptionPlan_billingPeriod_OrderByInput',
+    {
+        'billingPeriod': 'SortOrder',
+    },
+    total=True
+)
+
+_SubscriptionPlan_description_OrderByInput = TypedDict(
+    '_SubscriptionPlan_description_OrderByInput',
+    {
+        'description': 'SortOrder',
+    },
+    total=True
+)
+
+_SubscriptionPlan_features_OrderByInput = TypedDict(
+    '_SubscriptionPlan_features_OrderByInput',
+    {
+        'features': 'SortOrder',
+    },
+    total=True
+)
+
+_SubscriptionPlan_badge_OrderByInput = TypedDict(
+    '_SubscriptionPlan_badge_OrderByInput',
+    {
+        'badge': 'SortOrder',
+    },
+    total=True
+)
+
+_SubscriptionPlan_cta_OrderByInput = TypedDict(
+    '_SubscriptionPlan_cta_OrderByInput',
+    {
+        'cta': 'SortOrder',
+    },
+    total=True
+)
+
+_SubscriptionPlan_featured_OrderByInput = TypedDict(
+    '_SubscriptionPlan_featured_OrderByInput',
+    {
+        'featured': 'SortOrder',
+    },
+    total=True
+)
+
+_SubscriptionPlan_createdAt_OrderByInput = TypedDict(
+    '_SubscriptionPlan_createdAt_OrderByInput',
+    {
+        'createdAt': 'SortOrder',
+    },
+    total=True
+)
+
+_SubscriptionPlan_updatedAt_OrderByInput = TypedDict(
+    '_SubscriptionPlan_updatedAt_OrderByInput',
+    {
+        'updatedAt': 'SortOrder',
+    },
+    total=True
+)
+
+_SubscriptionPlan_RelevanceInner = TypedDict(
+    '_SubscriptionPlan_RelevanceInner',
+    {
+        'fields': 'List[SubscriptionPlanScalarFieldKeys]',
+        'search': 'str',
+        'sort': 'SortOrder',
+    },
+    total=True
+)
+
+_SubscriptionPlan_RelevanceOrderByInput = TypedDict(
+    '_SubscriptionPlan_RelevanceOrderByInput',
+    {
+        '_relevance': '_SubscriptionPlan_RelevanceInner',
+    },
+    total=True
+)
+
+SubscriptionPlanOrderByInput = Union[
+    '_SubscriptionPlan_id_OrderByInput',
+    '_SubscriptionPlan_name_OrderByInput',
+    '_SubscriptionPlan_planType_OrderByInput',
+    '_SubscriptionPlan_price_OrderByInput',
+    '_SubscriptionPlan_billingPeriod_OrderByInput',
+    '_SubscriptionPlan_description_OrderByInput',
+    '_SubscriptionPlan_features_OrderByInput',
+    '_SubscriptionPlan_badge_OrderByInput',
+    '_SubscriptionPlan_cta_OrderByInput',
+    '_SubscriptionPlan_featured_OrderByInput',
+    '_SubscriptionPlan_createdAt_OrderByInput',
+    '_SubscriptionPlan_updatedAt_OrderByInput',
+    '_SubscriptionPlan_RelevanceOrderByInput',
+]
+
+
+
+# recursive SubscriptionPlan types
+# TODO: cleanup these types
+
+
+# Dict[str, Any] is a mypy limitation
+# see https://github.com/RobertCraigie/prisma-client-py/issues/45
+# switch to pyright for improved types, see https://prisma-client-py.readthedocs.io/en/stable/reference/limitations/
+
+SubscriptionPlanRelationFilter = TypedDict(
+    'SubscriptionPlanRelationFilter',
+    {
+        'is': 'Dict[str, Any]',
+        'is_not': 'Dict[str, Any]',
+    },
+    total=False,
+)
+
+
+class SubscriptionPlanListRelationFilter(TypedDict, total=False):
+    some: 'Dict[str, Any]'
+    none: 'Dict[str, Any]'
+    every: 'Dict[str, Any]'
+
+
+class SubscriptionPlanInclude(TypedDict, total=False):
+    """SubscriptionPlan relational arguments"""
+
+
+    
+
+class UserIncludeFromSubscriptionPlan(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromSubscriptionPlanRecursive1']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromSubscriptionPlanRecursive1']
+    payments: Union[bool, 'FindManyPaymentArgsFromSubscriptionPlanRecursive1']
+
+
+class UserIncludeFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromSubscriptionPlanRecursive2']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromSubscriptionPlanRecursive2']
+    payments: Union[bool, 'FindManyPaymentArgsFromSubscriptionPlanRecursive2']
+
+
+class UserIncludeFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromSubscriptionPlanRecursive3']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromSubscriptionPlanRecursive3']
+    payments: Union[bool, 'FindManyPaymentArgsFromSubscriptionPlanRecursive3']
+
+
+class UserIncludeFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromSubscriptionPlanRecursive4']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromSubscriptionPlanRecursive4']
+    payments: Union[bool, 'FindManyPaymentArgsFromSubscriptionPlanRecursive4']
+
+
+class UserIncludeFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+    
+
+class UserArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'UserIncludeFromUserRecursive1'
+
+
+class UserArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'UserIncludeFromUserRecursive2'
+
+
+class UserArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'UserIncludeFromUserRecursive3'
+
+
+class UserArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'UserIncludeFromUserRecursive4'
+
+
+class UserArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    
+    
+
+class FindManyUserArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive1'
+
+
+class FindManyUserArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive2'
+
+
+class FindManyUserArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive3'
+
+
+class FindManyUserArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive4'
+
+
+class FindManyUserArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    
+    
+
+class CourseIncludeFromSubscriptionPlan(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    lessons: Union[bool, 'FindManyLessonArgsFromSubscriptionPlanRecursive1']
+
+
+class CourseIncludeFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    lessons: Union[bool, 'FindManyLessonArgsFromSubscriptionPlanRecursive2']
+
+
+class CourseIncludeFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    lessons: Union[bool, 'FindManyLessonArgsFromSubscriptionPlanRecursive3']
+
+
+class CourseIncludeFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    lessons: Union[bool, 'FindManyLessonArgsFromSubscriptionPlanRecursive4']
+
+
+class CourseIncludeFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+    
+
+class CourseArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'CourseIncludeFromCourseRecursive1'
+
+
+class CourseArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'CourseIncludeFromCourseRecursive2'
+
+
+class CourseArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'CourseIncludeFromCourseRecursive3'
+
+
+class CourseArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'CourseIncludeFromCourseRecursive4'
+
+
+class CourseArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    
+    
+
+class FindManyCourseArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive1'
+
+
+class FindManyCourseArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive2'
+
+
+class FindManyCourseArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive3'
+
+
+class FindManyCourseArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive4'
+
+
+class FindManyCourseArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    
+    
+
+class LessonIncludeFromSubscriptionPlan(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    course: Union[bool, 'CourseArgsFromSubscriptionPlanRecursive1']
+    progress: Union[bool, 'FindManyUserProgressArgsFromSubscriptionPlanRecursive1']
+
+
+class LessonIncludeFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    course: Union[bool, 'CourseArgsFromSubscriptionPlanRecursive2']
+    progress: Union[bool, 'FindManyUserProgressArgsFromSubscriptionPlanRecursive2']
+
+
+class LessonIncludeFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    course: Union[bool, 'CourseArgsFromSubscriptionPlanRecursive3']
+    progress: Union[bool, 'FindManyUserProgressArgsFromSubscriptionPlanRecursive3']
+
+
+class LessonIncludeFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    course: Union[bool, 'CourseArgsFromSubscriptionPlanRecursive4']
+    progress: Union[bool, 'FindManyUserProgressArgsFromSubscriptionPlanRecursive4']
+
+
+class LessonIncludeFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+    
+
+class LessonArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'LessonIncludeFromLessonRecursive1'
+
+
+class LessonArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'LessonIncludeFromLessonRecursive2'
+
+
+class LessonArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'LessonIncludeFromLessonRecursive3'
+
+
+class LessonArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'LessonIncludeFromLessonRecursive4'
+
+
+class LessonArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    
+    
+
+class FindManyLessonArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive1'
+
+
+class FindManyLessonArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive2'
+
+
+class FindManyLessonArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive3'
+
+
+class FindManyLessonArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive4'
+
+
+class FindManyLessonArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    
+    
+
+class UserProgressIncludeFromSubscriptionPlan(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    user: Union[bool, 'UserArgsFromSubscriptionPlanRecursive1']
+    lesson: Union[bool, 'LessonArgsFromSubscriptionPlanRecursive1']
+
+
+class UserProgressIncludeFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    user: Union[bool, 'UserArgsFromSubscriptionPlanRecursive2']
+    lesson: Union[bool, 'LessonArgsFromSubscriptionPlanRecursive2']
+
+
+class UserProgressIncludeFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    user: Union[bool, 'UserArgsFromSubscriptionPlanRecursive3']
+    lesson: Union[bool, 'LessonArgsFromSubscriptionPlanRecursive3']
+
+
+class UserProgressIncludeFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    user: Union[bool, 'UserArgsFromSubscriptionPlanRecursive4']
+    lesson: Union[bool, 'LessonArgsFromSubscriptionPlanRecursive4']
+
+
+class UserProgressIncludeFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+    
+
+class UserProgressArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'UserProgressIncludeFromUserProgressRecursive1'
+
+
+class UserProgressArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'UserProgressIncludeFromUserProgressRecursive2'
+
+
+class UserProgressArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'UserProgressIncludeFromUserProgressRecursive3'
+
+
+class UserProgressArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'UserProgressIncludeFromUserProgressRecursive4'
+
+
+class UserProgressArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    
+    
+
+class FindManyUserProgressArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive1'
+
+
+class FindManyUserProgressArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive2'
+
+
+class FindManyUserProgressArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive3'
+
+
+class FindManyUserProgressArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive4'
+
+
+class FindManyUserProgressArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    
+    
+
+class QuestionIncludeFromSubscriptionPlan(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class QuestionIncludeFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class QuestionIncludeFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class QuestionIncludeFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class QuestionIncludeFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+    
+
+class QuestionArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'QuestionIncludeFromQuestionRecursive1'
+
+
+class QuestionArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'QuestionIncludeFromQuestionRecursive2'
+
+
+class QuestionArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'QuestionIncludeFromQuestionRecursive3'
+
+
+class QuestionArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'QuestionIncludeFromQuestionRecursive4'
+
+
+class QuestionArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    
+    
+
+class FindManyQuestionArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive1'
+
+
+class FindManyQuestionArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive2'
+
+
+class FindManyQuestionArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive3'
+
+
+class FindManyQuestionArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive4'
+
+
+class FindManyQuestionArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    
+    
+
+class UserExamAttemptIncludeFromSubscriptionPlan(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    user: Union[bool, 'UserArgsFromSubscriptionPlanRecursive1']
+
+
+class UserExamAttemptIncludeFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    user: Union[bool, 'UserArgsFromSubscriptionPlanRecursive2']
+
+
+class UserExamAttemptIncludeFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    user: Union[bool, 'UserArgsFromSubscriptionPlanRecursive3']
+
+
+class UserExamAttemptIncludeFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    user: Union[bool, 'UserArgsFromSubscriptionPlanRecursive4']
+
+
+class UserExamAttemptIncludeFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+    
+
+class UserExamAttemptArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive1'
+
+
+class UserExamAttemptArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive2'
+
+
+class UserExamAttemptArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive3'
+
+
+class UserExamAttemptArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive4'
+
+
+class UserExamAttemptArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    
+    
+
+class FindManyUserExamAttemptArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive1'
+
+
+class FindManyUserExamAttemptArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive2'
+
+
+class FindManyUserExamAttemptArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive3'
+
+
+class FindManyUserExamAttemptArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive4'
+
+
+class FindManyUserExamAttemptArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    
+    
+
+class PaymentIncludeFromSubscriptionPlan(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    user: Union[bool, 'UserArgsFromSubscriptionPlanRecursive1']
+
+
+class PaymentIncludeFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    user: Union[bool, 'UserArgsFromSubscriptionPlanRecursive2']
+
+
+class PaymentIncludeFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    user: Union[bool, 'UserArgsFromSubscriptionPlanRecursive3']
+
+
+class PaymentIncludeFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+    user: Union[bool, 'UserArgsFromSubscriptionPlanRecursive4']
+
+
+class PaymentIncludeFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+    
+
+class PaymentArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class PaymentArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class PaymentArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class PaymentArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class PaymentArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    
+    
+
+class FindManyPaymentArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class FindManyPaymentArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class FindManyPaymentArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class FindManyPaymentArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class FindManyPaymentArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    
+    
+
+class BlogPostIncludeFromSubscriptionPlan(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class BlogPostIncludeFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class BlogPostIncludeFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class BlogPostIncludeFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class BlogPostIncludeFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+    
+
+class BlogPostArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class BlogPostArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class BlogPostArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class BlogPostArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class BlogPostArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    
+    
+
+class FindManyBlogPostArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class FindManyBlogPostArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class FindManyBlogPostArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class FindManyBlogPostArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class FindManyBlogPostArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    
+    
+
+class AboutContentIncludeFromSubscriptionPlan(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class AboutContentIncludeFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class AboutContentIncludeFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class AboutContentIncludeFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class AboutContentIncludeFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+    
+
+class AboutContentArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class AboutContentArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class AboutContentArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class AboutContentArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class AboutContentArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    
+    
+
+class FindManyAboutContentArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class FindManyAboutContentArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class FindManyAboutContentArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class FindManyAboutContentArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class FindManyAboutContentArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    
+    
+
+class SubscriptionPlanIncludeFromSubscriptionPlan(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class SubscriptionPlanIncludeFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class SubscriptionPlanIncludeFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class SubscriptionPlanIncludeFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class SubscriptionPlanIncludeFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+    
+
+class SubscriptionPlanArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class SubscriptionPlanArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class SubscriptionPlanArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class SubscriptionPlanArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class SubscriptionPlanArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    
+    
+
+class FindManySubscriptionPlanArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class FindManySubscriptionPlanArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class FindManySubscriptionPlanArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class FindManySubscriptionPlanArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class FindManySubscriptionPlanArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    
+    
+
+class TestimonialIncludeFromSubscriptionPlan(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class TestimonialIncludeFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class TestimonialIncludeFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class TestimonialIncludeFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class TestimonialIncludeFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+    
+
+class TestimonialArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class TestimonialArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class TestimonialArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class TestimonialArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class TestimonialArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    
+    
+
+class FindManyTestimonialArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class FindManyTestimonialArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class FindManyTestimonialArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class FindManyTestimonialArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class FindManyTestimonialArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    
+    
+
+class InterviewQuestionIncludeFromSubscriptionPlan(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class InterviewQuestionIncludeFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class InterviewQuestionIncludeFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class InterviewQuestionIncludeFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+
+class InterviewQuestionIncludeFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Relational arguments for SubscriptionPlan"""
+
+    
+
+class InterviewQuestionArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class InterviewQuestionArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class InterviewQuestionArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class InterviewQuestionArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class InterviewQuestionArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    
+    
+
+class FindManyInterviewQuestionArgsFromSubscriptionPlan(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class FindManyInterviewQuestionArgsFromSubscriptionPlanRecursive1(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class FindManyInterviewQuestionArgsFromSubscriptionPlanRecursive2(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class FindManyInterviewQuestionArgsFromSubscriptionPlanRecursive3(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class FindManyInterviewQuestionArgsFromSubscriptionPlanRecursive4(TypedDict, total=False):
+    """Arguments for SubscriptionPlan"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    
+
+
+FindManySubscriptionPlanArgs = FindManySubscriptionPlanArgsFromSubscriptionPlan
+FindFirstSubscriptionPlanArgs = FindManySubscriptionPlanArgsFromSubscriptionPlan
+
+
+    
+
+class SubscriptionPlanWhereInput(TypedDict, total=False):
+    """SubscriptionPlan arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    name: Union[_str, 'types.StringFilter']
+    planType: Union[_str, 'types.StringFilter']
+    price: Union[_float, 'types.FloatFilter']
+    billingPeriod: Union[_str, 'types.StringFilter']
+    description: Union[_str, 'types.StringFilter']
+    features: Union['fields.Json', 'types.JsonFilter']
+    badge: Union[None, _str, 'types.StringFilter']
+    cta: Union[_str, 'types.StringFilter']
+    featured: Union[_bool, 'types.BooleanFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['SubscriptionPlanWhereInputRecursive1', List['SubscriptionPlanWhereInputRecursive1']]
+    # but this causes mypy to hang :/
+    AND: List['SubscriptionPlanWhereInputRecursive1']
+    OR: List['SubscriptionPlanWhereInputRecursive1']
+    NOT: List['SubscriptionPlanWhereInputRecursive1']
+
+
+class SubscriptionPlanWhereInputRecursive1(TypedDict, total=False):
+    """SubscriptionPlan arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    name: Union[_str, 'types.StringFilter']
+    planType: Union[_str, 'types.StringFilter']
+    price: Union[_float, 'types.FloatFilter']
+    billingPeriod: Union[_str, 'types.StringFilter']
+    description: Union[_str, 'types.StringFilter']
+    features: Union['fields.Json', 'types.JsonFilter']
+    badge: Union[None, _str, 'types.StringFilter']
+    cta: Union[_str, 'types.StringFilter']
+    featured: Union[_bool, 'types.BooleanFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['SubscriptionPlanWhereInputRecursive2', List['SubscriptionPlanWhereInputRecursive2']]
+    # but this causes mypy to hang :/
+    AND: List['SubscriptionPlanWhereInputRecursive2']
+    OR: List['SubscriptionPlanWhereInputRecursive2']
+    NOT: List['SubscriptionPlanWhereInputRecursive2']
+
+
+class SubscriptionPlanWhereInputRecursive2(TypedDict, total=False):
+    """SubscriptionPlan arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    name: Union[_str, 'types.StringFilter']
+    planType: Union[_str, 'types.StringFilter']
+    price: Union[_float, 'types.FloatFilter']
+    billingPeriod: Union[_str, 'types.StringFilter']
+    description: Union[_str, 'types.StringFilter']
+    features: Union['fields.Json', 'types.JsonFilter']
+    badge: Union[None, _str, 'types.StringFilter']
+    cta: Union[_str, 'types.StringFilter']
+    featured: Union[_bool, 'types.BooleanFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['SubscriptionPlanWhereInputRecursive3', List['SubscriptionPlanWhereInputRecursive3']]
+    # but this causes mypy to hang :/
+    AND: List['SubscriptionPlanWhereInputRecursive3']
+    OR: List['SubscriptionPlanWhereInputRecursive3']
+    NOT: List['SubscriptionPlanWhereInputRecursive3']
+
+
+class SubscriptionPlanWhereInputRecursive3(TypedDict, total=False):
+    """SubscriptionPlan arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    name: Union[_str, 'types.StringFilter']
+    planType: Union[_str, 'types.StringFilter']
+    price: Union[_float, 'types.FloatFilter']
+    billingPeriod: Union[_str, 'types.StringFilter']
+    description: Union[_str, 'types.StringFilter']
+    features: Union['fields.Json', 'types.JsonFilter']
+    badge: Union[None, _str, 'types.StringFilter']
+    cta: Union[_str, 'types.StringFilter']
+    featured: Union[_bool, 'types.BooleanFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['SubscriptionPlanWhereInputRecursive4', List['SubscriptionPlanWhereInputRecursive4']]
+    # but this causes mypy to hang :/
+    AND: List['SubscriptionPlanWhereInputRecursive4']
+    OR: List['SubscriptionPlanWhereInputRecursive4']
+    NOT: List['SubscriptionPlanWhereInputRecursive4']
+
+
+class SubscriptionPlanWhereInputRecursive4(TypedDict, total=False):
+    """SubscriptionPlan arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    name: Union[_str, 'types.StringFilter']
+    planType: Union[_str, 'types.StringFilter']
+    price: Union[_float, 'types.FloatFilter']
+    billingPeriod: Union[_str, 'types.StringFilter']
+    description: Union[_str, 'types.StringFilter']
+    features: Union['fields.Json', 'types.JsonFilter']
+    badge: Union[None, _str, 'types.StringFilter']
+    cta: Union[_str, 'types.StringFilter']
+    featured: Union[_bool, 'types.BooleanFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+
+
+# aggregate SubscriptionPlan types
+
+
+    
+
+class SubscriptionPlanScalarWhereWithAggregatesInput(TypedDict, total=False):
+    """SubscriptionPlan arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    name: Union[_str, 'types.StringWithAggregatesFilter']
+    planType: Union[_str, 'types.StringWithAggregatesFilter']
+    price: Union[_float, 'types.FloatWithAggregatesFilter']
+    billingPeriod: Union[_str, 'types.StringWithAggregatesFilter']
+    description: Union[_str, 'types.StringWithAggregatesFilter']
+    features: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    badge: Union[_str, 'types.StringWithAggregatesFilter']
+    cta: Union[_str, 'types.StringWithAggregatesFilter']
+    featured: Union[_bool, 'types.BooleanWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['SubscriptionPlanScalarWhereWithAggregatesInputRecursive1']
+    OR: List['SubscriptionPlanScalarWhereWithAggregatesInputRecursive1']
+    NOT: List['SubscriptionPlanScalarWhereWithAggregatesInputRecursive1']
+
+
+class SubscriptionPlanScalarWhereWithAggregatesInputRecursive1(TypedDict, total=False):
+    """SubscriptionPlan arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    name: Union[_str, 'types.StringWithAggregatesFilter']
+    planType: Union[_str, 'types.StringWithAggregatesFilter']
+    price: Union[_float, 'types.FloatWithAggregatesFilter']
+    billingPeriod: Union[_str, 'types.StringWithAggregatesFilter']
+    description: Union[_str, 'types.StringWithAggregatesFilter']
+    features: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    badge: Union[_str, 'types.StringWithAggregatesFilter']
+    cta: Union[_str, 'types.StringWithAggregatesFilter']
+    featured: Union[_bool, 'types.BooleanWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['SubscriptionPlanScalarWhereWithAggregatesInputRecursive2']
+    OR: List['SubscriptionPlanScalarWhereWithAggregatesInputRecursive2']
+    NOT: List['SubscriptionPlanScalarWhereWithAggregatesInputRecursive2']
+
+
+class SubscriptionPlanScalarWhereWithAggregatesInputRecursive2(TypedDict, total=False):
+    """SubscriptionPlan arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    name: Union[_str, 'types.StringWithAggregatesFilter']
+    planType: Union[_str, 'types.StringWithAggregatesFilter']
+    price: Union[_float, 'types.FloatWithAggregatesFilter']
+    billingPeriod: Union[_str, 'types.StringWithAggregatesFilter']
+    description: Union[_str, 'types.StringWithAggregatesFilter']
+    features: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    badge: Union[_str, 'types.StringWithAggregatesFilter']
+    cta: Union[_str, 'types.StringWithAggregatesFilter']
+    featured: Union[_bool, 'types.BooleanWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['SubscriptionPlanScalarWhereWithAggregatesInputRecursive3']
+    OR: List['SubscriptionPlanScalarWhereWithAggregatesInputRecursive3']
+    NOT: List['SubscriptionPlanScalarWhereWithAggregatesInputRecursive3']
+
+
+class SubscriptionPlanScalarWhereWithAggregatesInputRecursive3(TypedDict, total=False):
+    """SubscriptionPlan arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    name: Union[_str, 'types.StringWithAggregatesFilter']
+    planType: Union[_str, 'types.StringWithAggregatesFilter']
+    price: Union[_float, 'types.FloatWithAggregatesFilter']
+    billingPeriod: Union[_str, 'types.StringWithAggregatesFilter']
+    description: Union[_str, 'types.StringWithAggregatesFilter']
+    features: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    badge: Union[_str, 'types.StringWithAggregatesFilter']
+    cta: Union[_str, 'types.StringWithAggregatesFilter']
+    featured: Union[_bool, 'types.BooleanWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['SubscriptionPlanScalarWhereWithAggregatesInputRecursive4']
+    OR: List['SubscriptionPlanScalarWhereWithAggregatesInputRecursive4']
+    NOT: List['SubscriptionPlanScalarWhereWithAggregatesInputRecursive4']
+
+
+class SubscriptionPlanScalarWhereWithAggregatesInputRecursive4(TypedDict, total=False):
+    """SubscriptionPlan arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    name: Union[_str, 'types.StringWithAggregatesFilter']
+    planType: Union[_str, 'types.StringWithAggregatesFilter']
+    price: Union[_float, 'types.FloatWithAggregatesFilter']
+    billingPeriod: Union[_str, 'types.StringWithAggregatesFilter']
+    description: Union[_str, 'types.StringWithAggregatesFilter']
+    features: Union['fields.Json', 'types.JsonWithAggregatesFilter']
+    badge: Union[_str, 'types.StringWithAggregatesFilter']
+    cta: Union[_str, 'types.StringWithAggregatesFilter']
+    featured: Union[_bool, 'types.BooleanWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+
+
+class SubscriptionPlanGroupByOutput(TypedDict, total=False):
+    id: _str
+    name: _str
+    planType: _str
+    price: _float
+    billingPeriod: _str
+    description: _str
+    features: 'fields.Json'
+    badge: _str
+    cta: _str
+    featured: _bool
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+    _sum: 'SubscriptionPlanSumAggregateOutput'
+    _avg: 'SubscriptionPlanAvgAggregateOutput'
+    _min: 'SubscriptionPlanMinAggregateOutput'
+    _max: 'SubscriptionPlanMaxAggregateOutput'
+    _count: 'SubscriptionPlanCountAggregateOutput'
+
+
+class SubscriptionPlanAvgAggregateOutput(TypedDict, total=False):
+    """SubscriptionPlan output for aggregating averages"""
+    price: float
+
+
+class SubscriptionPlanSumAggregateOutput(TypedDict, total=False):
+    """SubscriptionPlan output for aggregating sums"""
+    price: _float
+
+
+class SubscriptionPlanScalarAggregateOutput(TypedDict, total=False):
+    """SubscriptionPlan output including scalar fields"""
+    id: _str
+    name: _str
+    planType: _str
+    price: _float
+    billingPeriod: _str
+    description: _str
+    features: 'fields.Json'
+    badge: _str
+    cta: _str
+    featured: _bool
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+SubscriptionPlanMinAggregateOutput = SubscriptionPlanScalarAggregateOutput
+SubscriptionPlanMaxAggregateOutput = SubscriptionPlanScalarAggregateOutput
+
+
+class SubscriptionPlanMaxAggregateInput(TypedDict, total=False):
+    """SubscriptionPlan input for aggregating by max"""
+    id: bool
+    name: bool
+    planType: bool
+    price: bool
+    billingPeriod: bool
+    description: bool
+    features: bool
+    badge: bool
+    cta: bool
+    featured: bool
+    createdAt: bool
+    updatedAt: bool
+
+
+class SubscriptionPlanMinAggregateInput(TypedDict, total=False):
+    """SubscriptionPlan input for aggregating by min"""
+    id: bool
+    name: bool
+    planType: bool
+    price: bool
+    billingPeriod: bool
+    description: bool
+    features: bool
+    badge: bool
+    cta: bool
+    featured: bool
+    createdAt: bool
+    updatedAt: bool
+
+
+class SubscriptionPlanNumberAggregateInput(TypedDict, total=False):
+    """SubscriptionPlan input for aggregating numbers"""
+    price: bool
+
+
+SubscriptionPlanAvgAggregateInput = SubscriptionPlanNumberAggregateInput
+SubscriptionPlanSumAggregateInput = SubscriptionPlanNumberAggregateInput
+
+
+SubscriptionPlanCountAggregateInput = TypedDict(
+    'SubscriptionPlanCountAggregateInput',
+    {
+        'id': bool,
+        'name': bool,
+        'planType': bool,
+        'price': bool,
+        'billingPeriod': bool,
+        'description': bool,
+        'features': bool,
+        'badge': bool,
+        'cta': bool,
+        'featured': bool,
+        'createdAt': bool,
+        'updatedAt': bool,
+        '_all': bool,
+    },
+    total=False,
+)
+
+SubscriptionPlanCountAggregateOutput = TypedDict(
+    'SubscriptionPlanCountAggregateOutput',
+    {
+        'id': int,
+        'name': int,
+        'planType': int,
+        'price': int,
+        'billingPeriod': int,
+        'description': int,
+        'features': int,
+        'badge': int,
+        'cta': int,
+        'featured': int,
+        'createdAt': int,
+        'updatedAt': int,
+        '_all': int,
+    },
+    total=False,
+)
+
+
+SubscriptionPlanKeys = Literal[
+    'id',
+    'name',
+    'planType',
+    'price',
+    'billingPeriod',
+    'description',
+    'features',
+    'badge',
+    'cta',
+    'featured',
+    'createdAt',
+    'updatedAt',
+]
+SubscriptionPlanScalarFieldKeys = Literal[
+    'id',
+    'name',
+    'planType',
+    'price',
+    'billingPeriod',
+    'description',
+    'features',
+    'badge',
+    'cta',
+    'featured',
+    'createdAt',
+    'updatedAt',
+]
+SubscriptionPlanScalarFieldKeysT = TypeVar('SubscriptionPlanScalarFieldKeysT', bound=SubscriptionPlanScalarFieldKeys)
+
+SubscriptionPlanRelationalFieldKeys = _NoneType
+
+# Testimonial types
+
+class TestimonialOptionalCreateInput(TypedDict, total=False):
+    """Optional arguments to the Testimonial create method"""
+    id: _str
+    rating: _int
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class TestimonialCreateInput(TestimonialOptionalCreateInput):
+    """Required arguments to the Testimonial create method"""
+    name: _str
+    role: _str
+    company: _str
+    text: _str
+
+
+# TODO: remove this in favour of without explicit relations
+# e.g. PostCreateWithoutAuthorInput
+
+class TestimonialOptionalCreateWithoutRelationsInput(TypedDict, total=False):
+    """Optional arguments to the Testimonial create method, without relations"""
+    id: _str
+    rating: _int
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class TestimonialCreateWithoutRelationsInput(TestimonialOptionalCreateWithoutRelationsInput):
+    """Required arguments to the Testimonial create method, without relations"""
+    name: _str
+    role: _str
+    company: _str
+    text: _str
+
+class TestimonialConnectOrCreateWithoutRelationsInput(TypedDict):
+    create: 'TestimonialCreateWithoutRelationsInput'
+    where: 'TestimonialWhereUniqueInput'
+
+class TestimonialCreateNestedWithoutRelationsInput(TypedDict, total=False):
+    create: 'TestimonialCreateWithoutRelationsInput'
+    connect: 'TestimonialWhereUniqueInput'
+    connect_or_create: 'TestimonialConnectOrCreateWithoutRelationsInput'
+
+
+class TestimonialCreateManyNestedWithoutRelationsInput(TypedDict, total=False):
+    create: Union['TestimonialCreateWithoutRelationsInput', List['TestimonialCreateWithoutRelationsInput']]
+    connect: Union['TestimonialWhereUniqueInput', List['TestimonialWhereUniqueInput']]
+    connect_or_create: Union['TestimonialConnectOrCreateWithoutRelationsInput', List['TestimonialConnectOrCreateWithoutRelationsInput']]
+
+_TestimonialWhereUnique_id_Input = TypedDict(
+    '_TestimonialWhereUnique_id_Input',
+    {
+        'id': '_str',
+    },
+    total=True
+)
+
+TestimonialWhereUniqueInput = _TestimonialWhereUnique_id_Input
+
+
+class TestimonialUpdateInput(TypedDict, total=False):
+    """Optional arguments for updating a record"""
+    id: _str
+    name: _str
+    role: _str
+    company: _str
+    rating: Union[AtomicIntInput, _int]
+    text: _str
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class TestimonialUpdateManyMutationInput(TypedDict, total=False):
+    """Arguments for updating many records"""
+    id: _str
+    name: _str
+    role: _str
+    company: _str
+    rating: Union[AtomicIntInput, _int]
+    text: _str
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class TestimonialUpdateManyWithoutRelationsInput(TypedDict, total=False):
+    create: List['TestimonialCreateWithoutRelationsInput']
+    connect: List['TestimonialWhereUniqueInput']
+    connect_or_create: List['TestimonialConnectOrCreateWithoutRelationsInput']
+    set: List['TestimonialWhereUniqueInput']
+    disconnect: List['TestimonialWhereUniqueInput']
+    delete: List['TestimonialWhereUniqueInput']
+
+    # TODO
+    # update: List['TestimonialUpdateWithWhereUniqueWithoutRelationsInput']
+    # updateMany: List['TestimonialUpdateManyWithWhereUniqueWithoutRelationsInput']
+    # deleteMany: List['TestimonialScalarWhereInput']
+    # upsert: List['TestimonialUpserteWithWhereUniqueWithoutRelationsInput']
+
+
+class TestimonialUpdateOneWithoutRelationsInput(TypedDict, total=False):
+    create: 'TestimonialCreateWithoutRelationsInput'
+    connect: 'TestimonialWhereUniqueInput'
+    connect_or_create: 'TestimonialConnectOrCreateWithoutRelationsInput'
+    disconnect: bool
+    delete: bool
+
+    # TODO
+    # update: 'TestimonialUpdateInput'
+    # upsert: 'TestimonialUpsertWithoutRelationsInput'
+
+
+class TestimonialUpsertInput(TypedDict):
+    create: 'TestimonialCreateInput'
+    update: 'TestimonialUpdateInput'  # pyright: ignore[reportIncompatibleMethodOverride]
+
+
+_Testimonial_id_OrderByInput = TypedDict(
+    '_Testimonial_id_OrderByInput',
+    {
+        'id': 'SortOrder',
+    },
+    total=True
+)
+
+_Testimonial_name_OrderByInput = TypedDict(
+    '_Testimonial_name_OrderByInput',
+    {
+        'name': 'SortOrder',
+    },
+    total=True
+)
+
+_Testimonial_role_OrderByInput = TypedDict(
+    '_Testimonial_role_OrderByInput',
+    {
+        'role': 'SortOrder',
+    },
+    total=True
+)
+
+_Testimonial_company_OrderByInput = TypedDict(
+    '_Testimonial_company_OrderByInput',
+    {
+        'company': 'SortOrder',
+    },
+    total=True
+)
+
+_Testimonial_rating_OrderByInput = TypedDict(
+    '_Testimonial_rating_OrderByInput',
+    {
+        'rating': 'SortOrder',
+    },
+    total=True
+)
+
+_Testimonial_text_OrderByInput = TypedDict(
+    '_Testimonial_text_OrderByInput',
+    {
+        'text': 'SortOrder',
+    },
+    total=True
+)
+
+_Testimonial_createdAt_OrderByInput = TypedDict(
+    '_Testimonial_createdAt_OrderByInput',
+    {
+        'createdAt': 'SortOrder',
+    },
+    total=True
+)
+
+_Testimonial_updatedAt_OrderByInput = TypedDict(
+    '_Testimonial_updatedAt_OrderByInput',
+    {
+        'updatedAt': 'SortOrder',
+    },
+    total=True
+)
+
+_Testimonial_RelevanceInner = TypedDict(
+    '_Testimonial_RelevanceInner',
+    {
+        'fields': 'List[TestimonialScalarFieldKeys]',
+        'search': 'str',
+        'sort': 'SortOrder',
+    },
+    total=True
+)
+
+_Testimonial_RelevanceOrderByInput = TypedDict(
+    '_Testimonial_RelevanceOrderByInput',
+    {
+        '_relevance': '_Testimonial_RelevanceInner',
+    },
+    total=True
+)
+
+TestimonialOrderByInput = Union[
+    '_Testimonial_id_OrderByInput',
+    '_Testimonial_name_OrderByInput',
+    '_Testimonial_role_OrderByInput',
+    '_Testimonial_company_OrderByInput',
+    '_Testimonial_rating_OrderByInput',
+    '_Testimonial_text_OrderByInput',
+    '_Testimonial_createdAt_OrderByInput',
+    '_Testimonial_updatedAt_OrderByInput',
+    '_Testimonial_RelevanceOrderByInput',
+]
+
+
+
+# recursive Testimonial types
+# TODO: cleanup these types
+
+
+# Dict[str, Any] is a mypy limitation
+# see https://github.com/RobertCraigie/prisma-client-py/issues/45
+# switch to pyright for improved types, see https://prisma-client-py.readthedocs.io/en/stable/reference/limitations/
+
+TestimonialRelationFilter = TypedDict(
+    'TestimonialRelationFilter',
+    {
+        'is': 'Dict[str, Any]',
+        'is_not': 'Dict[str, Any]',
+    },
+    total=False,
+)
+
+
+class TestimonialListRelationFilter(TypedDict, total=False):
+    some: 'Dict[str, Any]'
+    none: 'Dict[str, Any]'
+    every: 'Dict[str, Any]'
+
+
+class TestimonialInclude(TypedDict, total=False):
+    """Testimonial relational arguments"""
+
+
+    
+
+class UserIncludeFromTestimonial(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromTestimonialRecursive1']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromTestimonialRecursive1']
+    payments: Union[bool, 'FindManyPaymentArgsFromTestimonialRecursive1']
+
+
+class UserIncludeFromTestimonialRecursive1(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromTestimonialRecursive2']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromTestimonialRecursive2']
+    payments: Union[bool, 'FindManyPaymentArgsFromTestimonialRecursive2']
+
+
+class UserIncludeFromTestimonialRecursive2(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromTestimonialRecursive3']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromTestimonialRecursive3']
+    payments: Union[bool, 'FindManyPaymentArgsFromTestimonialRecursive3']
+
+
+class UserIncludeFromTestimonialRecursive3(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromTestimonialRecursive4']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromTestimonialRecursive4']
+    payments: Union[bool, 'FindManyPaymentArgsFromTestimonialRecursive4']
+
+
+class UserIncludeFromTestimonialRecursive4(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+    
+
+class UserArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'UserIncludeFromUserRecursive1'
+
+
+class UserArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'UserIncludeFromUserRecursive2'
+
+
+class UserArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'UserIncludeFromUserRecursive3'
+
+
+class UserArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'UserIncludeFromUserRecursive4'
+
+
+class UserArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    
+    
+
+class FindManyUserArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive1'
+
+
+class FindManyUserArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive2'
+
+
+class FindManyUserArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive3'
+
+
+class FindManyUserArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive4'
+
+
+class FindManyUserArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    
+    
+
+class CourseIncludeFromTestimonial(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    lessons: Union[bool, 'FindManyLessonArgsFromTestimonialRecursive1']
+
+
+class CourseIncludeFromTestimonialRecursive1(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    lessons: Union[bool, 'FindManyLessonArgsFromTestimonialRecursive2']
+
+
+class CourseIncludeFromTestimonialRecursive2(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    lessons: Union[bool, 'FindManyLessonArgsFromTestimonialRecursive3']
+
+
+class CourseIncludeFromTestimonialRecursive3(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    lessons: Union[bool, 'FindManyLessonArgsFromTestimonialRecursive4']
+
+
+class CourseIncludeFromTestimonialRecursive4(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+    
+
+class CourseArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'CourseIncludeFromCourseRecursive1'
+
+
+class CourseArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'CourseIncludeFromCourseRecursive2'
+
+
+class CourseArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'CourseIncludeFromCourseRecursive3'
+
+
+class CourseArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'CourseIncludeFromCourseRecursive4'
+
+
+class CourseArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    
+    
+
+class FindManyCourseArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive1'
+
+
+class FindManyCourseArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive2'
+
+
+class FindManyCourseArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive3'
+
+
+class FindManyCourseArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive4'
+
+
+class FindManyCourseArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    
+    
+
+class LessonIncludeFromTestimonial(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    course: Union[bool, 'CourseArgsFromTestimonialRecursive1']
+    progress: Union[bool, 'FindManyUserProgressArgsFromTestimonialRecursive1']
+
+
+class LessonIncludeFromTestimonialRecursive1(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    course: Union[bool, 'CourseArgsFromTestimonialRecursive2']
+    progress: Union[bool, 'FindManyUserProgressArgsFromTestimonialRecursive2']
+
+
+class LessonIncludeFromTestimonialRecursive2(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    course: Union[bool, 'CourseArgsFromTestimonialRecursive3']
+    progress: Union[bool, 'FindManyUserProgressArgsFromTestimonialRecursive3']
+
+
+class LessonIncludeFromTestimonialRecursive3(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    course: Union[bool, 'CourseArgsFromTestimonialRecursive4']
+    progress: Union[bool, 'FindManyUserProgressArgsFromTestimonialRecursive4']
+
+
+class LessonIncludeFromTestimonialRecursive4(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+    
+
+class LessonArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'LessonIncludeFromLessonRecursive1'
+
+
+class LessonArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'LessonIncludeFromLessonRecursive2'
+
+
+class LessonArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'LessonIncludeFromLessonRecursive3'
+
+
+class LessonArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'LessonIncludeFromLessonRecursive4'
+
+
+class LessonArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    
+    
+
+class FindManyLessonArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive1'
+
+
+class FindManyLessonArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive2'
+
+
+class FindManyLessonArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive3'
+
+
+class FindManyLessonArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive4'
+
+
+class FindManyLessonArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    
+    
+
+class UserProgressIncludeFromTestimonial(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    user: Union[bool, 'UserArgsFromTestimonialRecursive1']
+    lesson: Union[bool, 'LessonArgsFromTestimonialRecursive1']
+
+
+class UserProgressIncludeFromTestimonialRecursive1(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    user: Union[bool, 'UserArgsFromTestimonialRecursive2']
+    lesson: Union[bool, 'LessonArgsFromTestimonialRecursive2']
+
+
+class UserProgressIncludeFromTestimonialRecursive2(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    user: Union[bool, 'UserArgsFromTestimonialRecursive3']
+    lesson: Union[bool, 'LessonArgsFromTestimonialRecursive3']
+
+
+class UserProgressIncludeFromTestimonialRecursive3(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    user: Union[bool, 'UserArgsFromTestimonialRecursive4']
+    lesson: Union[bool, 'LessonArgsFromTestimonialRecursive4']
+
+
+class UserProgressIncludeFromTestimonialRecursive4(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+    
+
+class UserProgressArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'UserProgressIncludeFromUserProgressRecursive1'
+
+
+class UserProgressArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'UserProgressIncludeFromUserProgressRecursive2'
+
+
+class UserProgressArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'UserProgressIncludeFromUserProgressRecursive3'
+
+
+class UserProgressArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'UserProgressIncludeFromUserProgressRecursive4'
+
+
+class UserProgressArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    
+    
+
+class FindManyUserProgressArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive1'
+
+
+class FindManyUserProgressArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive2'
+
+
+class FindManyUserProgressArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive3'
+
+
+class FindManyUserProgressArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive4'
+
+
+class FindManyUserProgressArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    
+    
+
+class QuestionIncludeFromTestimonial(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class QuestionIncludeFromTestimonialRecursive1(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class QuestionIncludeFromTestimonialRecursive2(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class QuestionIncludeFromTestimonialRecursive3(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class QuestionIncludeFromTestimonialRecursive4(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+    
+
+class QuestionArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'QuestionIncludeFromQuestionRecursive1'
+
+
+class QuestionArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'QuestionIncludeFromQuestionRecursive2'
+
+
+class QuestionArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'QuestionIncludeFromQuestionRecursive3'
+
+
+class QuestionArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'QuestionIncludeFromQuestionRecursive4'
+
+
+class QuestionArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    
+    
+
+class FindManyQuestionArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive1'
+
+
+class FindManyQuestionArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive2'
+
+
+class FindManyQuestionArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive3'
+
+
+class FindManyQuestionArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive4'
+
+
+class FindManyQuestionArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    
+    
+
+class UserExamAttemptIncludeFromTestimonial(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    user: Union[bool, 'UserArgsFromTestimonialRecursive1']
+
+
+class UserExamAttemptIncludeFromTestimonialRecursive1(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    user: Union[bool, 'UserArgsFromTestimonialRecursive2']
+
+
+class UserExamAttemptIncludeFromTestimonialRecursive2(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    user: Union[bool, 'UserArgsFromTestimonialRecursive3']
+
+
+class UserExamAttemptIncludeFromTestimonialRecursive3(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    user: Union[bool, 'UserArgsFromTestimonialRecursive4']
+
+
+class UserExamAttemptIncludeFromTestimonialRecursive4(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+    
+
+class UserExamAttemptArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive1'
+
+
+class UserExamAttemptArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive2'
+
+
+class UserExamAttemptArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive3'
+
+
+class UserExamAttemptArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive4'
+
+
+class UserExamAttemptArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    
+    
+
+class FindManyUserExamAttemptArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive1'
+
+
+class FindManyUserExamAttemptArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive2'
+
+
+class FindManyUserExamAttemptArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive3'
+
+
+class FindManyUserExamAttemptArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive4'
+
+
+class FindManyUserExamAttemptArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    
+    
+
+class PaymentIncludeFromTestimonial(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    user: Union[bool, 'UserArgsFromTestimonialRecursive1']
+
+
+class PaymentIncludeFromTestimonialRecursive1(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    user: Union[bool, 'UserArgsFromTestimonialRecursive2']
+
+
+class PaymentIncludeFromTestimonialRecursive2(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    user: Union[bool, 'UserArgsFromTestimonialRecursive3']
+
+
+class PaymentIncludeFromTestimonialRecursive3(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+    user: Union[bool, 'UserArgsFromTestimonialRecursive4']
+
+
+class PaymentIncludeFromTestimonialRecursive4(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+    
+
+class PaymentArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class PaymentArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class PaymentArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class PaymentArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class PaymentArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    
+    
+
+class FindManyPaymentArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class FindManyPaymentArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class FindManyPaymentArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class FindManyPaymentArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class FindManyPaymentArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    
+    
+
+class BlogPostIncludeFromTestimonial(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class BlogPostIncludeFromTestimonialRecursive1(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class BlogPostIncludeFromTestimonialRecursive2(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class BlogPostIncludeFromTestimonialRecursive3(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class BlogPostIncludeFromTestimonialRecursive4(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+    
+
+class BlogPostArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class BlogPostArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class BlogPostArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class BlogPostArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class BlogPostArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    
+    
+
+class FindManyBlogPostArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class FindManyBlogPostArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class FindManyBlogPostArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class FindManyBlogPostArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class FindManyBlogPostArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    
+    
+
+class AboutContentIncludeFromTestimonial(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class AboutContentIncludeFromTestimonialRecursive1(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class AboutContentIncludeFromTestimonialRecursive2(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class AboutContentIncludeFromTestimonialRecursive3(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class AboutContentIncludeFromTestimonialRecursive4(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+    
+
+class AboutContentArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class AboutContentArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class AboutContentArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class AboutContentArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class AboutContentArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    
+    
+
+class FindManyAboutContentArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class FindManyAboutContentArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class FindManyAboutContentArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class FindManyAboutContentArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class FindManyAboutContentArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    
+    
+
+class SubscriptionPlanIncludeFromTestimonial(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class SubscriptionPlanIncludeFromTestimonialRecursive1(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class SubscriptionPlanIncludeFromTestimonialRecursive2(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class SubscriptionPlanIncludeFromTestimonialRecursive3(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class SubscriptionPlanIncludeFromTestimonialRecursive4(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+    
+
+class SubscriptionPlanArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class SubscriptionPlanArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class SubscriptionPlanArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class SubscriptionPlanArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class SubscriptionPlanArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    
+    
+
+class FindManySubscriptionPlanArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class FindManySubscriptionPlanArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class FindManySubscriptionPlanArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class FindManySubscriptionPlanArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class FindManySubscriptionPlanArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    
+    
+
+class TestimonialIncludeFromTestimonial(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class TestimonialIncludeFromTestimonialRecursive1(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class TestimonialIncludeFromTestimonialRecursive2(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class TestimonialIncludeFromTestimonialRecursive3(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class TestimonialIncludeFromTestimonialRecursive4(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+    
+
+class TestimonialArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class TestimonialArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class TestimonialArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class TestimonialArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class TestimonialArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    
+    
+
+class FindManyTestimonialArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class FindManyTestimonialArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class FindManyTestimonialArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class FindManyTestimonialArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class FindManyTestimonialArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    
+    
+
+class InterviewQuestionIncludeFromTestimonial(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class InterviewQuestionIncludeFromTestimonialRecursive1(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class InterviewQuestionIncludeFromTestimonialRecursive2(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class InterviewQuestionIncludeFromTestimonialRecursive3(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+
+class InterviewQuestionIncludeFromTestimonialRecursive4(TypedDict, total=False):
+    """Relational arguments for Testimonial"""
+
+    
+
+class InterviewQuestionArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class InterviewQuestionArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class InterviewQuestionArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class InterviewQuestionArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class InterviewQuestionArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    
+    
+
+class FindManyInterviewQuestionArgsFromTestimonial(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class FindManyInterviewQuestionArgsFromTestimonialRecursive1(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class FindManyInterviewQuestionArgsFromTestimonialRecursive2(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class FindManyInterviewQuestionArgsFromTestimonialRecursive3(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class FindManyInterviewQuestionArgsFromTestimonialRecursive4(TypedDict, total=False):
+    """Arguments for Testimonial"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    
+
+
+FindManyTestimonialArgs = FindManyTestimonialArgsFromTestimonial
+FindFirstTestimonialArgs = FindManyTestimonialArgsFromTestimonial
+
+
+    
+
+class TestimonialWhereInput(TypedDict, total=False):
+    """Testimonial arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    name: Union[_str, 'types.StringFilter']
+    role: Union[_str, 'types.StringFilter']
+    company: Union[_str, 'types.StringFilter']
+    rating: Union[_int, 'types.IntFilter']
+    text: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['TestimonialWhereInputRecursive1', List['TestimonialWhereInputRecursive1']]
+    # but this causes mypy to hang :/
+    AND: List['TestimonialWhereInputRecursive1']
+    OR: List['TestimonialWhereInputRecursive1']
+    NOT: List['TestimonialWhereInputRecursive1']
+
+
+class TestimonialWhereInputRecursive1(TypedDict, total=False):
+    """Testimonial arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    name: Union[_str, 'types.StringFilter']
+    role: Union[_str, 'types.StringFilter']
+    company: Union[_str, 'types.StringFilter']
+    rating: Union[_int, 'types.IntFilter']
+    text: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['TestimonialWhereInputRecursive2', List['TestimonialWhereInputRecursive2']]
+    # but this causes mypy to hang :/
+    AND: List['TestimonialWhereInputRecursive2']
+    OR: List['TestimonialWhereInputRecursive2']
+    NOT: List['TestimonialWhereInputRecursive2']
+
+
+class TestimonialWhereInputRecursive2(TypedDict, total=False):
+    """Testimonial arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    name: Union[_str, 'types.StringFilter']
+    role: Union[_str, 'types.StringFilter']
+    company: Union[_str, 'types.StringFilter']
+    rating: Union[_int, 'types.IntFilter']
+    text: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['TestimonialWhereInputRecursive3', List['TestimonialWhereInputRecursive3']]
+    # but this causes mypy to hang :/
+    AND: List['TestimonialWhereInputRecursive3']
+    OR: List['TestimonialWhereInputRecursive3']
+    NOT: List['TestimonialWhereInputRecursive3']
+
+
+class TestimonialWhereInputRecursive3(TypedDict, total=False):
+    """Testimonial arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    name: Union[_str, 'types.StringFilter']
+    role: Union[_str, 'types.StringFilter']
+    company: Union[_str, 'types.StringFilter']
+    rating: Union[_int, 'types.IntFilter']
+    text: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['TestimonialWhereInputRecursive4', List['TestimonialWhereInputRecursive4']]
+    # but this causes mypy to hang :/
+    AND: List['TestimonialWhereInputRecursive4']
+    OR: List['TestimonialWhereInputRecursive4']
+    NOT: List['TestimonialWhereInputRecursive4']
+
+
+class TestimonialWhereInputRecursive4(TypedDict, total=False):
+    """Testimonial arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    name: Union[_str, 'types.StringFilter']
+    role: Union[_str, 'types.StringFilter']
+    company: Union[_str, 'types.StringFilter']
+    rating: Union[_int, 'types.IntFilter']
+    text: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+
+
+# aggregate Testimonial types
+
+
+    
+
+class TestimonialScalarWhereWithAggregatesInput(TypedDict, total=False):
+    """Testimonial arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    name: Union[_str, 'types.StringWithAggregatesFilter']
+    role: Union[_str, 'types.StringWithAggregatesFilter']
+    company: Union[_str, 'types.StringWithAggregatesFilter']
+    rating: Union[_int, 'types.IntWithAggregatesFilter']
+    text: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['TestimonialScalarWhereWithAggregatesInputRecursive1']
+    OR: List['TestimonialScalarWhereWithAggregatesInputRecursive1']
+    NOT: List['TestimonialScalarWhereWithAggregatesInputRecursive1']
+
+
+class TestimonialScalarWhereWithAggregatesInputRecursive1(TypedDict, total=False):
+    """Testimonial arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    name: Union[_str, 'types.StringWithAggregatesFilter']
+    role: Union[_str, 'types.StringWithAggregatesFilter']
+    company: Union[_str, 'types.StringWithAggregatesFilter']
+    rating: Union[_int, 'types.IntWithAggregatesFilter']
+    text: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['TestimonialScalarWhereWithAggregatesInputRecursive2']
+    OR: List['TestimonialScalarWhereWithAggregatesInputRecursive2']
+    NOT: List['TestimonialScalarWhereWithAggregatesInputRecursive2']
+
+
+class TestimonialScalarWhereWithAggregatesInputRecursive2(TypedDict, total=False):
+    """Testimonial arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    name: Union[_str, 'types.StringWithAggregatesFilter']
+    role: Union[_str, 'types.StringWithAggregatesFilter']
+    company: Union[_str, 'types.StringWithAggregatesFilter']
+    rating: Union[_int, 'types.IntWithAggregatesFilter']
+    text: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['TestimonialScalarWhereWithAggregatesInputRecursive3']
+    OR: List['TestimonialScalarWhereWithAggregatesInputRecursive3']
+    NOT: List['TestimonialScalarWhereWithAggregatesInputRecursive3']
+
+
+class TestimonialScalarWhereWithAggregatesInputRecursive3(TypedDict, total=False):
+    """Testimonial arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    name: Union[_str, 'types.StringWithAggregatesFilter']
+    role: Union[_str, 'types.StringWithAggregatesFilter']
+    company: Union[_str, 'types.StringWithAggregatesFilter']
+    rating: Union[_int, 'types.IntWithAggregatesFilter']
+    text: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['TestimonialScalarWhereWithAggregatesInputRecursive4']
+    OR: List['TestimonialScalarWhereWithAggregatesInputRecursive4']
+    NOT: List['TestimonialScalarWhereWithAggregatesInputRecursive4']
+
+
+class TestimonialScalarWhereWithAggregatesInputRecursive4(TypedDict, total=False):
+    """Testimonial arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    name: Union[_str, 'types.StringWithAggregatesFilter']
+    role: Union[_str, 'types.StringWithAggregatesFilter']
+    company: Union[_str, 'types.StringWithAggregatesFilter']
+    rating: Union[_int, 'types.IntWithAggregatesFilter']
+    text: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+
+
+class TestimonialGroupByOutput(TypedDict, total=False):
+    id: _str
+    name: _str
+    role: _str
+    company: _str
+    rating: _int
+    text: _str
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+    _sum: 'TestimonialSumAggregateOutput'
+    _avg: 'TestimonialAvgAggregateOutput'
+    _min: 'TestimonialMinAggregateOutput'
+    _max: 'TestimonialMaxAggregateOutput'
+    _count: 'TestimonialCountAggregateOutput'
+
+
+class TestimonialAvgAggregateOutput(TypedDict, total=False):
+    """Testimonial output for aggregating averages"""
+    rating: float
+
+
+class TestimonialSumAggregateOutput(TypedDict, total=False):
+    """Testimonial output for aggregating sums"""
+    rating: _int
+
+
+class TestimonialScalarAggregateOutput(TypedDict, total=False):
+    """Testimonial output including scalar fields"""
+    id: _str
+    name: _str
+    role: _str
+    company: _str
+    rating: _int
+    text: _str
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+TestimonialMinAggregateOutput = TestimonialScalarAggregateOutput
+TestimonialMaxAggregateOutput = TestimonialScalarAggregateOutput
+
+
+class TestimonialMaxAggregateInput(TypedDict, total=False):
+    """Testimonial input for aggregating by max"""
+    id: bool
+    name: bool
+    role: bool
+    company: bool
+    rating: bool
+    text: bool
+    createdAt: bool
+    updatedAt: bool
+
+
+class TestimonialMinAggregateInput(TypedDict, total=False):
+    """Testimonial input for aggregating by min"""
+    id: bool
+    name: bool
+    role: bool
+    company: bool
+    rating: bool
+    text: bool
+    createdAt: bool
+    updatedAt: bool
+
+
+class TestimonialNumberAggregateInput(TypedDict, total=False):
+    """Testimonial input for aggregating numbers"""
+    rating: bool
+
+
+TestimonialAvgAggregateInput = TestimonialNumberAggregateInput
+TestimonialSumAggregateInput = TestimonialNumberAggregateInput
+
+
+TestimonialCountAggregateInput = TypedDict(
+    'TestimonialCountAggregateInput',
+    {
+        'id': bool,
+        'name': bool,
+        'role': bool,
+        'company': bool,
+        'rating': bool,
+        'text': bool,
+        'createdAt': bool,
+        'updatedAt': bool,
+        '_all': bool,
+    },
+    total=False,
+)
+
+TestimonialCountAggregateOutput = TypedDict(
+    'TestimonialCountAggregateOutput',
+    {
+        'id': int,
+        'name': int,
+        'role': int,
+        'company': int,
+        'rating': int,
+        'text': int,
+        'createdAt': int,
+        'updatedAt': int,
+        '_all': int,
+    },
+    total=False,
+)
+
+
+TestimonialKeys = Literal[
+    'id',
+    'name',
+    'role',
+    'company',
+    'rating',
+    'text',
+    'createdAt',
+    'updatedAt',
+]
+TestimonialScalarFieldKeys = Literal[
+    'id',
+    'name',
+    'role',
+    'company',
+    'rating',
+    'text',
+    'createdAt',
+    'updatedAt',
+]
+TestimonialScalarFieldKeysT = TypeVar('TestimonialScalarFieldKeysT', bound=TestimonialScalarFieldKeys)
+
+TestimonialRelationalFieldKeys = _NoneType
+
+# InterviewQuestion types
+
+class InterviewQuestionOptionalCreateInput(TypedDict, total=False):
+    """Optional arguments to the InterviewQuestion create method"""
+    id: _str
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class InterviewQuestionCreateInput(InterviewQuestionOptionalCreateInput):
+    """Required arguments to the InterviewQuestion create method"""
+    topic: _str
+    questionText: _str
+    correctAnswer: _str
+
+
+# TODO: remove this in favour of without explicit relations
+# e.g. PostCreateWithoutAuthorInput
+
+class InterviewQuestionOptionalCreateWithoutRelationsInput(TypedDict, total=False):
+    """Optional arguments to the InterviewQuestion create method, without relations"""
+    id: _str
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class InterviewQuestionCreateWithoutRelationsInput(InterviewQuestionOptionalCreateWithoutRelationsInput):
+    """Required arguments to the InterviewQuestion create method, without relations"""
+    topic: _str
+    questionText: _str
+    correctAnswer: _str
+
+class InterviewQuestionConnectOrCreateWithoutRelationsInput(TypedDict):
+    create: 'InterviewQuestionCreateWithoutRelationsInput'
+    where: 'InterviewQuestionWhereUniqueInput'
+
+class InterviewQuestionCreateNestedWithoutRelationsInput(TypedDict, total=False):
+    create: 'InterviewQuestionCreateWithoutRelationsInput'
+    connect: 'InterviewQuestionWhereUniqueInput'
+    connect_or_create: 'InterviewQuestionConnectOrCreateWithoutRelationsInput'
+
+
+class InterviewQuestionCreateManyNestedWithoutRelationsInput(TypedDict, total=False):
+    create: Union['InterviewQuestionCreateWithoutRelationsInput', List['InterviewQuestionCreateWithoutRelationsInput']]
+    connect: Union['InterviewQuestionWhereUniqueInput', List['InterviewQuestionWhereUniqueInput']]
+    connect_or_create: Union['InterviewQuestionConnectOrCreateWithoutRelationsInput', List['InterviewQuestionConnectOrCreateWithoutRelationsInput']]
+
+_InterviewQuestionWhereUnique_id_Input = TypedDict(
+    '_InterviewQuestionWhereUnique_id_Input',
+    {
+        'id': '_str',
+    },
+    total=True
+)
+
+InterviewQuestionWhereUniqueInput = _InterviewQuestionWhereUnique_id_Input
+
+
+class InterviewQuestionUpdateInput(TypedDict, total=False):
+    """Optional arguments for updating a record"""
+    id: _str
+    topic: _str
+    questionText: _str
+    correctAnswer: _str
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class InterviewQuestionUpdateManyMutationInput(TypedDict, total=False):
+    """Arguments for updating many records"""
+    id: _str
+    topic: _str
+    questionText: _str
+    correctAnswer: _str
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+class InterviewQuestionUpdateManyWithoutRelationsInput(TypedDict, total=False):
+    create: List['InterviewQuestionCreateWithoutRelationsInput']
+    connect: List['InterviewQuestionWhereUniqueInput']
+    connect_or_create: List['InterviewQuestionConnectOrCreateWithoutRelationsInput']
+    set: List['InterviewQuestionWhereUniqueInput']
+    disconnect: List['InterviewQuestionWhereUniqueInput']
+    delete: List['InterviewQuestionWhereUniqueInput']
+
+    # TODO
+    # update: List['InterviewQuestionUpdateWithWhereUniqueWithoutRelationsInput']
+    # updateMany: List['InterviewQuestionUpdateManyWithWhereUniqueWithoutRelationsInput']
+    # deleteMany: List['InterviewQuestionScalarWhereInput']
+    # upsert: List['InterviewQuestionUpserteWithWhereUniqueWithoutRelationsInput']
+
+
+class InterviewQuestionUpdateOneWithoutRelationsInput(TypedDict, total=False):
+    create: 'InterviewQuestionCreateWithoutRelationsInput'
+    connect: 'InterviewQuestionWhereUniqueInput'
+    connect_or_create: 'InterviewQuestionConnectOrCreateWithoutRelationsInput'
+    disconnect: bool
+    delete: bool
+
+    # TODO
+    # update: 'InterviewQuestionUpdateInput'
+    # upsert: 'InterviewQuestionUpsertWithoutRelationsInput'
+
+
+class InterviewQuestionUpsertInput(TypedDict):
+    create: 'InterviewQuestionCreateInput'
+    update: 'InterviewQuestionUpdateInput'  # pyright: ignore[reportIncompatibleMethodOverride]
+
+
+_InterviewQuestion_id_OrderByInput = TypedDict(
+    '_InterviewQuestion_id_OrderByInput',
+    {
+        'id': 'SortOrder',
+    },
+    total=True
+)
+
+_InterviewQuestion_topic_OrderByInput = TypedDict(
+    '_InterviewQuestion_topic_OrderByInput',
+    {
+        'topic': 'SortOrder',
+    },
+    total=True
+)
+
+_InterviewQuestion_questionText_OrderByInput = TypedDict(
+    '_InterviewQuestion_questionText_OrderByInput',
+    {
+        'questionText': 'SortOrder',
+    },
+    total=True
+)
+
+_InterviewQuestion_correctAnswer_OrderByInput = TypedDict(
+    '_InterviewQuestion_correctAnswer_OrderByInput',
+    {
+        'correctAnswer': 'SortOrder',
+    },
+    total=True
+)
+
+_InterviewQuestion_createdAt_OrderByInput = TypedDict(
+    '_InterviewQuestion_createdAt_OrderByInput',
+    {
+        'createdAt': 'SortOrder',
+    },
+    total=True
+)
+
+_InterviewQuestion_updatedAt_OrderByInput = TypedDict(
+    '_InterviewQuestion_updatedAt_OrderByInput',
+    {
+        'updatedAt': 'SortOrder',
+    },
+    total=True
+)
+
+_InterviewQuestion_RelevanceInner = TypedDict(
+    '_InterviewQuestion_RelevanceInner',
+    {
+        'fields': 'List[InterviewQuestionScalarFieldKeys]',
+        'search': 'str',
+        'sort': 'SortOrder',
+    },
+    total=True
+)
+
+_InterviewQuestion_RelevanceOrderByInput = TypedDict(
+    '_InterviewQuestion_RelevanceOrderByInput',
+    {
+        '_relevance': '_InterviewQuestion_RelevanceInner',
+    },
+    total=True
+)
+
+InterviewQuestionOrderByInput = Union[
+    '_InterviewQuestion_id_OrderByInput',
+    '_InterviewQuestion_topic_OrderByInput',
+    '_InterviewQuestion_questionText_OrderByInput',
+    '_InterviewQuestion_correctAnswer_OrderByInput',
+    '_InterviewQuestion_createdAt_OrderByInput',
+    '_InterviewQuestion_updatedAt_OrderByInput',
+    '_InterviewQuestion_RelevanceOrderByInput',
+]
+
+
+
+# recursive InterviewQuestion types
+# TODO: cleanup these types
+
+
+# Dict[str, Any] is a mypy limitation
+# see https://github.com/RobertCraigie/prisma-client-py/issues/45
+# switch to pyright for improved types, see https://prisma-client-py.readthedocs.io/en/stable/reference/limitations/
+
+InterviewQuestionRelationFilter = TypedDict(
+    'InterviewQuestionRelationFilter',
+    {
+        'is': 'Dict[str, Any]',
+        'is_not': 'Dict[str, Any]',
+    },
+    total=False,
+)
+
+
+class InterviewQuestionListRelationFilter(TypedDict, total=False):
+    some: 'Dict[str, Any]'
+    none: 'Dict[str, Any]'
+    every: 'Dict[str, Any]'
+
+
+class InterviewQuestionInclude(TypedDict, total=False):
+    """InterviewQuestion relational arguments"""
+
+
+    
+
+class UserIncludeFromInterviewQuestion(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromInterviewQuestionRecursive1']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromInterviewQuestionRecursive1']
+    payments: Union[bool, 'FindManyPaymentArgsFromInterviewQuestionRecursive1']
+
+
+class UserIncludeFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromInterviewQuestionRecursive2']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromInterviewQuestionRecursive2']
+    payments: Union[bool, 'FindManyPaymentArgsFromInterviewQuestionRecursive2']
+
+
+class UserIncludeFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromInterviewQuestionRecursive3']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromInterviewQuestionRecursive3']
+    payments: Union[bool, 'FindManyPaymentArgsFromInterviewQuestionRecursive3']
+
+
+class UserIncludeFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    progress: Union[bool, 'FindManyUserProgressArgsFromInterviewQuestionRecursive4']
+    attempts: Union[bool, 'FindManyUserExamAttemptArgsFromInterviewQuestionRecursive4']
+    payments: Union[bool, 'FindManyPaymentArgsFromInterviewQuestionRecursive4']
+
+
+class UserIncludeFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+    
+
+class UserArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'UserIncludeFromUserRecursive1'
+
+
+class UserArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'UserIncludeFromUserRecursive2'
+
+
+class UserArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'UserIncludeFromUserRecursive3'
+
+
+class UserArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'UserIncludeFromUserRecursive4'
+
+
+class UserArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    
+    
+
+class FindManyUserArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive1'
+
+
+class FindManyUserArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive2'
+
+
+class FindManyUserArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive3'
+
+
+class FindManyUserArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    include: 'UserIncludeFromUserRecursive4'
+
+
+class FindManyUserArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserOrderByInput', List['UserOrderByInput']]
+    where: 'UserWhereInput'
+    cursor: 'UserWhereUniqueInput'
+    distinct: List['UserScalarFieldKeys']
+    
+    
+
+class CourseIncludeFromInterviewQuestion(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    lessons: Union[bool, 'FindManyLessonArgsFromInterviewQuestionRecursive1']
+
+
+class CourseIncludeFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    lessons: Union[bool, 'FindManyLessonArgsFromInterviewQuestionRecursive2']
+
+
+class CourseIncludeFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    lessons: Union[bool, 'FindManyLessonArgsFromInterviewQuestionRecursive3']
+
+
+class CourseIncludeFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    lessons: Union[bool, 'FindManyLessonArgsFromInterviewQuestionRecursive4']
+
+
+class CourseIncludeFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+    
+
+class CourseArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'CourseIncludeFromCourseRecursive1'
+
+
+class CourseArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'CourseIncludeFromCourseRecursive2'
+
+
+class CourseArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'CourseIncludeFromCourseRecursive3'
+
+
+class CourseArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'CourseIncludeFromCourseRecursive4'
+
+
+class CourseArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    
+    
+
+class FindManyCourseArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive1'
+
+
+class FindManyCourseArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive2'
+
+
+class FindManyCourseArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive3'
+
+
+class FindManyCourseArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    include: 'CourseIncludeFromCourseRecursive4'
+
+
+class FindManyCourseArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['CourseOrderByInput', List['CourseOrderByInput']]
+    where: 'CourseWhereInput'
+    cursor: 'CourseWhereUniqueInput'
+    distinct: List['CourseScalarFieldKeys']
+    
+    
+
+class LessonIncludeFromInterviewQuestion(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    course: Union[bool, 'CourseArgsFromInterviewQuestionRecursive1']
+    progress: Union[bool, 'FindManyUserProgressArgsFromInterviewQuestionRecursive1']
+
+
+class LessonIncludeFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    course: Union[bool, 'CourseArgsFromInterviewQuestionRecursive2']
+    progress: Union[bool, 'FindManyUserProgressArgsFromInterviewQuestionRecursive2']
+
+
+class LessonIncludeFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    course: Union[bool, 'CourseArgsFromInterviewQuestionRecursive3']
+    progress: Union[bool, 'FindManyUserProgressArgsFromInterviewQuestionRecursive3']
+
+
+class LessonIncludeFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    course: Union[bool, 'CourseArgsFromInterviewQuestionRecursive4']
+    progress: Union[bool, 'FindManyUserProgressArgsFromInterviewQuestionRecursive4']
+
+
+class LessonIncludeFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+    
+
+class LessonArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'LessonIncludeFromLessonRecursive1'
+
+
+class LessonArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'LessonIncludeFromLessonRecursive2'
+
+
+class LessonArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'LessonIncludeFromLessonRecursive3'
+
+
+class LessonArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'LessonIncludeFromLessonRecursive4'
+
+
+class LessonArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    
+    
+
+class FindManyLessonArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive1'
+
+
+class FindManyLessonArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive2'
+
+
+class FindManyLessonArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive3'
+
+
+class FindManyLessonArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    include: 'LessonIncludeFromLessonRecursive4'
+
+
+class FindManyLessonArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['LessonOrderByInput', List['LessonOrderByInput']]
+    where: 'LessonWhereInput'
+    cursor: 'LessonWhereUniqueInput'
+    distinct: List['LessonScalarFieldKeys']
+    
+    
+
+class UserProgressIncludeFromInterviewQuestion(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    user: Union[bool, 'UserArgsFromInterviewQuestionRecursive1']
+    lesson: Union[bool, 'LessonArgsFromInterviewQuestionRecursive1']
+
+
+class UserProgressIncludeFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    user: Union[bool, 'UserArgsFromInterviewQuestionRecursive2']
+    lesson: Union[bool, 'LessonArgsFromInterviewQuestionRecursive2']
+
+
+class UserProgressIncludeFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    user: Union[bool, 'UserArgsFromInterviewQuestionRecursive3']
+    lesson: Union[bool, 'LessonArgsFromInterviewQuestionRecursive3']
+
+
+class UserProgressIncludeFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    user: Union[bool, 'UserArgsFromInterviewQuestionRecursive4']
+    lesson: Union[bool, 'LessonArgsFromInterviewQuestionRecursive4']
+
+
+class UserProgressIncludeFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+    
+
+class UserProgressArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'UserProgressIncludeFromUserProgressRecursive1'
+
+
+class UserProgressArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'UserProgressIncludeFromUserProgressRecursive2'
+
+
+class UserProgressArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'UserProgressIncludeFromUserProgressRecursive3'
+
+
+class UserProgressArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'UserProgressIncludeFromUserProgressRecursive4'
+
+
+class UserProgressArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    
+    
+
+class FindManyUserProgressArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive1'
+
+
+class FindManyUserProgressArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive2'
+
+
+class FindManyUserProgressArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive3'
+
+
+class FindManyUserProgressArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    include: 'UserProgressIncludeFromUserProgressRecursive4'
+
+
+class FindManyUserProgressArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserProgressOrderByInput', List['UserProgressOrderByInput']]
+    where: 'UserProgressWhereInput'
+    cursor: 'UserProgressWhereUniqueInput'
+    distinct: List['UserProgressScalarFieldKeys']
+    
+    
+
+class QuestionIncludeFromInterviewQuestion(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class QuestionIncludeFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class QuestionIncludeFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class QuestionIncludeFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class QuestionIncludeFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+    
+
+class QuestionArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'QuestionIncludeFromQuestionRecursive1'
+
+
+class QuestionArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'QuestionIncludeFromQuestionRecursive2'
+
+
+class QuestionArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'QuestionIncludeFromQuestionRecursive3'
+
+
+class QuestionArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'QuestionIncludeFromQuestionRecursive4'
+
+
+class QuestionArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    
+    
+
+class FindManyQuestionArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive1'
+
+
+class FindManyQuestionArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive2'
+
+
+class FindManyQuestionArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive3'
+
+
+class FindManyQuestionArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    include: 'QuestionIncludeFromQuestionRecursive4'
+
+
+class FindManyQuestionArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['QuestionOrderByInput', List['QuestionOrderByInput']]
+    where: 'QuestionWhereInput'
+    cursor: 'QuestionWhereUniqueInput'
+    distinct: List['QuestionScalarFieldKeys']
+    
+    
+
+class UserExamAttemptIncludeFromInterviewQuestion(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    user: Union[bool, 'UserArgsFromInterviewQuestionRecursive1']
+
+
+class UserExamAttemptIncludeFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    user: Union[bool, 'UserArgsFromInterviewQuestionRecursive2']
+
+
+class UserExamAttemptIncludeFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    user: Union[bool, 'UserArgsFromInterviewQuestionRecursive3']
+
+
+class UserExamAttemptIncludeFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    user: Union[bool, 'UserArgsFromInterviewQuestionRecursive4']
+
+
+class UserExamAttemptIncludeFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+    
+
+class UserExamAttemptArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive1'
+
+
+class UserExamAttemptArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive2'
+
+
+class UserExamAttemptArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive3'
+
+
+class UserExamAttemptArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive4'
+
+
+class UserExamAttemptArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    
+    
+
+class FindManyUserExamAttemptArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive1'
+
+
+class FindManyUserExamAttemptArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive2'
+
+
+class FindManyUserExamAttemptArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive3'
+
+
+class FindManyUserExamAttemptArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    include: 'UserExamAttemptIncludeFromUserExamAttemptRecursive4'
+
+
+class FindManyUserExamAttemptArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['UserExamAttemptOrderByInput', List['UserExamAttemptOrderByInput']]
+    where: 'UserExamAttemptWhereInput'
+    cursor: 'UserExamAttemptWhereUniqueInput'
+    distinct: List['UserExamAttemptScalarFieldKeys']
+    
+    
+
+class PaymentIncludeFromInterviewQuestion(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    user: Union[bool, 'UserArgsFromInterviewQuestionRecursive1']
+
+
+class PaymentIncludeFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    user: Union[bool, 'UserArgsFromInterviewQuestionRecursive2']
+
+
+class PaymentIncludeFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    user: Union[bool, 'UserArgsFromInterviewQuestionRecursive3']
+
+
+class PaymentIncludeFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+    user: Union[bool, 'UserArgsFromInterviewQuestionRecursive4']
+
+
+class PaymentIncludeFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+    
+
+class PaymentArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class PaymentArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class PaymentArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class PaymentArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class PaymentArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    
+    
+
+class FindManyPaymentArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive1'
+
+
+class FindManyPaymentArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive2'
+
+
+class FindManyPaymentArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive3'
+
+
+class FindManyPaymentArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    include: 'PaymentIncludeFromPaymentRecursive4'
+
+
+class FindManyPaymentArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['PaymentOrderByInput', List['PaymentOrderByInput']]
+    where: 'PaymentWhereInput'
+    cursor: 'PaymentWhereUniqueInput'
+    distinct: List['PaymentScalarFieldKeys']
+    
+    
+
+class BlogPostIncludeFromInterviewQuestion(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class BlogPostIncludeFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class BlogPostIncludeFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class BlogPostIncludeFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class BlogPostIncludeFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+    
+
+class BlogPostArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class BlogPostArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class BlogPostArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class BlogPostArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class BlogPostArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    
+    
+
+class FindManyBlogPostArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive1'
+
+
+class FindManyBlogPostArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive2'
+
+
+class FindManyBlogPostArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive3'
+
+
+class FindManyBlogPostArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    include: 'BlogPostIncludeFromBlogPostRecursive4'
+
+
+class FindManyBlogPostArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['BlogPostOrderByInput', List['BlogPostOrderByInput']]
+    where: 'BlogPostWhereInput'
+    cursor: 'BlogPostWhereUniqueInput'
+    distinct: List['BlogPostScalarFieldKeys']
+    
+    
+
+class AboutContentIncludeFromInterviewQuestion(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class AboutContentIncludeFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class AboutContentIncludeFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class AboutContentIncludeFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class AboutContentIncludeFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+    
+
+class AboutContentArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class AboutContentArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class AboutContentArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class AboutContentArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class AboutContentArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    
+    
+
+class FindManyAboutContentArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive1'
+
+
+class FindManyAboutContentArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive2'
+
+
+class FindManyAboutContentArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive3'
+
+
+class FindManyAboutContentArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    include: 'AboutContentIncludeFromAboutContentRecursive4'
+
+
+class FindManyAboutContentArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['AboutContentOrderByInput', List['AboutContentOrderByInput']]
+    where: 'AboutContentWhereInput'
+    cursor: 'AboutContentWhereUniqueInput'
+    distinct: List['AboutContentScalarFieldKeys']
+    
+    
+
+class SubscriptionPlanIncludeFromInterviewQuestion(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class SubscriptionPlanIncludeFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class SubscriptionPlanIncludeFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class SubscriptionPlanIncludeFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class SubscriptionPlanIncludeFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+    
+
+class SubscriptionPlanArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class SubscriptionPlanArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class SubscriptionPlanArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class SubscriptionPlanArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class SubscriptionPlanArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    
+    
+
+class FindManySubscriptionPlanArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive1'
+
+
+class FindManySubscriptionPlanArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive2'
+
+
+class FindManySubscriptionPlanArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive3'
+
+
+class FindManySubscriptionPlanArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    include: 'SubscriptionPlanIncludeFromSubscriptionPlanRecursive4'
+
+
+class FindManySubscriptionPlanArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['SubscriptionPlanOrderByInput', List['SubscriptionPlanOrderByInput']]
+    where: 'SubscriptionPlanWhereInput'
+    cursor: 'SubscriptionPlanWhereUniqueInput'
+    distinct: List['SubscriptionPlanScalarFieldKeys']
+    
+    
+
+class TestimonialIncludeFromInterviewQuestion(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class TestimonialIncludeFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class TestimonialIncludeFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class TestimonialIncludeFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class TestimonialIncludeFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+    
+
+class TestimonialArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class TestimonialArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class TestimonialArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class TestimonialArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class TestimonialArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    
+    
+
+class FindManyTestimonialArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive1'
+
+
+class FindManyTestimonialArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive2'
+
+
+class FindManyTestimonialArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive3'
+
+
+class FindManyTestimonialArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    include: 'TestimonialIncludeFromTestimonialRecursive4'
+
+
+class FindManyTestimonialArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['TestimonialOrderByInput', List['TestimonialOrderByInput']]
+    where: 'TestimonialWhereInput'
+    cursor: 'TestimonialWhereUniqueInput'
+    distinct: List['TestimonialScalarFieldKeys']
+    
+    
+
+class InterviewQuestionIncludeFromInterviewQuestion(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class InterviewQuestionIncludeFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class InterviewQuestionIncludeFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class InterviewQuestionIncludeFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+
+class InterviewQuestionIncludeFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Relational arguments for InterviewQuestion"""
+
+    
+
+class InterviewQuestionArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class InterviewQuestionArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class InterviewQuestionArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class InterviewQuestionArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class InterviewQuestionArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    
+    
+
+class FindManyInterviewQuestionArgsFromInterviewQuestion(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive1'
+
+
+class FindManyInterviewQuestionArgsFromInterviewQuestionRecursive1(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive2'
+
+
+class FindManyInterviewQuestionArgsFromInterviewQuestionRecursive2(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive3'
+
+
+class FindManyInterviewQuestionArgsFromInterviewQuestionRecursive3(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    include: 'InterviewQuestionIncludeFromInterviewQuestionRecursive4'
+
+
+class FindManyInterviewQuestionArgsFromInterviewQuestionRecursive4(TypedDict, total=False):
+    """Arguments for InterviewQuestion"""
+    take: int
+    skip: int
+    order_by: Union['InterviewQuestionOrderByInput', List['InterviewQuestionOrderByInput']]
+    where: 'InterviewQuestionWhereInput'
+    cursor: 'InterviewQuestionWhereUniqueInput'
+    distinct: List['InterviewQuestionScalarFieldKeys']
+    
+
+
+FindManyInterviewQuestionArgs = FindManyInterviewQuestionArgsFromInterviewQuestion
+FindFirstInterviewQuestionArgs = FindManyInterviewQuestionArgsFromInterviewQuestion
+
+
+    
+
+class InterviewQuestionWhereInput(TypedDict, total=False):
+    """InterviewQuestion arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    topic: Union[_str, 'types.StringFilter']
+    questionText: Union[_str, 'types.StringFilter']
+    correctAnswer: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['InterviewQuestionWhereInputRecursive1', List['InterviewQuestionWhereInputRecursive1']]
+    # but this causes mypy to hang :/
+    AND: List['InterviewQuestionWhereInputRecursive1']
+    OR: List['InterviewQuestionWhereInputRecursive1']
+    NOT: List['InterviewQuestionWhereInputRecursive1']
+
+
+class InterviewQuestionWhereInputRecursive1(TypedDict, total=False):
+    """InterviewQuestion arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    topic: Union[_str, 'types.StringFilter']
+    questionText: Union[_str, 'types.StringFilter']
+    correctAnswer: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['InterviewQuestionWhereInputRecursive2', List['InterviewQuestionWhereInputRecursive2']]
+    # but this causes mypy to hang :/
+    AND: List['InterviewQuestionWhereInputRecursive2']
+    OR: List['InterviewQuestionWhereInputRecursive2']
+    NOT: List['InterviewQuestionWhereInputRecursive2']
+
+
+class InterviewQuestionWhereInputRecursive2(TypedDict, total=False):
+    """InterviewQuestion arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    topic: Union[_str, 'types.StringFilter']
+    questionText: Union[_str, 'types.StringFilter']
+    correctAnswer: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['InterviewQuestionWhereInputRecursive3', List['InterviewQuestionWhereInputRecursive3']]
+    # but this causes mypy to hang :/
+    AND: List['InterviewQuestionWhereInputRecursive3']
+    OR: List['InterviewQuestionWhereInputRecursive3']
+    NOT: List['InterviewQuestionWhereInputRecursive3']
+
+
+class InterviewQuestionWhereInputRecursive3(TypedDict, total=False):
+    """InterviewQuestion arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    topic: Union[_str, 'types.StringFilter']
+    questionText: Union[_str, 'types.StringFilter']
+    correctAnswer: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+    # should be noted that AND and NOT should be Union['InterviewQuestionWhereInputRecursive4', List['InterviewQuestionWhereInputRecursive4']]
+    # but this causes mypy to hang :/
+    AND: List['InterviewQuestionWhereInputRecursive4']
+    OR: List['InterviewQuestionWhereInputRecursive4']
+    NOT: List['InterviewQuestionWhereInputRecursive4']
+
+
+class InterviewQuestionWhereInputRecursive4(TypedDict, total=False):
+    """InterviewQuestion arguments for searching"""
+    id: Union[_str, 'types.StringFilter']
+    topic: Union[_str, 'types.StringFilter']
+    questionText: Union[_str, 'types.StringFilter']
+    correctAnswer: Union[_str, 'types.StringFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeFilter']
+
+
+
+# aggregate InterviewQuestion types
+
+
+    
+
+class InterviewQuestionScalarWhereWithAggregatesInput(TypedDict, total=False):
+    """InterviewQuestion arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    topic: Union[_str, 'types.StringWithAggregatesFilter']
+    questionText: Union[_str, 'types.StringWithAggregatesFilter']
+    correctAnswer: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['InterviewQuestionScalarWhereWithAggregatesInputRecursive1']
+    OR: List['InterviewQuestionScalarWhereWithAggregatesInputRecursive1']
+    NOT: List['InterviewQuestionScalarWhereWithAggregatesInputRecursive1']
+
+
+class InterviewQuestionScalarWhereWithAggregatesInputRecursive1(TypedDict, total=False):
+    """InterviewQuestion arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    topic: Union[_str, 'types.StringWithAggregatesFilter']
+    questionText: Union[_str, 'types.StringWithAggregatesFilter']
+    correctAnswer: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['InterviewQuestionScalarWhereWithAggregatesInputRecursive2']
+    OR: List['InterviewQuestionScalarWhereWithAggregatesInputRecursive2']
+    NOT: List['InterviewQuestionScalarWhereWithAggregatesInputRecursive2']
+
+
+class InterviewQuestionScalarWhereWithAggregatesInputRecursive2(TypedDict, total=False):
+    """InterviewQuestion arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    topic: Union[_str, 'types.StringWithAggregatesFilter']
+    questionText: Union[_str, 'types.StringWithAggregatesFilter']
+    correctAnswer: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['InterviewQuestionScalarWhereWithAggregatesInputRecursive3']
+    OR: List['InterviewQuestionScalarWhereWithAggregatesInputRecursive3']
+    NOT: List['InterviewQuestionScalarWhereWithAggregatesInputRecursive3']
+
+
+class InterviewQuestionScalarWhereWithAggregatesInputRecursive3(TypedDict, total=False):
+    """InterviewQuestion arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    topic: Union[_str, 'types.StringWithAggregatesFilter']
+    questionText: Union[_str, 'types.StringWithAggregatesFilter']
+    correctAnswer: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+    AND: List['InterviewQuestionScalarWhereWithAggregatesInputRecursive4']
+    OR: List['InterviewQuestionScalarWhereWithAggregatesInputRecursive4']
+    NOT: List['InterviewQuestionScalarWhereWithAggregatesInputRecursive4']
+
+
+class InterviewQuestionScalarWhereWithAggregatesInputRecursive4(TypedDict, total=False):
+    """InterviewQuestion arguments for searching"""
+    id: Union[_str, 'types.StringWithAggregatesFilter']
+    topic: Union[_str, 'types.StringWithAggregatesFilter']
+    questionText: Union[_str, 'types.StringWithAggregatesFilter']
+    correctAnswer: Union[_str, 'types.StringWithAggregatesFilter']
+    createdAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+    updatedAt: Union[datetime.datetime, 'types.DateTimeWithAggregatesFilter']
+
+
+
+class InterviewQuestionGroupByOutput(TypedDict, total=False):
+    id: _str
+    topic: _str
+    questionText: _str
+    correctAnswer: _str
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+    _sum: 'InterviewQuestionSumAggregateOutput'
+    _avg: 'InterviewQuestionAvgAggregateOutput'
+    _min: 'InterviewQuestionMinAggregateOutput'
+    _max: 'InterviewQuestionMaxAggregateOutput'
+    _count: 'InterviewQuestionCountAggregateOutput'
+
+
+class InterviewQuestionAvgAggregateOutput(TypedDict, total=False):
+    """InterviewQuestion output for aggregating averages"""
+
+
+class InterviewQuestionSumAggregateOutput(TypedDict, total=False):
+    """InterviewQuestion output for aggregating sums"""
+
+
+class InterviewQuestionScalarAggregateOutput(TypedDict, total=False):
+    """InterviewQuestion output including scalar fields"""
+    id: _str
+    topic: _str
+    questionText: _str
+    correctAnswer: _str
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+
+
+InterviewQuestionMinAggregateOutput = InterviewQuestionScalarAggregateOutput
+InterviewQuestionMaxAggregateOutput = InterviewQuestionScalarAggregateOutput
+
+
+class InterviewQuestionMaxAggregateInput(TypedDict, total=False):
+    """InterviewQuestion input for aggregating by max"""
+    id: bool
+    topic: bool
+    questionText: bool
+    correctAnswer: bool
+    createdAt: bool
+    updatedAt: bool
+
+
+class InterviewQuestionMinAggregateInput(TypedDict, total=False):
+    """InterviewQuestion input for aggregating by min"""
+    id: bool
+    topic: bool
+    questionText: bool
+    correctAnswer: bool
+    createdAt: bool
+    updatedAt: bool
+
+
+class InterviewQuestionNumberAggregateInput(TypedDict, total=False):
+    """InterviewQuestion input for aggregating numbers"""
+
+
+InterviewQuestionAvgAggregateInput = InterviewQuestionNumberAggregateInput
+InterviewQuestionSumAggregateInput = InterviewQuestionNumberAggregateInput
+
+
+InterviewQuestionCountAggregateInput = TypedDict(
+    'InterviewQuestionCountAggregateInput',
+    {
+        'id': bool,
+        'topic': bool,
+        'questionText': bool,
+        'correctAnswer': bool,
+        'createdAt': bool,
+        'updatedAt': bool,
+        '_all': bool,
+    },
+    total=False,
+)
+
+InterviewQuestionCountAggregateOutput = TypedDict(
+    'InterviewQuestionCountAggregateOutput',
+    {
+        'id': int,
+        'topic': int,
+        'questionText': int,
+        'correctAnswer': int,
+        'createdAt': int,
+        'updatedAt': int,
+        '_all': int,
+    },
+    total=False,
+)
+
+
+InterviewQuestionKeys = Literal[
+    'id',
+    'topic',
+    'questionText',
+    'correctAnswer',
+    'createdAt',
+    'updatedAt',
+]
+InterviewQuestionScalarFieldKeys = Literal[
+    'id',
+    'topic',
+    'questionText',
+    'correctAnswer',
+    'createdAt',
+    'updatedAt',
+]
+InterviewQuestionScalarFieldKeysT = TypeVar('InterviewQuestionScalarFieldKeysT', bound=InterviewQuestionScalarFieldKeys)
+
+InterviewQuestionRelationalFieldKeys = _NoneType
 
 
 

@@ -101,6 +101,11 @@ class Prisma(AsyncBasePrisma):
     question: 'actions.QuestionActions[models.Question]'
     userexamattempt: 'actions.UserExamAttemptActions[models.UserExamAttempt]'
     payment: 'actions.PaymentActions[models.Payment]'
+    blogpost: 'actions.BlogPostActions[models.BlogPost]'
+    aboutcontent: 'actions.AboutContentActions[models.AboutContent]'
+    subscriptionplan: 'actions.SubscriptionPlanActions[models.SubscriptionPlan]'
+    testimonial: 'actions.TestimonialActions[models.Testimonial]'
+    interviewquestion: 'actions.InterviewQuestionActions[models.InterviewQuestion]'
 
     __slots__ = (
         'user',
@@ -110,6 +115,11 @@ class Prisma(AsyncBasePrisma):
         'question',
         'userexamattempt',
         'payment',
+        'blogpost',
+        'aboutcontent',
+        'subscriptionplan',
+        'testimonial',
+        'interviewquestion',
     )
 
     def __init__(
@@ -147,6 +157,11 @@ class Prisma(AsyncBasePrisma):
         self.question = actions.QuestionActions[models.Question](self, models.Question)
         self.userexamattempt = actions.UserExamAttemptActions[models.UserExamAttempt](self, models.UserExamAttempt)
         self.payment = actions.PaymentActions[models.Payment](self, models.Payment)
+        self.blogpost = actions.BlogPostActions[models.BlogPost](self, models.BlogPost)
+        self.aboutcontent = actions.AboutContentActions[models.AboutContent](self, models.AboutContent)
+        self.subscriptionplan = actions.SubscriptionPlanActions[models.SubscriptionPlan](self, models.SubscriptionPlan)
+        self.testimonial = actions.TestimonialActions[models.Testimonial](self, models.Testimonial)
+        self.interviewquestion = actions.InterviewQuestionActions[models.InterviewQuestion](self, models.InterviewQuestion)
 
         if auto_register:
             register(self)
@@ -304,6 +319,11 @@ class Batch:
     question: 'QuestionBatchActions'
     userexamattempt: 'UserExamAttemptBatchActions'
     payment: 'PaymentBatchActions'
+    blogpost: 'BlogPostBatchActions'
+    aboutcontent: 'AboutContentBatchActions'
+    subscriptionplan: 'SubscriptionPlanBatchActions'
+    testimonial: 'TestimonialBatchActions'
+    interviewquestion: 'InterviewQuestionBatchActions'
 
     def __init__(self, client: Prisma) -> None:
         self.__client = client
@@ -316,6 +336,11 @@ class Batch:
         self.question = QuestionBatchActions(self)
         self.userexamattempt = UserExamAttemptBatchActions(self)
         self.payment = PaymentBatchActions(self)
+        self.blogpost = BlogPostBatchActions(self)
+        self.aboutcontent = AboutContentBatchActions(self)
+        self.subscriptionplan = SubscriptionPlanBatchActions(self)
+        self.testimonial = TestimonialBatchActions(self)
+        self.interviewquestion = InterviewQuestionBatchActions(self)
 
     def _add(self, **kwargs: Any) -> None:
         builder = QueryBuilder(
@@ -1139,6 +1164,561 @@ class PaymentBatchActions:
         self._batcher._add(
             method='delete_many',
             model=models.Payment,
+            arguments={'where': where},
+            root_selection=['count'],
+        )
+
+
+
+# NOTE: some arguments are meaningless in this context but are included
+# for completeness sake
+class BlogPostBatchActions:
+    def __init__(self, batcher: Batch) -> None:
+        self._batcher = batcher
+
+    def create(
+        self,
+        data: types.BlogPostCreateInput,
+        include: Optional[types.BlogPostInclude] = None
+    ) -> None:
+        self._batcher._add(
+            method='create',
+            model=models.BlogPost,
+            arguments={
+                'data': data,
+                'include': include,
+            },
+        )
+
+    def create_many(
+        self,
+        data: List[types.BlogPostCreateWithoutRelationsInput],
+        *,
+        skip_duplicates: Optional[bool] = None,
+    ) -> None:
+        if skip_duplicates and self._batcher._active_provider in CREATE_MANY_SKIP_DUPLICATES_UNSUPPORTED:
+            raise errors.UnsupportedDatabaseError(self._batcher._active_provider, 'create_many_skip_duplicates')
+
+        self._batcher._add(
+            method='create_many',
+            model=models.BlogPost,
+            arguments={
+                'data': data,
+                'skipDuplicates': skip_duplicates,
+            },
+            root_selection=['count'],
+        )
+
+    def delete(
+        self,
+        where: types.BlogPostWhereUniqueInput,
+        include: Optional[types.BlogPostInclude] = None,
+    ) -> None:
+        self._batcher._add(
+            method='delete',
+            model=models.BlogPost,
+            arguments={
+                'where': where,
+                'include': include,
+            },
+        )
+
+    def update(
+        self,
+        data: types.BlogPostUpdateInput,
+        where: types.BlogPostWhereUniqueInput,
+        include: Optional[types.BlogPostInclude] = None
+    ) -> None:
+        self._batcher._add(
+            method='update',
+            model=models.BlogPost,
+            arguments={
+                'data': data,
+                'where': where,
+                'include': include,
+            },
+        )
+
+    def upsert(
+        self,
+        where: types.BlogPostWhereUniqueInput,
+        data: types.BlogPostUpsertInput,
+        include: Optional[types.BlogPostInclude] = None,
+    ) -> None:
+        self._batcher._add(
+            method='upsert',
+            model=models.BlogPost,
+            arguments={
+                'where': where,
+                'include': include,
+                'create': data.get('create'),
+                'update': data.get('update'),
+            },
+        )
+
+    def update_many(
+        self,
+        data: types.BlogPostUpdateManyMutationInput,
+        where: types.BlogPostWhereInput,
+    ) -> None:
+        self._batcher._add(
+            method='update_many',
+            model=models.BlogPost,
+            arguments={'data': data, 'where': where,},
+            root_selection=['count'],
+        )
+
+    def delete_many(
+        self,
+        where: Optional[types.BlogPostWhereInput] = None,
+    ) -> None:
+        self._batcher._add(
+            method='delete_many',
+            model=models.BlogPost,
+            arguments={'where': where},
+            root_selection=['count'],
+        )
+
+
+
+# NOTE: some arguments are meaningless in this context but are included
+# for completeness sake
+class AboutContentBatchActions:
+    def __init__(self, batcher: Batch) -> None:
+        self._batcher = batcher
+
+    def create(
+        self,
+        data: types.AboutContentCreateInput,
+        include: Optional[types.AboutContentInclude] = None
+    ) -> None:
+        self._batcher._add(
+            method='create',
+            model=models.AboutContent,
+            arguments={
+                'data': data,
+                'include': include,
+            },
+        )
+
+    def create_many(
+        self,
+        data: List[types.AboutContentCreateWithoutRelationsInput],
+        *,
+        skip_duplicates: Optional[bool] = None,
+    ) -> None:
+        if skip_duplicates and self._batcher._active_provider in CREATE_MANY_SKIP_DUPLICATES_UNSUPPORTED:
+            raise errors.UnsupportedDatabaseError(self._batcher._active_provider, 'create_many_skip_duplicates')
+
+        self._batcher._add(
+            method='create_many',
+            model=models.AboutContent,
+            arguments={
+                'data': data,
+                'skipDuplicates': skip_duplicates,
+            },
+            root_selection=['count'],
+        )
+
+    def delete(
+        self,
+        where: types.AboutContentWhereUniqueInput,
+        include: Optional[types.AboutContentInclude] = None,
+    ) -> None:
+        self._batcher._add(
+            method='delete',
+            model=models.AboutContent,
+            arguments={
+                'where': where,
+                'include': include,
+            },
+        )
+
+    def update(
+        self,
+        data: types.AboutContentUpdateInput,
+        where: types.AboutContentWhereUniqueInput,
+        include: Optional[types.AboutContentInclude] = None
+    ) -> None:
+        self._batcher._add(
+            method='update',
+            model=models.AboutContent,
+            arguments={
+                'data': data,
+                'where': where,
+                'include': include,
+            },
+        )
+
+    def upsert(
+        self,
+        where: types.AboutContentWhereUniqueInput,
+        data: types.AboutContentUpsertInput,
+        include: Optional[types.AboutContentInclude] = None,
+    ) -> None:
+        self._batcher._add(
+            method='upsert',
+            model=models.AboutContent,
+            arguments={
+                'where': where,
+                'include': include,
+                'create': data.get('create'),
+                'update': data.get('update'),
+            },
+        )
+
+    def update_many(
+        self,
+        data: types.AboutContentUpdateManyMutationInput,
+        where: types.AboutContentWhereInput,
+    ) -> None:
+        self._batcher._add(
+            method='update_many',
+            model=models.AboutContent,
+            arguments={'data': data, 'where': where,},
+            root_selection=['count'],
+        )
+
+    def delete_many(
+        self,
+        where: Optional[types.AboutContentWhereInput] = None,
+    ) -> None:
+        self._batcher._add(
+            method='delete_many',
+            model=models.AboutContent,
+            arguments={'where': where},
+            root_selection=['count'],
+        )
+
+
+
+# NOTE: some arguments are meaningless in this context but are included
+# for completeness sake
+class SubscriptionPlanBatchActions:
+    def __init__(self, batcher: Batch) -> None:
+        self._batcher = batcher
+
+    def create(
+        self,
+        data: types.SubscriptionPlanCreateInput,
+        include: Optional[types.SubscriptionPlanInclude] = None
+    ) -> None:
+        self._batcher._add(
+            method='create',
+            model=models.SubscriptionPlan,
+            arguments={
+                'data': data,
+                'include': include,
+            },
+        )
+
+    def create_many(
+        self,
+        data: List[types.SubscriptionPlanCreateWithoutRelationsInput],
+        *,
+        skip_duplicates: Optional[bool] = None,
+    ) -> None:
+        if skip_duplicates and self._batcher._active_provider in CREATE_MANY_SKIP_DUPLICATES_UNSUPPORTED:
+            raise errors.UnsupportedDatabaseError(self._batcher._active_provider, 'create_many_skip_duplicates')
+
+        self._batcher._add(
+            method='create_many',
+            model=models.SubscriptionPlan,
+            arguments={
+                'data': data,
+                'skipDuplicates': skip_duplicates,
+            },
+            root_selection=['count'],
+        )
+
+    def delete(
+        self,
+        where: types.SubscriptionPlanWhereUniqueInput,
+        include: Optional[types.SubscriptionPlanInclude] = None,
+    ) -> None:
+        self._batcher._add(
+            method='delete',
+            model=models.SubscriptionPlan,
+            arguments={
+                'where': where,
+                'include': include,
+            },
+        )
+
+    def update(
+        self,
+        data: types.SubscriptionPlanUpdateInput,
+        where: types.SubscriptionPlanWhereUniqueInput,
+        include: Optional[types.SubscriptionPlanInclude] = None
+    ) -> None:
+        self._batcher._add(
+            method='update',
+            model=models.SubscriptionPlan,
+            arguments={
+                'data': data,
+                'where': where,
+                'include': include,
+            },
+        )
+
+    def upsert(
+        self,
+        where: types.SubscriptionPlanWhereUniqueInput,
+        data: types.SubscriptionPlanUpsertInput,
+        include: Optional[types.SubscriptionPlanInclude] = None,
+    ) -> None:
+        self._batcher._add(
+            method='upsert',
+            model=models.SubscriptionPlan,
+            arguments={
+                'where': where,
+                'include': include,
+                'create': data.get('create'),
+                'update': data.get('update'),
+            },
+        )
+
+    def update_many(
+        self,
+        data: types.SubscriptionPlanUpdateManyMutationInput,
+        where: types.SubscriptionPlanWhereInput,
+    ) -> None:
+        self._batcher._add(
+            method='update_many',
+            model=models.SubscriptionPlan,
+            arguments={'data': data, 'where': where,},
+            root_selection=['count'],
+        )
+
+    def delete_many(
+        self,
+        where: Optional[types.SubscriptionPlanWhereInput] = None,
+    ) -> None:
+        self._batcher._add(
+            method='delete_many',
+            model=models.SubscriptionPlan,
+            arguments={'where': where},
+            root_selection=['count'],
+        )
+
+
+
+# NOTE: some arguments are meaningless in this context but are included
+# for completeness sake
+class TestimonialBatchActions:
+    def __init__(self, batcher: Batch) -> None:
+        self._batcher = batcher
+
+    def create(
+        self,
+        data: types.TestimonialCreateInput,
+        include: Optional[types.TestimonialInclude] = None
+    ) -> None:
+        self._batcher._add(
+            method='create',
+            model=models.Testimonial,
+            arguments={
+                'data': data,
+                'include': include,
+            },
+        )
+
+    def create_many(
+        self,
+        data: List[types.TestimonialCreateWithoutRelationsInput],
+        *,
+        skip_duplicates: Optional[bool] = None,
+    ) -> None:
+        if skip_duplicates and self._batcher._active_provider in CREATE_MANY_SKIP_DUPLICATES_UNSUPPORTED:
+            raise errors.UnsupportedDatabaseError(self._batcher._active_provider, 'create_many_skip_duplicates')
+
+        self._batcher._add(
+            method='create_many',
+            model=models.Testimonial,
+            arguments={
+                'data': data,
+                'skipDuplicates': skip_duplicates,
+            },
+            root_selection=['count'],
+        )
+
+    def delete(
+        self,
+        where: types.TestimonialWhereUniqueInput,
+        include: Optional[types.TestimonialInclude] = None,
+    ) -> None:
+        self._batcher._add(
+            method='delete',
+            model=models.Testimonial,
+            arguments={
+                'where': where,
+                'include': include,
+            },
+        )
+
+    def update(
+        self,
+        data: types.TestimonialUpdateInput,
+        where: types.TestimonialWhereUniqueInput,
+        include: Optional[types.TestimonialInclude] = None
+    ) -> None:
+        self._batcher._add(
+            method='update',
+            model=models.Testimonial,
+            arguments={
+                'data': data,
+                'where': where,
+                'include': include,
+            },
+        )
+
+    def upsert(
+        self,
+        where: types.TestimonialWhereUniqueInput,
+        data: types.TestimonialUpsertInput,
+        include: Optional[types.TestimonialInclude] = None,
+    ) -> None:
+        self._batcher._add(
+            method='upsert',
+            model=models.Testimonial,
+            arguments={
+                'where': where,
+                'include': include,
+                'create': data.get('create'),
+                'update': data.get('update'),
+            },
+        )
+
+    def update_many(
+        self,
+        data: types.TestimonialUpdateManyMutationInput,
+        where: types.TestimonialWhereInput,
+    ) -> None:
+        self._batcher._add(
+            method='update_many',
+            model=models.Testimonial,
+            arguments={'data': data, 'where': where,},
+            root_selection=['count'],
+        )
+
+    def delete_many(
+        self,
+        where: Optional[types.TestimonialWhereInput] = None,
+    ) -> None:
+        self._batcher._add(
+            method='delete_many',
+            model=models.Testimonial,
+            arguments={'where': where},
+            root_selection=['count'],
+        )
+
+
+
+# NOTE: some arguments are meaningless in this context but are included
+# for completeness sake
+class InterviewQuestionBatchActions:
+    def __init__(self, batcher: Batch) -> None:
+        self._batcher = batcher
+
+    def create(
+        self,
+        data: types.InterviewQuestionCreateInput,
+        include: Optional[types.InterviewQuestionInclude] = None
+    ) -> None:
+        self._batcher._add(
+            method='create',
+            model=models.InterviewQuestion,
+            arguments={
+                'data': data,
+                'include': include,
+            },
+        )
+
+    def create_many(
+        self,
+        data: List[types.InterviewQuestionCreateWithoutRelationsInput],
+        *,
+        skip_duplicates: Optional[bool] = None,
+    ) -> None:
+        if skip_duplicates and self._batcher._active_provider in CREATE_MANY_SKIP_DUPLICATES_UNSUPPORTED:
+            raise errors.UnsupportedDatabaseError(self._batcher._active_provider, 'create_many_skip_duplicates')
+
+        self._batcher._add(
+            method='create_many',
+            model=models.InterviewQuestion,
+            arguments={
+                'data': data,
+                'skipDuplicates': skip_duplicates,
+            },
+            root_selection=['count'],
+        )
+
+    def delete(
+        self,
+        where: types.InterviewQuestionWhereUniqueInput,
+        include: Optional[types.InterviewQuestionInclude] = None,
+    ) -> None:
+        self._batcher._add(
+            method='delete',
+            model=models.InterviewQuestion,
+            arguments={
+                'where': where,
+                'include': include,
+            },
+        )
+
+    def update(
+        self,
+        data: types.InterviewQuestionUpdateInput,
+        where: types.InterviewQuestionWhereUniqueInput,
+        include: Optional[types.InterviewQuestionInclude] = None
+    ) -> None:
+        self._batcher._add(
+            method='update',
+            model=models.InterviewQuestion,
+            arguments={
+                'data': data,
+                'where': where,
+                'include': include,
+            },
+        )
+
+    def upsert(
+        self,
+        where: types.InterviewQuestionWhereUniqueInput,
+        data: types.InterviewQuestionUpsertInput,
+        include: Optional[types.InterviewQuestionInclude] = None,
+    ) -> None:
+        self._batcher._add(
+            method='upsert',
+            model=models.InterviewQuestion,
+            arguments={
+                'where': where,
+                'include': include,
+                'create': data.get('create'),
+                'update': data.get('update'),
+            },
+        )
+
+    def update_many(
+        self,
+        data: types.InterviewQuestionUpdateManyMutationInput,
+        where: types.InterviewQuestionWhereInput,
+    ) -> None:
+        self._batcher._add(
+            method='update_many',
+            model=models.InterviewQuestion,
+            arguments={'data': data, 'where': where,},
+            root_selection=['count'],
+        )
+
+    def delete_many(
+        self,
+        where: Optional[types.InterviewQuestionWhereInput] = None,
+    ) -> None:
+        self._batcher._add(
+            method='delete_many',
+            model=models.InterviewQuestion,
             arguments={'where': where},
             root_selection=['count'],
         )

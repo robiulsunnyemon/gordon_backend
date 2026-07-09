@@ -144,3 +144,53 @@ class BasePayment(_PrismaModel):
         return actions.PaymentActions[_PrismaModelT](client or get_client(), cls)
 
 
+class BaseBlogPost(_PrismaModel):
+    __prisma_model__: ClassVar[Literal['BlogPost']] = 'BlogPost'  # pyright: ignore[reportIncompatibleVariableOverride]
+
+    @classmethod
+    def prisma(cls: Type[_PrismaModelT], client: Optional['Prisma'] = None) -> 'actions.BlogPostActions[_PrismaModelT]':
+        from .client import get_client
+
+        return actions.BlogPostActions[_PrismaModelT](client or get_client(), cls)
+
+
+class BaseAboutContent(_PrismaModel):
+    __prisma_model__: ClassVar[Literal['AboutContent']] = 'AboutContent'  # pyright: ignore[reportIncompatibleVariableOverride]
+
+    @classmethod
+    def prisma(cls: Type[_PrismaModelT], client: Optional['Prisma'] = None) -> 'actions.AboutContentActions[_PrismaModelT]':
+        from .client import get_client
+
+        return actions.AboutContentActions[_PrismaModelT](client or get_client(), cls)
+
+
+class BaseSubscriptionPlan(_PrismaModel):
+    __prisma_model__: ClassVar[Literal['SubscriptionPlan']] = 'SubscriptionPlan'  # pyright: ignore[reportIncompatibleVariableOverride]
+
+    @classmethod
+    def prisma(cls: Type[_PrismaModelT], client: Optional['Prisma'] = None) -> 'actions.SubscriptionPlanActions[_PrismaModelT]':
+        from .client import get_client
+
+        return actions.SubscriptionPlanActions[_PrismaModelT](client or get_client(), cls)
+
+
+class BaseTestimonial(_PrismaModel):
+    __prisma_model__: ClassVar[Literal['Testimonial']] = 'Testimonial'  # pyright: ignore[reportIncompatibleVariableOverride]
+
+    @classmethod
+    def prisma(cls: Type[_PrismaModelT], client: Optional['Prisma'] = None) -> 'actions.TestimonialActions[_PrismaModelT]':
+        from .client import get_client
+
+        return actions.TestimonialActions[_PrismaModelT](client or get_client(), cls)
+
+
+class BaseInterviewQuestion(_PrismaModel):
+    __prisma_model__: ClassVar[Literal['InterviewQuestion']] = 'InterviewQuestion'  # pyright: ignore[reportIncompatibleVariableOverride]
+
+    @classmethod
+    def prisma(cls: Type[_PrismaModelT], client: Optional['Prisma'] = None) -> 'actions.InterviewQuestionActions[_PrismaModelT]':
+        from .client import get_client
+
+        return actions.InterviewQuestionActions[_PrismaModelT](client or get_client(), cls)
+
+
